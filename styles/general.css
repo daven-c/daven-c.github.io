@@ -2,11 +2,11 @@ body {
   margin-top: 80px;
   padding-bottom: 1000px;
   background-color: rgb(40, 40, 40);
+  font-family: Rajdhani, sans-serif;
+  color: white;
 }
 
 p {
-  font-family: Rajdhani, sans-serif;
   margin-top: 0;
   margin-bottom: 0px;
-  color: white;
 }
