@@ -1,0 +1,34 @@
+.page {
+    height: 92vh;
+    margin: 0;
+    background-size: cover;
+  }
+  
+
+/* BANNER-> */
+
+#banner {
+  text-align: center;
+  background-image: url("../images/rocket.png");
+}
+
+#title {
+  font-size: 60px;
+  font-weight: 600;
+  margin: auto;
+}
+
+#subtitle {
+  font-size: 26px;
+}
+
+/* <-BANNER */
+
+/* 02-> */
+
+#stuff {
+    background-image: url("../images/brain.png");
+    
+}
+
+/* <-02 */

@@ -1,8 +1,8 @@
 body {
-  margin-top: 80px;
-  padding-bottom: 1000px;
+  margin-top: 8vh;
   background-color: rgb(40, 40, 40);
   font-family: Rajdhani, sans-serif;
+  font-weight: 400;;
   color: white;
 }
 
