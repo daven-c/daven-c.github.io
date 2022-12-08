@@ -9,7 +9,6 @@
 
 #banner {
   text-align: center;
-  background-image: url("../images/rocket.png");
 }
 
 #title {
@@ -27,8 +26,6 @@
 /* 02-> */
 
 #stuff {
-    background-image: url("../images/brain.png");
-    
 }
 
 /* <-02 */
