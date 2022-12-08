@@ -1,4 +1,7 @@
-.glow {
-  box-shadow: 0 0 15px rgba(145, 145, 145, 1), 0 0 15px rgba(145, 145, 145, 1),
-    0 0 15px rgba(145, 145, 145, 1), 0 0 15px rgba(145, 145, 145, 1);
+.box-glow {
+  box-shadow: 0 0 15px rgba(145, 145, 145, 1);
+}
+
+.text-glow {
+  text-shadow: 0 0 15px rgba(145, 145, 145, 1);
 }
