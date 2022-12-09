@@ -1,0 +1,36 @@
+#banner-container {
+  display: flex;
+  position: absolute;
+  left: 50vw;
+  margin-top: 8vh;
+  transform: translate(-50%);
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+#frame {
+  display: flex;
+  position: relative;
+  filter: invert(1)
+}
+
+#banner-box {
+  display: flex;
+  position: relative;
+  padding-top: 50vh;
+  margin: 8px;
+  transform: translate(0, -25%);
+  text-align: center;
+}
+
+#title {
+  font-size: 60px;
+  font-weight: 600;
+}
+
+#subtitle {
+  font-size: 26px;
+}
+
+/* <-BANNER */
