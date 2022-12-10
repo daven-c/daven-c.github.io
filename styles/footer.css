@@ -4,14 +4,15 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to bottom, rgb(30, 30, 33), rgb(50, 50, 50));
+  background: linear-gradient(to bottom, rgb(30, 30, 35), rgb(50, 50, 50));
   transition: .75s;
+  overflow: hidden;
 }
 
 #footer-container:hover {
   height: 100px;
   transition: .75s;
-  box-shadow: 0 0 10px rgba(200, 200, 200, .7)
+  box-shadow: 0 0 10px rgba(200, 200, 200, .7);
 }
 
 #footer-bar {

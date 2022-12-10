@@ -18,9 +18,9 @@
   text-align: center;
 }
 
-#title {
+#title {  
   font-size: 60px;
-  font-weight: 600;
+  text-shadow: 0 0 5px rgb(255, 255, 255);
 }
 
 #subtitle {

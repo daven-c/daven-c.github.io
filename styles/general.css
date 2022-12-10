@@ -3,10 +3,9 @@ body {
   padding: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgb(30, 30, 33);
+  background-color: rgb(30, 30, 35);
   font-family: Rajdhani, sans-serif;
   color: white;
-  overflow: hidden;
 }
 
 a {
