@@ -1,5 +1,29 @@
 #footer-container {
+  position: absolute;
+  height: 40px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgb(30, 30, 33), rgb(50, 50, 50));
+  transition: .75s;
+}
+
+#footer-container:hover {
+  height: 100px;
+  transition: .75s;
+  box-shadow: 0 0 10px rgba(200, 200, 200, .7)
+}
+
+#footer-bar {
+  width: 30px;
+  height: 40px;
+  padding-left: 50%;
+  padding-right: 50%;
+  filter: invert(1);
+}
+
+#footer-links-container {
   display: flex;
-  height: 500px;
-  background: linear-gradient(to top, rgb(30, 30, 33), rgb(60, 60, 63));
+  align-items: center;
+  justify-content: space-evenly;
 }
