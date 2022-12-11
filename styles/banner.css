@@ -1,30 +1,37 @@
 #banner-container {
-  margin-top: 8vh;
-  margin-bottom: 8vh;
-  margin-left: 15vw;
-  margin-right: 15vw;
+  height: 70vh;
+  width: 50vw;
+  margin-left: 50%;
+  margin-top: 70px;
+  transform: translate(-50%);
   justify-content: center;
-  border: 1px solid white;
-  border-radius: 10px;
-}
-
-#frame {
-  
+  background: linear-gradient(to right, white 4px, transparent 4px) 0 0,
+    linear-gradient(to right, white 4px, transparent 4px) 0 100%,
+    linear-gradient(to left, white 4px, transparent 4px) 100% 0,
+    linear-gradient(to left, white 4px, transparent 4px) 100% 100%,
+    linear-gradient(to bottom, white 4px, transparent 4px) 0 0,
+    linear-gradient(to bottom, white 4px, transparent 4px) 100% 0,
+    linear-gradient(to top, white 4px, transparent 4px) 0 100%,
+    linear-gradient(to top, white 4px, transparent 4px) 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 150px 150px;
+  padding: 30px;
 }
 
 #banner-card {
   margin: 8px;
-  transform: translate(0, -25%);
-  text-align: center;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  white-space: normal;
 }
 
-#title {  
-  font-size: 60px;
+#title {
+  text-align: center;
+  font-size: 40px;
   text-shadow: 0 0 5px rgb(255, 255, 255);
 }
 
-#subtitle {
-  font-size: 26px;
+#content {
+  font-size: 25px;
 }
-
-/* <-BANNER */
