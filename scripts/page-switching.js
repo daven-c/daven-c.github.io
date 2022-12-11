@@ -8,3 +8,4 @@ var text_field = document.querySelector('p');
 btn_home.addEventListener('click', () => {
     text_field.innerText = 'New Text';
 });
+ 
