@@ -23,27 +23,43 @@
   <body>
     <div id="header">
       <div id="header-button-container">
-        <button id="home-button" class="header-button header-center-button">
+        <button id="home-button" class="header-button focused-button" onclick="page_swap(this)">
           Home
         </button>
-        <button id="two-button" class="header-button header-outer-button">
+        <button id="two-button" class="header-button" onclick="page_swap(this)">
           // 02
         </button>
-        <button id="three-button" class="header-button header-outer-button">
+        <button id="three-button" class="header-button" onclick="page_swap(this)">
           // 03
         </button>
-        <button id="four-button" class="header-button header-outer-button">
+        <button id="four-button" class="header-button" onclick="page_swap(this)">
           // 04
         </button>
-        <button id="five-button" class="header-button header-outer-button">
+        <button id="five-button" class="header-button" onclick="page_swap(this)">
           // 05
         </button>
       </div>
     </div>
     <div id="banner-container">
-      <div id="home-page" class="banner-card">
-        <h1 id="title">Home</h1>
-        <p id="content">This is home</p>
+      <div id="home-page" class="banner-card focused-banner">
+        <h1 class="title">Home</h1>
+        <p class="content">This is home</p>
+      </div>
+      <div id="two-page" class="banner-card">
+        <h1 class="title">Two</h1>
+        <p class="content">This is Two</p>
+      </div>
+      <div id="three-page" class="banner-card">
+        <h1 class="title">Three</h1>
+        <p class="content">This is Three</p>
+      </div>
+      <div id="four-page" class="banner-card">
+        <h1 class="title">Four</h1>
+        <p class="content">This is Four</p>
+      </div>
+      <div id="five-page" class="banner-card">
+        <h1 class="title">Five</h1>
+        <p class="content">This is Five</p>
       </div>
     </div>
     <div id="footer-container">
@@ -54,6 +70,6 @@
       </div>
     </div>
 
-    <script src="page-switching.js"></script>
+    <script src="scripts/page-switching.js"></script>
   </body>
 </html>

@@ -18,7 +18,8 @@
   padding: 30px;
 }
 
-#banner-card {
+.banner-card {
+  display: none;
   margin: 8px;
   overflow-wrap: break-word;
   word-wrap: break-word;
@@ -26,12 +27,16 @@
   white-space: normal;
 }
 
-#title {
+.focused-banner {
+  display: inline;
+}
+
+.title {
   text-align: center;
   font-size: 40px;
   text-shadow: 0 0 5px rgb(255, 255, 255);
 }
 
-#content {
+.content {
   font-size: 25px;
 }
