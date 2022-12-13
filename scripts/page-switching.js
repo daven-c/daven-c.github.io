@@ -19,15 +19,7 @@ function change_button(new_button) {
 
 function change_banner(button_id) {
   var current_banner = get_focused_banner();
-  var new_banner = document.getElementById(button_to_banner[button_id]);
+  var new_banner = document.getElementById(button_id.split("-")[0] + "-page");
   current_banner.classList.remove("focused-banner");
   new_banner.classList.add("focused-banner");
 }
-
-var button_to_banner = {
-  "home-button": "home-page",
-  "two-button": "two-page",
-  "three-button": "three-page",
-  "four-button": "four-page",
-  "five-button": "five-page",
-};

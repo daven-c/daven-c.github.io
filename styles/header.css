@@ -1,36 +1,28 @@
-#header {
-  height: 50px;
-  min-height: 40px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
 #header-button-container {
-  width: 55vw;
-  background-color: rgb(20, 20, 25);
-  border-radius: 50px;
-  display: flex;
-  align-items: center;
+  margin-top: 10px;
+  margin-left: 50%;
+  padding: 5px;
+  transform: translate(-50%);
+  width: 50vw;
+  max-width: 500px;
   justify-content: space-evenly;
+  align-items: center;
+  display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  border-radius: 50px;
+  background-color: rgb(20, 20, 25);
 }
 
 .header-button {
-  opacity: 0.5;
+  opacity: 0.3;
+  width: 90px;
   background-color: transparent;
   font-family: Rajdhani, sans-serif;
   font-size: 26px;
   font-weight: 400;
   color: white;
-  border: 2px solid rgb(20, 20, 25);
+  border: 2px solid transparent;
   border-radius: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -39,7 +31,7 @@
   opacity: 1;
   border: 2px solid rgba(145, 145, 145, 1);
   box-shadow: 0 0 5px white;
-  transition: 200ms;
+  transition: 250ms;
 }
 
 .header-button:hover {
