@@ -6,7 +6,7 @@ body {
   background-color: rgb(30, 30, 35);
   font-family: Rajdhani, sans-serif;
   color: white;
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 a {

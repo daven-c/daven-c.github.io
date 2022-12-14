@@ -1,4 +1,6 @@
 #header-button-container {
+  padding-left: 15px;
+  padding-right: 15px;
   justify-content: space-evenly;
   align-items: center;
   display: flex;
