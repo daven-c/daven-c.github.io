@@ -12,11 +12,11 @@
 .header-button {
   opacity: 0.3;
   width: 90px;
-  background-color: transparent;
   font-family: Rajdhani, sans-serif;
   font-size: 26px;
   font-weight: 400;
   color: white;
+  background-color: transparent;
   border: 2px solid transparent;
   border-radius: 20px;
   padding-top: 5px;

@@ -13,18 +13,22 @@
     linear-gradient(to top, white 4px, transparent 4px) 0 100%,
     linear-gradient(to top, white 4px, transparent 4px) 100% 100%;
   background-repeat: no-repeat;
-  background-size: 150px 150px;
+  background-size: 100px 100px;
   padding: 30px;
   overflow-y: auto;
 }
 
 #banner-container::-webkit-scrollbar {
-  width: 0;
+  background: rgb(30, 30, 35);
+  width: 4px;
+}
+
+#banner-container::-webkit-scrollbar-thumb {
+  background: white;
 }
 
 .banner-card {
   display: none;
-  margin: 8px;
   overflow-wrap: break-word;
   word-wrap: break-word;
   hyphens: auto;
