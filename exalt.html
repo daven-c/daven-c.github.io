@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dox</title>
+    <link type="image/x-icon" rel="icon" href="index.ico" />
+
+    <!--styles-->
+    <link rel="stylesheet" href="exalt-styles/preloading/preload-styles.css" />
+    <link rel="stylesheet" href="exalt-styles/styling.css" />
+
+    <!--fonts-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap"
+    />
+  </head>
+  <body>
+    <div id="backwall-top"></div>
+    <div id="backwall-bot"></div>
+    <svg id="base-svg" width="100%" height="100%">
+      <circle
+        cx="50%"
+        cy="50%"
+        r="150"
+        stroke="white"
+        stroke-width="4"
+        fill="rgb(25, 25, 25)"
+      ></circle>
+    </svg>
+    <svg id="mask-svg" width="100%" height="100%">
+      <circle
+        id="mask-circle"
+        cx="50%"
+        cy="50%"
+        r="150"
+        stroke="red"
+        stroke-width="4"
+        stroke-dasharray="1080"
+        stroke-linecap="round"
+        fill="transparent"
+      >
+        <animate
+          attributeName="stroke-dashoffset"
+          values="1080;0"
+          dur="3.5s"
+          repeatCount="1"
+        ></animate>
+      </circle>
+      <text id="loading-text" x="50%" y="50%">0</text>
+    </svg>
+
+    <div class="page-container focused">
+      <p class="content">A!</p>
+    </div>
+    <div class="page-container focused">
+      <p class="content">B!</p>
+    </div>
+
+    <script src="exalt-styles/preloading/preload-script.js"></script>
+    <script src="https://pie-meister.github.io/PieMeister-with-Progress.min.js"></script>
+  </body>
+</html>
