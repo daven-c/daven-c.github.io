@@ -9,54 +9,26 @@
     <link rel="stylesheet" href="exalt-styles/styling.css" />
 
     <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Rajdhani&display=swap"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap"
     />
   </head>
   <body>
-    <div id="backwall-top"></div>
-    <div id="backwall-bot"></div>
-    <svg id="base-svg" width="100%" height="100%">
-      <circle
-        cx="50%"
-        cy="50%"
-        r="150"
-        stroke="white"
-        stroke-width="4"
-        fill="rgb(25, 25, 25)"
-      ></circle>
-    </svg>
-    <svg id="mask-svg" width="100%" height="100%">
-      <circle
-        id="mask-circle"
-        cx="50%"
-        cy="50%"
-        r="150"
-        stroke="red"
-        stroke-width="4"
-        stroke-dasharray="1080"
-        stroke-linecap="round"
-        fill="transparent"
-      >
-        <animate
-          attributeName="stroke-dashoffset"
-          values="1080;0"
-          dur="3.5s"
-          repeatCount="1"
-        ></animate>
-      </circle>
-      <text id="loading-text" x="50%" y="50%">0</text>
-    </svg>
-
+    <div id="preload-container">
+      <div id="preload-t1" class="preload-text">Welcome!</div>
+      <hr id="divider">
+      <div id="preload-t2" class="preload-text">Enjoy!</div>
+    </div>
     <div class="page-container focused">
       <p class="content">A!</p>
     </div>
-    <div class="page-container focused">
+    <div class="page-container">
       <p class="content">B!</p>
     </div>
 
     <script src="exalt-styles/preloading/preload-script.js"></script>
-    <script src="https://pie-meister.github.io/PieMeister-with-Progress.min.js"></script>
   </body>
 </html>

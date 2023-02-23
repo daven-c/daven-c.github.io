@@ -6,7 +6,7 @@ body {
   color: white;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
   display: none;
 }
 
@@ -30,7 +30,6 @@ body::-webkit-scrollbar{
   font-size: 3em;
   font-weight: 400;
 }
-
 
 .focused {
   visibility: visible;
