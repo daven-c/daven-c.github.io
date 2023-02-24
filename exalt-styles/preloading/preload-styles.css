@@ -13,7 +13,7 @@ body {
   background-color: rgb(30, 30, 35);
   z-index: 1000;
   animation: release 2s forwards;
-  animation-delay: 5s ;
+  animation-delay: 5s;
 }
 
 @keyframes release {
@@ -64,31 +64,33 @@ body {
 
 #preload-t1 {
   bottom: 50%;
-  opacity: 0;
   padding-top: 100px;
-  transform: translate(-50%, 100px);
-  animation: expand 1s forwards;
+  overflow-y: hidden;
+  height: 0;
+  animation: rise 1s forwards;
   animation-delay: 1s;
 }
 
-@keyframes expand {
-  50% {
-    opacity: 0%;
-  }
-  100% {
-    transform: translate(-50%, 0);
-    opacity: 100%;
+@keyframes rise {
+  to {
+    padding-top: 0;
+    height: 100px;
   }
 }
 
 #preload-t2 {
   top: 50%;
-  opacity: 0;
   padding-bottom: 100px;
-  transform: translate(-50%, -100px);
-  animation: expand 1s forwards;
+  animation: fall 1s forwards;
   animation-delay: 2.5s;
 }
 
+@keyframes fall {
+}
+
 #footer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
