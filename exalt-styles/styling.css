@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(30, 30, 35);
+  background-color: rgb(255, 255, 255);
   font-family: Rajdhani, sans-serif;
   color: white;
 }
@@ -19,7 +19,7 @@ body::-webkit-scrollbar {
   margin-bottom: 10vh;
   border-radius: 30px;
   box-shadow: 0 0 10px rgb(108, 223, 223);
-  background-color: rgb(40 40, 45);
+  background-color: rgb(255 255, 255);
   display: flex;
   justify-content: center;
   visibility: hidden;

@@ -12,14 +12,11 @@ body {
   overflow-y: hidden;
   background-color: rgb(30, 30, 35);
   z-index: 1000;
-  animation: release 2s forwards;
-  animation-delay: 5s;
+  /*animation: vanish 1s forwards;*/
+  animation-delay: 4s;
 }
 
-@keyframes release {
-  99% {
-    bottom: 100%;
-  }
+@keyframes vanish {
   100% {
     opacity: 0;
     visibility: hidden;
@@ -36,7 +33,7 @@ body {
   padding: 0;
   margin: 0;
   margin-left: 50%;
-  transform: translate(-50%, -1px);
+  transform: translate(-50%, 0);
   background-color: white;
   border-radius: 5%;
   animation: widen 1s forwards;
@@ -67,8 +64,10 @@ body {
   padding-top: 100px;
   overflow-y: hidden;
   height: 0;
+  z-index: inherit;
   animation: rise 1s forwards;
   animation-delay: 1s;
+  background-color: inherit;
 }
 
 @keyframes rise {
@@ -79,18 +78,23 @@ body {
 }
 
 #preload-t2 {
-  top: 50%;
+  bottom: 50%;
   padding-bottom: 100px;
+  height: 0 !important;
   animation: fall 1s forwards;
   animation-delay: 2.5s;
 }
 
 @keyframes fall {
+  to {
+    padding-bottom: 0;
+    height: 100px;
+  }
 }
 
 #footer {
   position: absolute;
   bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
+  transform: translate(calc(50vw - 50%), 0);
+  font-size: 1.5rem;
 }
