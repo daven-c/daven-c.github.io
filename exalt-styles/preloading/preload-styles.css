@@ -35,7 +35,7 @@ body {
   margin-left: 50%;
   transform: translate(-50%, 0);
   background-color: white;
-  border-radius: 5%;
+  border-radius: 10%;
   animation: widen 1s forwards;
 }
 
@@ -64,7 +64,6 @@ body {
   padding-top: 100px;
   overflow-y: hidden;
   height: 0;
-  z-index: inherit;
   animation: rise 1s forwards;
   animation-delay: 1s;
   background-color: inherit;
@@ -89,6 +88,21 @@ body {
   to {
     padding-bottom: 0;
     height: 100px;
+  }
+}
+
+#preload-t3 {
+  transform: translate(-50%, calc(50vh - 50%));
+  font-size: 3rem;
+  opacity: 0;
+  background-color: red;
+  animation: appear 1s forwards;
+  animation-delay: 2s;
+}
+
+@keyframes appear {
+  to {
+    opacity: 100;
   }
 }
 
