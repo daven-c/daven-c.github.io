@@ -22,7 +22,6 @@ body {
   background-color: rgb(8, 8, 19);
   animation: vanish 1.2s forwards;
   animation-delay: 4s;
-  visibility: hidden;
 }
 
 @keyframes vanish {
