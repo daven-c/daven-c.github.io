@@ -5,10 +5,11 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: Rajdhani, sans-serif;
   color: #fff;
   background-color: rgb(40, 40, 45);
   overflow-x: hidden;
+  height: 1000px;
 }
 
 .header {

@@ -1,0 +1,139 @@
+body {
+  overflow: hidden;
+  animation: release 0.1 forwards;
+  animation-delay: 5.2s;
+}
+
+@keyframes release {
+  to {
+    overflow: auto;
+  }
+}
+
+#preload-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow-y: hidden;
+  z-index: 1001;
+  color: rgb(255, 255, 255);
+  background-color: rgb(30, 30, 35);
+  animation: vanish 1.2s forwards;
+  animation-delay: 4s;
+}
+
+@keyframes vanish {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.preload-text {
+  font-size: 5rem;
+  margin: 0;
+  padding: 0;
+  width: fit-content;
+  height: fit-content;
+  overflow-wrap: break-word;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+#preload-t1 {
+  bottom: 50%;
+  z-index: inherit;
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-top: 100px;
+  overflow-y: hidden;
+  height: 0;
+  animation: rise 1s forwards;
+  animation-delay: 1s;
+  background-color: inherit;
+}
+
+@keyframes rise {
+  to {
+    padding-top: 0;
+    height: 100px;
+  }
+}
+
+#preload-t2 {
+  bottom: 50%;
+  padding-bottom: 100px;
+  height: 0 !important;
+  white-space: nowrap;
+  animation: fall 1s forwards;
+  animation-delay: 2.5s;
+}
+
+@keyframes fall {
+  to {
+    padding-bottom: 0;
+    height: 100px;
+  }
+}
+
+#preload-t3 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  transform: translate(-50%, calc(50vh - 50%));
+  font-size: 2rem;
+  background-color: transparent;
+  animation: appear 1s forwards;
+}
+
+#preload-t3::before,
+#preload-t3::after {
+  content: "";
+  height: 2px;
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+#preload-t3:not(:empty)::before {
+  padding-right: 0;
+  animation: widen-left 1s forwards;
+}
+
+#preload-t3:not(:empty)::after {
+  padding-left: 0;
+  animation: widen-right 1s forwards;
+}
+
+@keyframes widen-right {
+  100% {
+    padding-right: 250px;
+  }
+}
+
+@keyframes gap-center {
+  100% {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@keyframes widen-left {
+  100% {
+    padding-left: 250px;
+  }
+}
+
+@keyframes appear {
+  to {
+    opacity: 100;
+  }
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  transform: translate(calc(50vw - 50%), 0);
+  font-size: 1.5rem;
+}
