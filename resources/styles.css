@@ -44,6 +44,20 @@ body::-webkit-scrollbar {
   color: rgb(30, 30, 35);
 }
 
+#resume {
+  position: absolute;
+  right: 20px;
+  color: white;
+  font-size: 26px;
+  text-decoration: none;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+#resume:hover {
+  color: rgb(30, 30, 35);
+}
+
 .section-tags-wrapper {
   display: flex;
   justify-content: center;

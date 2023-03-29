@@ -9,8 +9,8 @@
     <link type="image/x-icon" rel="icon" href="index.ico" />
 
     <!--styles-->
-    <link rel="stylesheet" href="GPT4/preloading/preload-styles.css">
-    <link rel="stylesheet" href="GPT4/styles.css">
+    <link rel="stylesheet" href="resources/preloading/preload-styles.css">
+    <link rel="stylesheet" href="resources/styles.css">
 
     <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -37,6 +37,7 @@
             <a href="#experience" onclick="return sectionSwap(event);">Experience</a>
             <a href="#contact" onclick="return sectionSwap(event);">Contact</a>
         </div>
+        <a id="resume">Res</a>
     </header>
 
     <div id="progressContainer">
@@ -51,29 +52,25 @@
 
         <section id="about" class="section">
             <h2>About Me</h2>
-            <p>I am a skilled web developer with experience in various web technologies. I enjoy creating unique and
-                interactive websites for clients and personal projects.</p>
+            <p>I am good at python.</p>
         </section>
 
         <section id="skills" class="section">
             <h2>Skills</h2>
-            <p>My main skills include HTML, CSS, JavaScript, and various web development frameworks and libraries. I am
-                constantly learning and expanding my skill set to stay up-to-date with the latest web technologies.</p>
+            <p>My main skills include python.</p>
         </section>
 
         <section id="experience" class="section">
             <h2>Experience</h2>
-            <p>I have worked on numerous web development projects, ranging from small personal websites to complex web
-                applications for businesses. My diverse experience allows me to adapt quickly to new technologies and
-                projects.</p>
+            <p>I have worked on numerous web development projects, ranging from small python projects to large python projects.</p>
         </section>
 
         <section id="contact" class="section">
             <span id="contact-container">
                 <h2>Contact Me</h2>
-                <form class="contact-form">
-                    <input type="text" name="name" placeholder="Name" required>
-                    <input type="email" name="email" placeholder="Email" required>
+                <form class="contact-form" action="https://script.google.com/macros/s/AKfycbzb7YGCHSUhJc_Zl8fL5Z2NpuIjQyc5iaeEW-_MIaX5kvKlz5lsPV64ZpLjQa0NrXXgtw/exec" method="post" target="hidden_iframe">
+                    <input type="text" name="Name" placeholder="Name" required>
+                    <input type="email" name="Email" placeholder="Email" required>
                     <textarea name="message" placeholder="Message" rows="5" required></textarea>
                     <input type="submit" value="Send Message">
                 </form>
@@ -85,9 +82,8 @@
         </section>
     </div>
 
-
-    <script src="GPT4/preloading/preload-script.js"></script>
-    <script src="GPT4/scripts.js"></script>
+    <script src="resources/preloading/preload-script.js"></script>
+    <script src="resources/scripts.js"></script>
 </body>
 
 </html>
