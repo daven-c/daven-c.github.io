@@ -27,10 +27,16 @@ body::-webkit-scrollbar {
   justify-content: space-between;
   align-items: center;
   overflow: auto;
+  user-select: none;
 }
 
 .header::-webkit-scrollbar {
-  display: none;
+  height: 5px;
+}
+
+.header::-webkit-scrollbar-thumb {
+  background-color: white;
+  width: 5%;
 }
 
 .header a {
@@ -82,7 +88,7 @@ body::-webkit-scrollbar {
   position: fixed;
   top: 50%;
   transform: translate(0, -50%);
-  right: 30px;
+  right: 3%;
   height: 300px;
   z-index: 1000;
   width: 5px;
@@ -103,6 +109,7 @@ body::-webkit-scrollbar {
 
 .section {
   min-height: 100vh;
+  padding: 0 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
