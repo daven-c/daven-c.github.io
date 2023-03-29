@@ -13,7 +13,7 @@ body {
   color: rgb(255, 255, 255);
   background-color: rgb(30, 30, 35);
   animation: vanish .8s forwards;
-  animation-delay: 4s;
+  animation-delay: 0.1s;
 }
 
 @keyframes vanish {
