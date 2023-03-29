@@ -9,6 +9,7 @@ body {
   color: white;
   background-color: rgb(40, 40, 45);
   overflow-x: hidden;
+  scrollbar-width: none;
 }
 
 body::-webkit-scrollbar {
@@ -27,6 +28,7 @@ body::-webkit-scrollbar {
   justify-content: space-between;
   align-items: center;
   overflow: auto;
+  scrollbar-width: none;
   user-select: none;
 }
 
