@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Progress Tracker</title>
+    <style>
+        body {
+            height: 2000px;
+            padding: 20px;
+        }
+
+        #progressContainer {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            height: 300px;
+            width: 5px;
+            background-color: #ccc;
+        }
+
+        #progressDot {
+            position: absolute;
+            left: -5px;
+            width: 15px;
+            height: 15px;
+            background-color: blue;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="progressContainer">
+        <div id="progressDot"></div>
+    </div>
+
+    <script>
+        const progressDot = document.getElementById("progressDot");
+        const progressContainer = document.getElementById("progressContainer");
+
+        function updateProgressDot() {
+            const windowHeight = window.innerHeight;
+            const scrollHeight = document.documentElement.scrollHeight;
+            const scrolledAmount = window.scrollY;
+
+            const remainingScroll = scrollHeight - windowHeight;
+            const scrollPercentage = scrolledAmount / remainingScroll;
+
+            const progressContainerHeight = progressContainer.offsetHeight;
+            const maxDotOffset = progressContainerHeight - progressDot.offsetHeight;
+
+            progressDot.style.top = `${scrollPercentage * maxDotOffset}px`;
+        }
+
+        window.addEventListener("scroll", updateProgressDot);
+        window.addEventListener("resize", updateProgressDot);
+        updateProgressDot();
+    </script>
+</body>
+
+</html>

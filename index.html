@@ -1,121 +1,93 @@
-<!-- <meta http-equiv="refresh" content="0; url=http://daven-c.github.io/Home.html" /> -->
-
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Daven Chang</title>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Personal Website</title>
     <link type="image/x-icon" rel="icon" href="index.ico" />
 
     <!--styles-->
-    <link rel="stylesheet" href="styles/general.css" />
-    <link rel="stylesheet" href="styles/visuals.css" />
-    <link rel="stylesheet" href="styles/banner.css" />
-    <link rel="stylesheet" href="styles/header.css" />
-    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="GPT4/preloading/preload-styles.css">
+    <link rel="stylesheet" href="GPT4/styles.css">
 
     <!--fonts-->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap"
-    />
-  </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Rajdhani&display=swap"
+        rel="stylesheet" />
+</head>
 
-  <body>
-    <div id="main-container">
-      <div id="header-button-container">
-        <button
-          id="home-button"
-          class="header-button focused-button"
-          onclick="page_swap(this)"
-        >
-          DC
-        </button>
-        <button id="two-button" class="header-button" onclick="page_swap(this)">
-          AB
-        </button>
-        <button
-          id="three-button"
-          class="header-button"
-          onclick="page_swap(this)"
-        >
-          EX
-        </button>
-        <button
-          id="four-button"
-          class="header-button"
-          onclick="page_swap(this)"
-        >
-          IT
-        </button>
-        <button
-          id="five-button"
-          class="header-button"
-          onclick="page_swap(this)"
-        >
-          CV
-        </button>
-      </div>
-      <div id="banner-container">
-        <div id="home-page" class="banner-card focused-banner">
-          <h1 class="title">DC</h1>
-          <p class="content">
-            header wrapping causes banner container to overflow
-          </p>
-        </div>
-        <div id="two-page" class="banner-card">
-          <h1 class="title">AB</h1>
-          <p class="content">
-            wall of text wall of text wall of text wall of text wall of text
-            wall of text wall of text wall of text wall of text wall of text
-            wall of text wall of text wall of text
-          </p>
-        </div>
-        <div id="three-page" class="banner-card">
-          <h1 class="title">EX</h1>
-          <p class="content">
-            wall of text wall of text wall of text wall of text wall of text
-            wall of text wall of text wall of text wall of text wall of text
-            wall of text wall of text wall of text
-          </p>
-        </div>
-        <div id="four-page" class="banner-card">
-          <h1 class="title">IT</h1>
-          <p class="content">
-            wall of text wall of text wall of text wall of text wall of text
-            wall of text wall of text wall of text wall of text wall of text
-            wall of text wall of text wall of text wall of text wall of text
-            wall of text wall of text wall of text wall of text wall of text
-            wall of text wall of text wall of text wall of text wall of text
-            wall of text wall of text wall of text wall of text wall of text
-            wall of text wall of text wall of text wall of text wall of text
-            wall of text wall of text wall of text wall of text wall of text
-            wall of text wall of text wall of text wall of text wall of text
-            wall of text wall of text wall of text wall of text wall of text
-            wall of text wall of text wall of text wall of text wall of text
-            wall of text wall of text wall of text wall of text wall of text
-            wall of text wall of text wall of text wall of text wall of text
-            wall of text wall of text wall of text wall of text wall of text
-            wall of text wall of text wall of text wall of text wall of text
-            wall of text wall of text
-          </p>
-        </div>
-        <div id="five-page" class="banner-card">
-          <h1 class="title">CV</h1>
-          <p class="content">Tuga owes me money.</p>
-        </div>
-      </div>
+<body>
+
+    <div id="preload-container">
+        <div id="preload-t1" class="preload-text">Hello!</div>
+        <div id="preload-t2" class="preload-text">Enjoy!</div>
+        <div id="preload-t3" class="preload-text"> </div>
+        <div id="footer">https://github.com/daven-c/daven-c.github.io</div>
     </div>
 
-    <div id="footer-container">
-      <img id="footer-bar-icon" src="images/footer-bar.png" />
-      <div id="footer-links-container">
-        <a href="https://www.google.com" target="_blank">Google</a>
-        <a href="https://beta.openai.com/playground" target="_blank">Davinci</a>
-        <a href="https://www.desmos.com/calculator" target="_blank">Desmos</a>
-        <!--<a href="mailto:ddchang1iz@gmail.com" target="_blank">BBB</a>-->
-      </div>
+    <header class="header">
+        <a id="nametag" href="index.html">Daven Chang</a>
+        <div class="section-tags-wrapper">
+            <a href="#home" onclick="return sectionSwap(event);">Home</a>
+            <a href="#about" onclick="return sectionSwap(event);">About</a>
+            <a href="#skills" onclick="return sectionSwap(event);">Skills</a>
+            <a href="#experience" onclick="return sectionSwap(event);">Experience</a>
+            <a href="#contact" onclick="return sectionSwap(event);">Contact</a>
+        </div>
+    </header>
+
+    <div id="progressContainer">
+        <div id="progressDot"></div>
     </div>
 
-    <script src="scripts/page-switching.js"></script>
-  </body>
+    <div class="scroll-wrapper">
+        <section id="home" class="section">
+            <h2>Welcome to My Personal Website</h2>
+            <p>This is the home section of my personal website. Scroll down to learn more about me and my skills.</p>
+        </section>
+
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>I am a skilled web developer with experience in various web technologies. I enjoy creating unique and
+                interactive websites for clients and personal projects.</p>
+        </section>
+
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <p>My main skills include HTML, CSS, JavaScript, and various web development frameworks and libraries. I am
+                constantly learning and expanding my skill set to stay up-to-date with the latest web technologies.</p>
+        </section>
+
+        <section id="experience" class="section">
+            <h2>Experience</h2>
+            <p>I have worked on numerous web development projects, ranging from small personal websites to complex web
+                applications for businesses. My diverse experience allows me to adapt quickly to new technologies and
+                projects.</p>
+        </section>
+
+        <section id="contact" class="section">
+            <span id="contact-container">
+                <h2>Contact Me</h2>
+                <form class="contact-form">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" placeholder="Message" rows="5" required></textarea>
+                    <input type="submit" value="Send Message">
+                </form>
+                <div class="contact-info">
+                    <a id="email" href="mailto:ddchang1iz@gmail.com">ddchang1iz@gmail.com</a>
+                    <a href="tel:+123456789">Phone #</a>
+                </div>
+            </span>
+        </section>
+    </div>
+
+
+    <script src="GPT4/preloading/preload-script.js"></script>
+    <script src="GPT4/scripts.js"></script>
+</body>
+
 </html>
