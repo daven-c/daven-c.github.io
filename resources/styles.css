@@ -25,13 +25,12 @@ body::-webkit-scrollbar {
   background-color: rgb(130, 199, 135);
   padding: 15px 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
 #nametag {
-  position: absolute;
-  left: 10px;
+  white-space: nowrap;
   color: white;
   font-size: 26px;
   font-weight: bold;
@@ -45,8 +44,6 @@ body::-webkit-scrollbar {
 }
 
 #resume {
-  position: absolute;
-  right: 20px;
   color: white;
   font-size: 26px;
   text-decoration: none;
