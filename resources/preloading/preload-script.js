@@ -1,6 +1,3 @@
-// handle refresh
-const home = document.getElementById("home")
-home.scrollIntoView({ behavior: "smooth" });
 
 const preloader = document.getElementById("preload-container");
 preloader.onanimationend = (animation) => {
