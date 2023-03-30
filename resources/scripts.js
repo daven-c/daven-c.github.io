@@ -1,3 +1,7 @@
+// handle refresh
+const home = document.getElementById("home")
+home.scrollIntoView({ behavior: "smooth" });
+
 const sections = document.querySelectorAll(".section");
 const headerLinks = document.querySelectorAll(".header a");
 
