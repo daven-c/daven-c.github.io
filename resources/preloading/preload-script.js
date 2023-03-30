@@ -1,7 +1,19 @@
 const preloader = document.getElementById("preload-container");
 
-// handle refresh
-window.onbeforeunload = preloader.scrollIntoView({ behavior: "smooth" });
+const pageAccessedByReload = () => {
+  var refreshed =
+    (window.performance.navigation &&
+      window.performance.navigation.type === 1) ||
+    window.performance
+      .getEntriesByType("navigation")
+      .map((nav) => nav.type)
+      .includes("reload");
+  if (refreshed) {
+    document.body.removeChild(preloader);
+  }
+};
+
+pageAccessedByReload();
 
 preloader.onanimationend = (animation) => {
   if (animation.animationName == "vanish") {
