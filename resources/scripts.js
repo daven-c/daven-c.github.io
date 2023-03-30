@@ -4,10 +4,6 @@ const headerLinks = document.querySelectorAll(".header a");
 const progressDot = document.getElementById("progressDot");
 const progressContainer = document.getElementById("progressContainer");
 
-// handle refresh
-const home = document.getElementById("home")
-home.scrollIntoView({ behavior: "smooth" });
-
 const options = {
   root: document,
   threshold: 0.8,
