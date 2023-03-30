@@ -9,20 +9,21 @@ const pageAccessedByReload = () => {
       .map((nav) => nav.type)
       .includes("reload");
   if (refreshed) {
-    document.body.style.overflowY = "auto";
-    document.body.removeChild(preloader);
-  }
-  else {
-    
+    cleanup();
+  } else {
+    preloader.onanimationend = (animation) => {
+      if (animation.animationName == "vanish") {
+        console.log("preload animation ended");
+        cleanup();
+      }
+    };
   }
 };
+
+function cleanup() {
+  document.body.style.overflowY = "auto";
+  document.body.removeChild(preloader);
+}
 
 pageAccessedByReload();
 
-preloader.onanimationend = (animation) => {
-  if (animation.animationName == "vanish") {
-    console.log("preload animation ended");
-    document.body.style.overflowY = "auto";
-    document.body.removeChild(preloader);
-  }
-};
