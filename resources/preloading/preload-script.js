@@ -1,5 +1,5 @@
-
 const preloader = document.getElementById("preload-container");
+
 preloader.onanimationend = (animation) => {
   if (animation.animationName == 'vanish') {
     console.log("preload animation ended");
