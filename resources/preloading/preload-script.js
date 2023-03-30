@@ -10,15 +10,15 @@ const pageAccessedByReload = () => {
       .includes("reload");
   if (refreshed) {
     document.body.removeChild(preloader);
+  } else {
+    preloader.onanimationend = (animation) => {
+      if (animation.animationName == "vanish") {
+        console.log("preload animation ended");
+        document.body.style.overflowY = "auto";
+        document.body.removeChild(preloader);
+      }
+    };
   }
 };
 
 pageAccessedByReload();
-
-preloader.onanimationend = (animation) => {
-  if (animation.animationName == "vanish") {
-    console.log("preload animation ended");
-    document.body.style.overflowY = "auto";
-    document.body.removeChild(preloader);
-  }
-};
