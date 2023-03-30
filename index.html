@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Personal Website</title>
     <link type="image/x-icon" rel="icon" href="index.ico" />
 
@@ -22,20 +22,32 @@
 <body>
 
     <div id="preload-container">
-        <div id="preload-t1" class="preload-text">Hello!</div>
-        <div id="preload-t2" class="preload-text">Enjoy!</div>
-        <div id="preload-t3" class="preload-text"> </div>
-        <div id="footer">https://github.com/daven-c/daven-c.github.io</div>
+        <div class="git-cloud">
+            <a href="https://github.com/daven-c/daven-c.github.io" target="_blank">
+                <h2 id="footer">GitHub</h2>
+            </a>
+        </div>
+        <!--<img src="resources/preloading/cloud-network.gif">-->
+        <div class="dot-trail">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <span class="load-bar"></span>
     </div>
 
     <header class="header">
-        <a draggable="false" id="nametag" href="index.html">Daven Chang</a>
+        <a draggable="false" id="nametag" href="">Daven Chang</a>
         <div class="section-tags-wrapper">
-            <a draggable="false" href="#home" onclick="return sectionSwap(event);">Home</a>
-            <a draggable="false" href="#about" onclick="return sectionSwap(event);">About</a>
-            <a draggable="false" href="#skills" onclick="return sectionSwap(event);">Skills</a>
-            <a draggable="false" href="#experience" onclick="return sectionSwap(event);">Experience</a>
-            <a draggable="false" href="#contact" onclick="return sectionSwap(event);">Contact</a>
+            <a id="home-tag" draggable="false" href="#home" class="active-section"
+                onclick="return sectionSwap(event);">Home</a>
+            <a id="about-tag" draggable="false" href="#about" onclick="return sectionSwap(event);">About</a>
+            <a id="skills-tag" draggable="false" href="#skills" onclick="return sectionSwap(event);">Skills</a>
+            <a id="experience-tag" draggable="false" href="#experience"
+                onclick="return sectionSwap(event);">Experience</a>
+            <a id="contact-tag" draggable="false" href="#contact" onclick="return sectionSwap(event);">Contact</a>
         </div>
         <a id="resume">Res</a>
     </header>
@@ -62,25 +74,22 @@
 
         <section id="experience" class="section">
             <h2>Experience</h2>
-            <p>I have worked on numerous web development projects, ranging from small python projects to large python projects.</p>
+            <p>I have worked on numerous web development projects, ranging from small python projects to large python
+                projects.</p>
         </section>
 
         <section id="contact" class="section">
             <span id="contact-container">
                 <h2>Contact Me</h2>
-                <form class="contact-form" action="https://script.google.com/macros/s/AKfycbzb7YGCHSUhJc_Zl8fL5Z2NpuIjQyc5iaeEW-_MIaX5kvKlz5lsPV64ZpLjQa0NrXXgtw/exec" method="post" target="hidden_iframe">
+                <form class="contact-form"
+                    action="https://script.google.com/macros/s/AKfycbzb7YGCHSUhJc_Zl8fL5Z2NpuIjQyc5iaeEW-_MIaX5kvKlz5lsPV64ZpLjQa0NrXXgtw/exec"
+                    method="post" target="hidden_iframe">
                     <input type="text" name="Name" placeholder="Name" required>
                     <input type="email" name="Email" placeholder="Email" required>
                     <textarea id="message-block" name="message" placeholder="Message" rows="8" required></textarea>
                     <input id="submit-button" type="submit" value="Submit">
                 </form>
             </span>
-            <!--
-            <div class="contact-info">
-                <a id="email" href="mailto:ddchang1iz@gmail.com">ddchang1iz@gmail.com</a>
-                <a href="tel:+123456789">Phone #</a>
-            </div>
-            -->
         </section>
     </div>
 

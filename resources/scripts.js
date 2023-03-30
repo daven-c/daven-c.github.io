@@ -1,29 +1,35 @@
-/*
 const sections = document.querySelectorAll(".section");
 const headerLinks = document.querySelectorAll(".header a");
-
-const options = {
-  rootMargin: "0px 0px -50% 0px",
-  threshold: 0,
-};
-
-const observer = new IntersectionObserver((events) => {
-  events.forEach((entry) => {
-    if (entry.isIntersecting) {
-      const id = entry.target.id;
-      console.log(entry.target)
-    }
-  });
-}, options);
-
-sections.forEach((section) => observer.observe(section));
-*/
 
 const progressDot = document.getElementById("progressDot");
 const progressContainer = document.getElementById("progressContainer");
 
+// handle refresh
+const home = document.getElementById("home")
+home.scrollIntoView({ behavior: "smooth" });
+
+const options = {
+  root: document,
+  threshold: 0.8,
+};
+
+// section switching function
+const observer = new IntersectionObserver((events) => {
+  events.forEach((entry) => {
+    if (entry.isIntersecting) {
+      document
+        .getElementsByClassName("active-section")[0]
+        .classList.remove("active-section");
+      document
+        .getElementById(entry.target.id + "-tag")
+        .classList.add("active-section");
+      // console.log(entry)
+    }
+  });
+}, options);
+
+// scrolling function
 function sectionSwap(event) {
-  // Prevent the default behavior of the link
   event.preventDefault();
 
   var targetSectionId = event.currentTarget.getAttribute("href");
@@ -31,6 +37,7 @@ function sectionSwap(event) {
   targetSection.scrollIntoView({ behavior: "smooth" });
 }
 
+// scroll tracking functin
 function updateProgressDot() {
   const windowHeight = window.innerHeight;
   const scrollHeight = document.documentElement.scrollHeight;
@@ -44,6 +51,8 @@ function updateProgressDot() {
 
   progressDot.style.top = `${scrollPercentage * maxDotOffset}px`;
 }
+
+sections.forEach((section) => observer.observe(section));
 
 window.addEventListener("scroll", updateProgressDot);
 window.addEventListener("resize", updateProgressDot);

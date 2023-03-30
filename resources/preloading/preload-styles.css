@@ -10,121 +10,151 @@ body {
   right: 0;
   overflow: hidden;
   z-index: 1001;
-  color: rgb(255, 255, 255);
-  background-color: rgb(30, 30, 35);
-  animation: vanish .8s forwards;
-  animation-delay: 4s;
+  background-color: rgb(40, 40, 45);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: vanish 0.8s forwards;
+  animation-delay: 5.5s;
 }
 
 @keyframes vanish {
   100% {
     opacity: 0;
     visibility: hidden;
+    pointer-events: none;
   }
 }
 
-.preload-text {
-  font-size: 5rem;
-  margin: 0;
-  padding: 0;
-  width: fit-content;
-  height: fit-content;
-  overflow-wrap: break-word;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0%);
-}
-
-#preload-t1 {
-  bottom: 50%;
-  z-index: inherit;
-  padding-left: 50%;
-  padding-right: 50%;
-  padding-top: 100px;
-  overflow-y: hidden;
-  height: 100px;
-  animation: rise 1s forwards;
-  animation-delay: 1s;
-  background-color: inherit;
-}
-
-@keyframes rise {
-  to {
-    padding-top: 0;
-  }
-}
-
-#preload-t2 {
-  bottom: 50%;
-  padding-bottom: 100px;
-  height: 0 !important;
-  white-space: nowrap;
-  animation: fall 1s forwards;
-  animation-delay: 2.5s;
-}
-
-@keyframes fall {
-  to {
-    padding-bottom: 0;
-    height: 100px;
-  }
-}
-
-#preload-t3 {
+.git-cloud {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  width: 60%;
+  min-width: 300px;
+  max-width: 600px;
+  height: 30%;
+  min-height: 200px;
+  max-height: 400px;
+  background-image: url("cloud.png");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  filter: invert(1);
+}
+
+.git-cloud a {
+  color: rgb(130, 200, 135);
+  text-decoration: none;
+  filter: invert(1);
+}
+
+.git-cloud a:hover {
+  text-decoration: underline;
+}
+
+.git-cloud h2 {
   text-align: center;
-  transform: translate(-50%, calc(50vh - 50%));
-  font-size: 2rem;
-  background-color: transparent;
-  animation: appear 1s forwards;
+  transform: translate(0, 25%);
+  font-size: 3rem;
+  word-wrap: break-word;
 }
 
-#preload-t3::before,
-#preload-t3::after {
+.dot-trail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.dot-trail span {
+  height: 20px;
+  width: 20px;
+  transform: scale(.3);
+  border-radius: 50%;
+  background-color: rgb(130, 200, 135);
+  margin: 1rem;
+  animation: scaling 2.3s forwards 2;
+}
+
+.dot-trail span:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.dot-trail span:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.dot-trail span:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.dot-trail span:nth-child(4) {
+  animation-delay: 0.8s;
+}
+.dot-trail span:nth-child(5) {
+  animation-delay: 1s;
+}
+
+@keyframes scaling {
+  0% {
+    transform: scale(0.3);
+  }
+  30% {
+    box-shadow: none;
+  }
+  50% {
+    transform: scale(1);
+    box-shadow: 0 0 15px rgb(90, 170, 117);
+  }
+  70% {
+    box-shadow: none;
+  }
+  100% {
+    transform: scale(0.3);
+  }
+}
+
+.load-bar {
+  position: relative;
+  width: 60%;
+  min-width: 300px;
+  max-width: 450px;
+  height: 20px;
+  background-color: inherit;
+  border: solid 2px white;
+  border-radius: 20px;
+}
+
+.load-bar::before {
+  width: 0;
   content: "";
-  height: 2px;
-  border-bottom: 2px solid rgb(255, 255, 255);
-}
-
-#preload-t3:not(:empty)::before {
-  padding-right: 0;
-  animation: widen-left 1s forwards;
-}
-
-#preload-t3:not(:empty)::after {
-  padding-left: 0;
-  animation: widen-right 1s forwards;
-}
-
-@keyframes widen-right {
-  100% {
-    padding-right: 250px;
-  }
-}
-
-@keyframes gap-center {
-  100% {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-}
-
-@keyframes widen-left {
-  100% {
-    padding-left: 250px;
-  }
-}
-
-@keyframes appear {
-  to {
-    opacity: 100;
-  }
-}
-
-#footer {
   position: absolute;
-  bottom: 0;
-  transform: translate(calc(50vw - 50%), 0);
-  font-size: 1.5rem;
+  inset: 0;
+  background: rgb(130, 200, 135);
+  border-radius: 20px;
+  animation: load 5s linear forwards;
+}
+
+.load-bar::after {
+  width: 0;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgb(130, 200, 135);
+  border-radius: 20px;
+  animation: load 5s linear forwards;
+  filter: blur(10px);
+}
+
+@keyframes load {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+#preload-container img {
 }
