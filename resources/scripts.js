@@ -1,5 +1,3 @@
-// handle refresh
-window.scrollTo({ top: 0, behavior: "smooth" });
 
 const sections = document.querySelectorAll(".section");
 const headerLinks = document.querySelectorAll(".header a");

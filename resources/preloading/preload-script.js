@@ -1,5 +1,8 @@
 const preloader = document.getElementById("preload-container");
 
+// handle refresh
+window.scrollTo({ top: 0, behavior: "smooth" });
+
 preloader.onanimationend = (animation) => {
   if (animation.animationName == 'vanish') {
     console.log("preload animation ended");
