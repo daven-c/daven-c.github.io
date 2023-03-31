@@ -22,12 +22,14 @@ body::-webkit-scrollbar {
   left: 0;
   right: 0;
   z-index: 1000;
+  height: 12vh;
   background-color: rgb(130, 200, 135);
   padding: 15px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  overflow: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
   scrollbar-width: none;
   user-select: none;
 }
@@ -109,7 +111,8 @@ body::-webkit-scrollbar {
 .section {
   color: white;
   min-height: 100vh;
-  padding: 0 5%;
+  margin: 0 5%;
+  padding-top: 12vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -148,16 +151,16 @@ body::-webkit-scrollbar {
   justify-content: space-evenly;
   align-items: center;
   width: 60vw;
-  height: 60vh;
-  max-width: 600px;
+  height: 50vh;
+  max-width: 500px;
   max-height: 400px;
-  padding-bottom: 20px;
 }
 
 .contact-form input,
 .contact-form textarea {
   background-color: rgb(60, 60, 65);
   padding: 10px;
+  margin-bottom: 10px;  
   width: 100%;
   color: white;
   font-family: Rajdhani, sans-serif;
@@ -181,27 +184,4 @@ body::-webkit-scrollbar {
 
 .contact-form input[type="submit"]:hover {
   background-color: rgb(0, 0, 0);
-}
-
-.contact-info {
-  position: relative;
-  bottom: 0;
-  top: 100%;
-  background-color: rgb(60, 60, 65);
-  border-radius: 20px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.contact-info a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.contact-info a:hover {
-  color: rgb(125, 189, 128);
-  text-decoration: underline;
 }
