@@ -16,7 +16,7 @@ body {
   justify-content: center;
   align-items: center;
   animation: vanish 0.8s forwards;
-  animation-delay: 55s;
+  animation-delay: 5.5s;
 }
 
 @keyframes vanish {
