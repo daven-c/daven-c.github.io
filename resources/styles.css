@@ -22,7 +22,7 @@ body::-webkit-scrollbar {
   left: 0;
   right: 0;
   z-index: 1000;
-  height: 12vh;
+  height: 8vh;
   background-color: rgb(130, 200, 135);
   padding: 15px 0;
   display: flex;
@@ -113,7 +113,7 @@ body::-webkit-scrollbar {
   color: white;
   min-height: 100vh;
   margin: 0 5%;
-  padding-top: 12vh;
+  padding-top: 8vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
