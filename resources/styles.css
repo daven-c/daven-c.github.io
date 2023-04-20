@@ -22,9 +22,8 @@ body::-webkit-scrollbar {
   left: 0;
   right: 0;
   z-index: 1000;
-  height: 12vh;
   background-color: rgb(130, 200, 135);
-  padding: 15px 0;
+  height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -83,7 +82,7 @@ body::-webkit-scrollbar {
 .active-section {
   background-color: rgba(255, 255, 255, 0.8);
   color: black !important;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 #progressContainer {
@@ -112,8 +111,8 @@ body::-webkit-scrollbar {
 .section {
   color: white;
   min-height: 100vh;
+  padding-top: 60px;
   margin: 0 5%;
-  padding-top: 8vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
