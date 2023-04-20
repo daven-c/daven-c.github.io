@@ -22,7 +22,7 @@ body::-webkit-scrollbar {
   left: 0;
   right: 0;
   z-index: 1000;
-  height: 8vh;
+  height: 12vh;
   background-color: rgb(130, 200, 135);
   padding: 15px 0;
   display: flex;
