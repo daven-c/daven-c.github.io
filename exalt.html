@@ -11,224 +11,74 @@
   <!--fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Rajdhani&display=swap" rel="stylesheet" />
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      color: white;
-      font-family: Rajdhani, sans-serif;
-    }
-
-    body {
-      width: 100vw;
-      height: 100vh;
-      background: url("./resources/images/glass_bg.jpg") no-repeat center center fixed;
-      background-size: cover;
-      overflow-wrap: normal;
-      overflow: hidden;
-    }
-
-    .box {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 80vw;
-      max-width: 600px;
-      height: 80vh;
-      padding: 0 30px;
-      border-radius: 20px;
-      background: rgba(255, 255, 255, 0.192);
-      backdrop-filter: blur(30px);
-    }
-
-    .header {
-      display: flex;
-      overflow: auto;
-      justify-content: space-between;
-    }
-
-    .section-header {
-      display: flex;
-      justify-content: center;
-    }
-
-    .header-button {
-      margin: 10px;
-      padding: 10px;
-      border-radius: 10px;
-      border: none;
-      color: white;
-      background-color: transparent;
-      transition: 250ms;
-      font-size: 18px;
-      text-decoration: none;
-    }
-
-    .header-button:hover {
-      cursor: pointer;
-      color: black;
-    }
-
-    .section {
-      display: none;
-      opacity: 0;
-      margin-left: 100%;
-      margin-right: 0;
-    }
-
-    .active {
-      display: block;
-      opacity: 1;
-      animation: shift-in .5s forwards;
-    }
-
-    @keyframes shift-in {
-      0% {
-        margin-left: 100%;
-        opacity: 0;
-      }
-
-      30% {
-        opacity: 0;
-      }
-
-      100% {
-        margin-left: 0px;
-        opacity: 1;
-      }
-    }
-
-    #Contact {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    #Contact hr {
-      width: 12.5%;
-      height: 4px;
-      background-color: white;
-      transform: translate(-50%, 0);
-    }
-
-    .contact-form {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      height: 55vh;
-      /*box-shadow: inset 0 0 5px rgba(0, 0, 0, .5); */
-      border-radius: 20px;
-      padding: 20px;
-      width: fit-content;
-    }
-    .contact-form input,
-    .contact-form textarea {
-      background-color: rgba(255, 255, 255, 0.05);
-      backdrop-filter: blur(20px);
-      padding: 10px;
-      margin-bottom: 10px;
-      width: 300px;
-      color: white;
-      font-family: Rajdhani, sans-serif;
-      font-size: 16px;
-      font-weight: bold;
-      border-radius: 20px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
-      border: none;
-      outline: none;
-      resize: none;
-    }
-
-    .contact-form input::placeholder,
-    .contact-form textarea::placeholder {
-      color: white;
-    }
-
-    .contact-form input[type="submit"] {
-      font-weight: bold;
-      cursor: pointer;
-      transition: background-color 0.3s;
-      width: 100px;
-    }
-
-    .contact-form input[type="submit"]:hover {
-      background-color: rgb(130, 200, 135);
-    }
-  </style>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Rajdhani&display=swap"/>
+  <!--styles-->
+  <link rel="stylesheet" href="./exalt-styles/styling.css"/>
 </head>
 
 <body>
-  <div class="box">
-    <div class="header">
-      <a class="header-button" href="https://www.google.com" target="_blank">Daven</a>
+  <div id="container">
+    <div id="header-container">
+      <a class="header-button" href="exalt.html">Daven Chang</a>
       <div class="section-header">
-        <button class="header-button" onclick="showSection('section1')">
-          Section 1
+        <button id="Home-button" class="header-button selected" onclick="showSection('Home')">
+          Home
         </button>
-        <button class="header-button" onclick="showSection('section2')">
-          Section 2
+        <button id="About-button" class="header-button" onclick="showSection('About')">
+          About
         </button>
-        <button class="header-button" onclick="showSection('section3')">
-          Section 3
+        <button id="Skills-button" class="header-button" onclick="showSection('Skills')">
+          Skills
+        </button>
+        <button id="Projects-button" class="header-button" onclick="showSection('Projects')">
+          Projects
+        </button>
+        <button id="Experience-button" class="header-button" onclick="showSection('Experience')">
+          Experience
+        </button>
+        <button id="Contact-button" class="header-button" onclick="showSection('Contact')">
+          Contact
         </button>
       </div>
-      <button class="header-button" onclick="showSection('Contact')">
-        Contact
-      </button>
     </div>
-    <div id="section1" class="section active">
-      <h1>This is section one.</h1>
-    </div>
-    <div id="section2" class="section">
-      <h1>This is section two.</h1>
-    </div>
-    <div id="section3" class="section">
-      <h1>This is section three.</h1>
-    </div>
-    <div id="Contact" class="section">
-      <h1>Contact Me</h1>
-      <hr>
-      <form class="contact-form"
-        action="https://script.google.com/macros/s/AKfycbzb7YGCHSUhJc_Zl8fL5Z2NpuIjQyc5iaeEW-_MIaX5kvKlz5lsPV64ZpLjQa0NrXXgtw/exec"
-        method="post" target="hidden_iframe">
-        <input type="text" name="Name" placeholder="Name" required>
-        <input type="email" name="Email" placeholder="Email" required>
-        <textarea id="message-block" name="message" placeholder="Message" rows="8" required></textarea>
-        <input id="submit-button" type="submit" value="Submit">
-      </form>
+    <div id="section-container">
+      <div id="Home" class="section active">
+        <h1>Home</h1>
+        <div id="Home-content">
+          <div id="Home-sub1">
+            <a href="resources/images/troll.jpg" target="_blank">Resume</a>
+          </div>
+          <div id="Home-sub2"">
+  
+          </div>
+        </div>
+      </div>
+      <div id="About" class="section">
+        <h1>About</h1>
+      </div>
+      <div id="Skills" class="section">
+        <h1>Skills</h1>
+      </div>
+      <div id="Projects" class="section">
+        <h1>Projects</h1>
+      </div>
+      <div id="Experience" class="section">
+        <h1>Experience</h1>
+      </div>
+      <div id="Contact" class="section">
+        <h1>Contact Me!</h1>
+        <form class="contact-form"
+          action="https://script.google.com/macros/s/AKfycbzb7YGCHSUhJc_Zl8fL5Z2NpuIjQyc5iaeEW-_MIaX5kvKlz5lsPV64ZpLjQa0NrXXgtw/exec"
+          method="post" target="hidden_iframe">
+          <input type="text" name="Name" placeholder="Name" required>
+          <input type="email" name="Email" placeholder="Email" required>
+          <textarea id="message-block" name="message" placeholder="Message" rows="8" required></textarea>
+          <input id="submit-button" type="submit" value="Submit">
+        </form>
+      </div>
     </div>
   </div>
-  <script>
-    var sections = ["section1", "section2", "section3"];
-    var current = 0;
-
-    function showSection(id) {
-      var index = sections.indexOf(id);
-      if (index != -1) {
-        current = index;
-      }
-      var elements = document.getElementsByClassName("section");
-      for (var i = 0; i < elements.length; i++) {
-        elements[i].classList.remove("active");
-      }
-      var section = document.getElementById(id);
-      section.classList.add("active");
-    }
-
-    document.addEventListener("keydown", function (event) {
-      if (event.key == "ArrowLeft") {
-        current = (current - 1 + sections.length) % sections.length;
-        showSection(sections[current]);
-      } else if (event.key == "ArrowRight") {
-        current = (current + 1) % sections.length;
-        showSection(sections[current]);
-      }
-    });
-  </script>
+  <script src="exalt-styles/exscript.js"></script>
 </body>
 
 </html>
