@@ -25,7 +25,7 @@
     </div>
 
     <header class="header">
-        <a draggable="false" id="nametag" href="exalt.html">Daven Chang</a>
+        <a draggable="false" id="nametag" href="index.html">Daven Chang</a>
         <div class="section-tags-wrapper">
             <a id="home-tag" draggable="false" href="#home" class="active-section"
                 onclick="return sectionSwap(event);">Home</a>
@@ -36,7 +36,6 @@
                 onclick="return sectionSwap(event);">Experience</a>
             <a id="contact-tag" draggable="false" href="#contact" onclick="return sectionSwap(event);">Contact</a>
         </div>
-        <a id="resume">Res</a>
     </header>
 
     <div id="progressContainer">
@@ -72,17 +71,15 @@
         </section>
 
         <section id="contact" class="section">
-            <span id="contact-container">
-                <h2>Contact Me</h2>
-                <form class="contact-form"
-                    action="https://script.google.com/macros/s/AKfycbwNb1GhH6F8-EGU-fhr9Ljwn3YTSaH8AG59Cyqa-TCw8CcNkPi2AVZOLbpYtW3CUCE6-Q/exec"
-                    method="post" target="hidden_iframe">
-                    <input type="text" name="Name" placeholder="Name" required>
-                    <input type="email" name="Email" placeholder="Email" required>
-                    <textarea id="message-block" name="Message" placeholder="Message" rows="8" required></textarea>
-                    <input id="submit-button" type="submit" value="Submit">
-                </form>
-            </span>
+            <h2>Contact Me!</h2>
+            <form class="contact-form"
+                action="https://script.google.com/macros/s/AKfycbwNb1GhH6F8-EGU-fhr9Ljwn3YTSaH8AG59Cyqa-TCw8CcNkPi2AVZOLbpYtW3CUCE6-Q/exec"
+                method="post" target="hidden_iframe">
+                <input class="form-field" type="text" name="Name" placeholder="Name" required>
+                <input class="form-field" type="email" name="Email" placeholder="Email" required>
+                <textarea id="message-block" class="form-field" name="Message" placeholder="Message" rows="8" required></textarea>
+                <input id="submit-button" type="submit" value="Submit">
+            </form>
         </section>
     </div>
 
