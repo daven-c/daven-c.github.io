@@ -11,36 +11,36 @@
   <!--fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Rajdhani&display=swap"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Rajdhani&display=swap" />
   <!--styles-->
-  <link rel="stylesheet" href="./exalt-styles/styling.css"/>
+  <link rel="stylesheet" href="./exalt-styles/styling.css" />
 </head>
 
 <body>
-  <div id="container">
-    <div id="header-container">
-      <a class="header-button" href="index.html">Daven Chang</a>
-      <div class="section-header">
-        <button id="Home-button" class="header-button selected" onclick="showSection('Home')">
-          Home
-        </button>
-        <button id="About-button" class="header-button" onclick="showSection('About')">
-          About
-        </button>
-        <button id="Skills-button" class="header-button" onclick="showSection('Skills')">
-          Skills
-        </button>
-        <button id="Projects-button" class="header-button" onclick="showSection('Projects')">
-          Projects
-        </button>
-        <button id="Experience-button" class="header-button" onclick="showSection('Experience')">
-          Experience
-        </button>
-        <button id="Contact-button" class="header-button" onclick="showSection('Contact')">
-          Contact
-        </button>
-      </div>
+  <div id="header-container">
+    <a class="header-button" href="index.html">Daven Chang</a>
+    <div class="section-header">
+      <button id="Home-button" class="header-button selected" onclick="showSection('Home')">
+        Home
+      </button>
+      <button id="About-button" class="header-button" onclick="showSection('About')">
+        About
+      </button>
+      <button id="Skills-button" class="header-button" onclick="showSection('Skills')">
+        Skills
+      </button>
+      <button id="Projects-button" class="header-button" onclick="showSection('Projects')">
+        Projects
+      </button>
+      <button id="Experience-button" class="header-button" onclick="showSection('Experience')">
+        Experience
+      </button>
+      <button id="Contact-button" class="header-button" onclick="showSection('Contact')">
+        Contact
+      </button>
     </div>
+  </div>
+  <div id="container">
     <div id="section-container">
       <div id="Home" class="section active">
         <h1>Home</h1>
@@ -48,9 +48,7 @@
           <div id="Home-sub1">
             <a href="resources/images/troll.jpg" target="_blank">Resume</a>
           </div>
-          <div id="Home-sub2"">
-  
-          </div>
+          <div id="Home-sub2""></div>
         </div>
       </div>
       <div id="About" class="section">
@@ -67,18 +65,21 @@
       </div>
       <div id="Contact" class="section">
         <h1>Contact Me!</h1>
-        <form class="contact-form"
-          action="https://script.google.com/macros/s/AKfycbwNb1GhH6F8-EGU-fhr9Ljwn3YTSaH8AG59Cyqa-TCw8CcNkPi2AVZOLbpYtW3CUCE6-Q/exec"
-          method="post" target="hidden_iframe">
-          <input type="text" name="Name" placeholder="Name" required>
-          <input type="email" name="Email" placeholder="Email" required>
-          <textarea id="message-block" name="Message" placeholder="Message" rows="8" required></textarea>
-          <input id="submit-button" type="submit" value="Submit">
-        </form>
+        <div class="contact-sub-container">
+          <p id="contact info">aoerfhaiurulhieahierherhruirrhizriririrvrireiu</p>
+          <form id="contact-form"
+            action="https://script.google.com/macros/s/AKfycbwNb1GhH6F8-EGU-fhr9Ljwn3YTSaH8AG59Cyqa-TCw8CcNkPi2AVZOLbpYtW3CUCE6-Q/exec"
+            method="post" target="hidden_iframe">
+            <input type="text" name="Name" placeholder="Name" required>
+            <input type="email" name="Email" placeholder="Email" required>
+            <textarea id="message-block" name="Message" placeholder="Message" rows="8" required></textarea>
+            <input id="submit-button" type="submit" value="Submit">
+          </form>
+        </div>
       </div>
     </div>
   </div>
   <script src="exalt-styles/exscript.js"></script>
-</body>
+  </body>
 
 </html>
