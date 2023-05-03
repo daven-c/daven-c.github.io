@@ -44,11 +44,6 @@ body::-webkit-scrollbar {
   margin-left: 10px;
   margin-right: 20px;
   white-space: nowrap;
-  color: white;
-  font-size: 26px;
-  font-weight: bold;
-  text-decoration: none;
-  cursor: pointer;
 }
 
 #nametag:hover,
