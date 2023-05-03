@@ -1,15 +1,15 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   transition: 200ms;
 }
 
 body {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  overflow-x: hidden;
   font-family: Rajdhani, sans-serif;
   color: white;
   background-color: rgb(40, 40, 45);
-  overflow-x: hidden;
   scrollbar-width: none;
 }
 
