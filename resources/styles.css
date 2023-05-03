@@ -40,10 +40,6 @@ body::-webkit-scrollbar {
   margin: 5px;
 }
 
-.header a:hover {
-  color: rgb(130, 200, 130);
-}
-
 #nametag {
   margin-left: 10px;
   margin-right: 20px;
@@ -55,7 +51,8 @@ body::-webkit-scrollbar {
   cursor: pointer;
 }
 
-#nametag:hover {
+#nametag:hover,
+.header a:hover {
   color: rgb(130, 200, 130);
 }
 
