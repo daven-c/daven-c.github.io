@@ -178,11 +178,6 @@ body::-webkit-scrollbar {
   background-color: rgba(200, 130, 130, 0.8);
 }
 
-#clear-button:active {
-  background-color: rgba(200, 130, 130, 0.3);
-  transition: 50ms;
-}
-
 #submit-button {
   border: solid 1px rgba(130, 200, 130, 0.8);
 }
@@ -191,7 +186,8 @@ body::-webkit-scrollbar {
   background-color: rgba(130, 200, 130, 0.8);
 }
 
+#clear-button:active,
 #submit-button:active {
-  background-color: rgba(130, 200, 130, 0.3);
+  transform: scale(.95);
   transition: 50ms;
 }
