@@ -158,8 +158,17 @@ body::-webkit-scrollbar {
   transition: 0ms;
 }
 
+#form-button-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 #clear-button,
 #submit-button {
+  width: fit-content;
   color: white;
   font-family: Rajdhani, sans-serif;
   font-size: 24px;
