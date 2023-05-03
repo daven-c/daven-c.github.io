@@ -49,6 +49,11 @@ function updateProgressDot() {
   progressDot.style.top = `${scrollPercentage * maxDotOffset}px`;
 }
 
+function clearForm(id) {
+  const form = document.getElementById(id);
+  form.childNodes.forEach((input) => (input.value = ""));
+}
+
 sections.forEach((section) => observer.observe(section));
 
 window.addEventListener("scroll", updateProgressDot);

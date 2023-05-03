@@ -135,7 +135,7 @@ body::-webkit-scrollbar {
 #contact {
 }
 
-.contact-form {
+#contact-form {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -144,7 +144,7 @@ body::-webkit-scrollbar {
   max-width: 500px;
 }
 
-.form-field{
+.form-field {
   width: 100%;
   margin-bottom: 20px;
   color: white;
@@ -152,7 +152,7 @@ body::-webkit-scrollbar {
   font-size: 24px;
   background-color: transparent;
   border: none;
-  border-bottom: solid 2px rgba(255, 255, 255, .5);
+  border-bottom: solid 2px rgba(255, 255, 255, 0.5);
   outline: none;
   resize: none;
 }
@@ -167,11 +167,11 @@ body::-webkit-scrollbar {
   transition: 0ms;
 }
 
-.contact-form input[type="submit"] {
+#clear-button,
+#submit-button {
   color: white;
   font-family: Rajdhani, sans-serif;
   font-size: 24px;
-  border: solid 2px white;
   background-color: transparent;
   border-radius: 20px;
   padding: 10px 20px;
@@ -179,11 +179,28 @@ body::-webkit-scrollbar {
   cursor: pointer;
 }
 
-.contact-form input[type="submit"]:hover {
+#clear-button {
+  border: solid 1px rgba(200, 130, 130, 0.8);
+}
+
+#clear-button:hover {
+  background-color: rgba(200, 130, 130, 0.8);
+}
+
+#clear-button:active {
+  background-color: rgba(200, 130, 130, 0.3);
+  transition: 50ms;
+}
+
+#submit-button {
+  border: solid 1px rgba(130, 200, 130, 0.8);
+}
+
+#submit-button:hover {
   background-color: rgba(130, 200, 130, 0.8);
 }
 
-.contact-form input[type="submit"]:active {
+#submit-button:active {
   background-color: rgba(130, 200, 130, 0.3);
   transition: 50ms;
 }

@@ -72,17 +72,19 @@
 
         <section id="contact" class="section">
             <h2>Contact Me!</h2>
-            <form class="contact-form"
+            <form id="contact-form"
                 action="https://script.google.com/macros/s/AKfycbwNb1GhH6F8-EGU-fhr9Ljwn3YTSaH8AG59Cyqa-TCw8CcNkPi2AVZOLbpYtW3CUCE6-Q/exec"
                 method="post" target="hidden_iframe">
                 <input class="form-field" type="text" name="Name" placeholder="Name" required>
                 <input class="form-field" type="email" name="Email" placeholder="Email" required>
                 <textarea id="message-block" class="form-field" name="Message" placeholder="Message" rows="8" required></textarea>
-                <input id="submit-button" type="submit" value="Submit">
+                <span id="form-button-wrapper">
+                    <input id="clear-button" type="button" value="Clear" onclick="clearForm('contact-form')">
+                    <input id="submit-button" type="submit" value="Submit">
+                </span>
             </form>
         </section>
     </div>
-
     <script src="resources/preloading/preload-script.js"></script>
     <script src="resources/scripts.js"></script>
 </body>
