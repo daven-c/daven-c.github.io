@@ -33,20 +33,20 @@
 #form-button-container {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
 #clear-button,
 #submit-button {
-  width: fit-content;
+  width: 120px;
   color: white;
   font-family: Rajdhani, sans-serif;
   font-size: 24px;
   background-color: transparent;
   border-radius: 20px;
   padding: 10px 20px;
+  margin: 0 20px;
   font-weight: bold;
   cursor: pointer;
 }
