@@ -73,10 +73,6 @@
 .skills-icon {
   margin: 0 5%;
   width: 80px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 @media (hover: hover) {
@@ -84,6 +80,15 @@
     transform: scale(1.2);
     transform: 200ms;
   }
+}
+
+.skills-icon a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .skills-icon img {
