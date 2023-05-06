@@ -24,6 +24,7 @@
 .section {
   height: 100vh;
   margin: 0 5%;
+  margin-bottom: 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -71,17 +72,18 @@
 
 .skills-icon {
   margin: 0 5%;
-  min-width: 80px;
-  max-width: 100px;
+  width: 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.skills-icon:hover {
-  transform: scale(1.2);
-  transform: 200ms;
+@media (hover: hover) {
+  .skills-icon:hover {
+    transform: scale(1.2);
+    transform: 200ms;
+  }
 }
 
 .skills-icon img {
@@ -106,4 +108,5 @@
 }
 
 #contact {
+  margin-bottom: 0;
 }
