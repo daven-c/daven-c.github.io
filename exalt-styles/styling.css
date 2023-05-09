@@ -9,7 +9,7 @@
 body {
   width: 100vw;
   height: 100vh;
-  background: url("../resources/images/glass_bg4.jpg") no-repeat;
+  background: url("../resources/images/glass_bg5.jpg") no-repeat;
   background-size: cover;
   overflow-wrap: normal;
   overflow: hidden;
@@ -76,8 +76,8 @@ body {
   max-height: 800px;
   border: solid 1px rgba(255, 255, 255, 0.4);
   border-radius: 20px;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(15px);
+  background: rgba(40, 40, 45, 0.7);
+  backdrop-filter: blur(5px);
   padding: 20px;
 }
 
@@ -174,7 +174,7 @@ body {
 
 #contact-form input::placeholder,
 #contact-form textarea::placeholder {
-  color: rgba(130, 200, 135, .5);
+  color: rgba(130, 200, 135, 0.5);
 }
 
 #contact-form input[type="submit"] {

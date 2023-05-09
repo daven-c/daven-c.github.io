@@ -23,8 +23,6 @@
 
 .section {
   height: 100vh;
-  margin: 0 5%;
-  margin-bottom: 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -34,19 +32,30 @@
   /*border: solid 1px white; */
 }
 
-.section h2 {
-  font-size: 48px;
-  margin-bottom: 20px;
-  color: rgb(130, 200, 130);
-}
-
 .section p {
   font-size: 24px;
   line-height: 1.4;
   text-align: center;
 }
 
+.section-title {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: white;
+}
+
 #home {
+  text-overflow: clip;
+}
+
+#home h2 {
+  font-size: 100px;
+  margin: 0;
+  text-shadow: rgb(0, 0, 0) 0 4px 5px;
+}
+
+#home p {
+  font-size: 40px;
 }
 
 #home-content {

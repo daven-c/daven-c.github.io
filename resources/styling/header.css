@@ -12,6 +12,7 @@
   overflow-y: hidden;
   scrollbar-width: none;
   user-select: none;
+  backdrop-filter: blur(15px);
 }
 
 .header a {
@@ -22,17 +23,10 @@
 }
 
 #nametag {
+  color: rgb(130, 200, 130);
   margin-left: 10px;
   margin-right: 20px;
   white-space: nowrap;
-}
-
-/* additions for non touch screen devices */
-@media (any-pointer: fine) {
-  #nametag:hover,
-  .header a:hover {
-    color: rgb(130, 200, 130);
-  }
 }
 
 .section-tags-wrapper {
@@ -44,5 +38,15 @@
 
 .active-section {
   color: rgb(130, 200, 130) !important;
-  border-radius: 10px;
+}
+
+/* additions for non touch screen devices */
+@media (any-pointer: fine) {
+  .section-tags-wrapper:hover a {
+    opacity: 0.3;
+  }
+  .section-tags-wrapper a:hover {
+    opacity: 1;
+    transform: 0;
+  }
 }
