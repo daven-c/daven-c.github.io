@@ -55,24 +55,22 @@
   border: solid 1px rgba(200, 130, 130, 0.8);
 }
 
-@media (hover: hover) {
-  #clear-button:hover {
-    background-color: rgba(200, 130, 130, 0.8);
-  }
-}
-
 #submit-button {
   border: solid 1px rgba(130, 200, 130, 0.8);
-}
-
-@media (hover: hover) {
-  #submit-button:hover {
-    background-color: rgba(130, 200, 130, 0.8);
-  }
 }
 
 #clear-button:active,
 #submit-button:active {
   transform: scale(0.95);
   transition: 50ms;
+}
+
+@media (any-pointer: fine) {
+  #clear-button:hover {
+    background-color: rgba(200, 130, 130, 0.8);
+  }
+
+  #submit-button:hover {
+    background-color: rgba(130, 200, 130, 0.8);
+  }
 }

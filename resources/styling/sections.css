@@ -76,24 +76,6 @@
   width: 60px;
 }
 
-/* PC Specific */
-@media (hover: hover) {
-
-  #skills-content {
-    width: 80%;
-  }
-
-  .skills-icon {
-    margin: 0 5%;
-    flex: 0 1 calc(20% - 15%);
-  }
-
-  .skills-icon:hover {
-    transform: scale(1.2);
-    transform: 200ms;
-  }
-}
-
 .skills-icon a {
   height: 160px;
   color: white;
@@ -116,7 +98,22 @@
   text-overflow: clip;
 }
 
-@media (hover: hover) {
+/* additions for non touch screen devices */
+@media (any-pointer: fine) {
+  #skills-content {
+    width: 80%;
+  }
+
+  .skills-icon {
+    margin: 0 5%;
+    flex: 0 1 calc(20% - 15%);
+  }
+
+  .skills-icon:hover {
+    transform: scale(1.2);
+    transform: 200ms;
+  }
+
   .skills-icon p {
     font-size: 28px;
   }

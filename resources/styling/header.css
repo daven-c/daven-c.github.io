@@ -27,7 +27,8 @@
   white-space: nowrap;
 }
 
-@media (hover: hover) {
+/* additions for non touch screen devices */
+@media (any-pointer: fine) {
   #nametag:hover,
   .header a:hover {
     color: rgb(130, 200, 130);
