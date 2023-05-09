@@ -65,6 +65,7 @@
   transition: 50ms;
 }
 
+/* additions for non touch screen devices */
 @media (any-pointer: fine) {
   #clear-button:hover {
     background-color: rgba(200, 130, 130, 0.8);
