@@ -9,7 +9,7 @@
 body {
   width: 100vw;
   height: 100vh;
-  background: url("../resources/images/glass_bg5.jpg") no-repeat;
+  background: url("../glass_bg8.jpg") no-repeat center center;
   background-size: cover;
   overflow-wrap: normal;
   overflow: hidden;
