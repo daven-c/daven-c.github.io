@@ -80,8 +80,6 @@
     flex-direction: column;
     justify-content: center;
     white-space: nowrap;
-    height: 100vh;
-    min-height: -webkit-fill-available;
     background-color: rgba(40, 40, 45, 1);
   }
 
