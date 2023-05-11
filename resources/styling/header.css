@@ -81,6 +81,7 @@
     justify-content: center;
     white-space: nowrap;
     padding-bottom: 30vh;
+    min-height: -webkit-fill-available;
     background-color: rgba(40, 40, 45, 1);
   }
 
