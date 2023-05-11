@@ -43,8 +43,8 @@ function sectionSwap(event) {
   var targetSectionId = event.currentTarget.getAttribute("href");
   var targetSection = document.querySelector(targetSectionId);
   targetSection.scrollIntoView({ behavior: "smooth" });
-
-  menuanimate(menuButton);
+  if (!isDesktop())
+    menuanimate(menuButton);
 }
 
 function clearForm(id) {
@@ -64,7 +64,7 @@ const appHeight = () => {
   const doc = document.documentElement
   doc.style.setProperty(' — app-height', `${window.innerHeight}px`)
  }
- window.addEventListener(‘resize’, appHeight)
+ window.addEventListener('resize', appHeight)
  appHeight()
 
 sections.forEach((section) => observer.observe(section));
