@@ -1,10 +1,10 @@
 /* DESKTOP */
 @media (any-pointer: fine) {
-  .header2 {
+  .headerM {
     visibility: hidden;
   }
 
-  .header1 {
+  .headerD {
     height: 60px;
     display: flex;
     justify-content: space-between;
@@ -18,11 +18,11 @@
     color: rgb(130, 200, 130) !important;
   }
 
-  .header1:hover a {
+  .headerD:hover a {
     opacity: 0.3;
   }
 
-  .header1 a:hover {
+  .headerD a:hover {
     opacity: 1;
     transform: 0;
   }
@@ -30,7 +30,7 @@
 
 /* MOBILE */
 @media (any-pointer: coarse) {
-  .header1 {
+  .headerD {
     visibility: hidden;
   }
 

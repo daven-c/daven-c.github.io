@@ -144,6 +144,10 @@
   background-color: rgb(130, 200, 130);
 }
 
+#footer a {
+  border-bottom: solid 2px transparent;
+}
+
 #footer a:hover {
-  border-bottom: solid 1px white;
+  border-bottom: solid 2px white;
 }
