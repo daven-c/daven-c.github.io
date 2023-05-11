@@ -1,3 +1,4 @@
+/* DESKTOP */
 @media (any-pointer: fine) {
   .header2 {
     visibility: hidden;
@@ -27,6 +28,8 @@
   }
 }
 
+
+/* MOBILE */
 @media (any-pointer: coarse) {
   .header1 {
     visibility: hidden;
