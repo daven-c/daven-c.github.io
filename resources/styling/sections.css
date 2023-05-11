@@ -1,28 +1,6 @@
-#progressContainer {
-  position: fixed;
-  top: 50%;
-  transform: translate(0, -50%);
-  right: 3%;
-  height: 300px;
-  z-index: 1000;
-  width: 5px;
-  align-items: center;
-  background-color: rgb(130, 200, 130);
-  border-radius: 5px;
-}
-
-#progressDot {
-  position: absolute;
-  top: 0;
-  width: 10px;
-  height: 10px;
-  transform: translate(-25%, 0);
-  background-color: white;
-  border-radius: 50%;
-}
-
 .section {
   height: 100vh;
+  min-height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,20 +23,35 @@
 }
 
 #home {
+  background: url("../images/titlebg.png") no-repeat center center;
+  background-size: cover;
   text-overflow: clip;
 }
 
+#nametag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 15px 50px;
+  color: rgb(130, 200, 130);
+  white-space: nowrap;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#nametag:hover {
+  opacity: .7;
+}
+
 #home h2 {
-  font-size: 100px;
+  font-size: 120px;
+  font-weight: bolder;
   margin: 0;
   text-shadow: rgb(0, 0, 0) 0 4px 5px;
 }
 
-#home p {
-  font-size: 40px;
-}
-
 #home-content {
+  font-size: 40px;
 }
 
 #about {
@@ -143,5 +136,14 @@
 }
 
 #contact {
-  margin-bottom: 0;
+  height: 95vh;
+}
+
+#footer {
+  height: 35vh;
+  background-color: rgb(130, 200, 130);
+}
+
+#footer a:hover {
+  border-bottom: solid 1px white;
 }

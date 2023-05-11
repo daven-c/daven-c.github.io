@@ -15,7 +15,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  animation: vanish 2s forwards;
+  animation: vanish 1s linear forwards;
 }
 
 @keyframes vanish {

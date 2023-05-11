@@ -8,7 +8,7 @@ body {
   overflow-x: hidden;
   font-family: Rajdhani, sans-serif;
   color: white;
-  background-color: rgb(40, 40, 45);
+  background-color: rgb(42, 40, 47);
   scrollbar-width: none;
 }
 
@@ -16,9 +16,16 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-.flex-align {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+header {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+}
+
+a {
+  color: white;
+  font-size: 26px;
+  text-decoration: none;
+  margin: 10px;
 }

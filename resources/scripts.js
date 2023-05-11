@@ -1,19 +1,27 @@
 
 const sections = document.querySelectorAll(".section");
-const headerLinks = document.querySelectorAll(".header a");
+const headerLinks = document.querySelectorAll("header a");
 
 const progressDot = document.getElementById("progressDot");
 const progressContainer = document.getElementById("progressContainer");
+
+const menuButton = document.getElementById("menu-button-container");
 
 const options = {
   root: document,
   threshold: 0.8,
 };
 
+function menuanimate() {
+  menuButton.classList.toggle("btn-active");
+  document.getElementById("menu-container").classList.toggle("menu-active");
+  document.getElementById("menu-container").classList.toggle("menu-inactive");
+}
+
 // section switching function
 const observer = new IntersectionObserver((events) => {
   events.forEach((entry) => {
-    if (entry.isIntersecting) {
+    if (entry.isIntersecting && entry.target.id != 'footer') {
       document
         .getElementsByClassName("active-section")[0]
         .classList.remove("active-section");
@@ -32,21 +40,9 @@ function sectionSwap(event) {
   var targetSectionId = event.currentTarget.getAttribute("href");
   var targetSection = document.querySelector(targetSectionId);
   targetSection.scrollIntoView({ behavior: "smooth" });
-}
 
-// scroll tracking functin
-function updateProgressDot() {
-  const windowHeight = window.innerHeight;
-  const scrollHeight = document.documentElement.scrollHeight;
-  const scrolledAmount = window.scrollY;
+  menuanimate(menuButton);
 
-  const remainingScroll = scrollHeight - windowHeight;
-  const scrollPercentage = scrolledAmount / remainingScroll;
-
-  const progressContainerHeight = progressContainer.offsetHeight;
-  const maxDotOffset = progressContainerHeight - progressDot.offsetHeight;
-
-  progressDot.style.top = `${scrollPercentage * maxDotOffset}px`;
 }
 
 function clearForm(id) {
@@ -55,7 +51,3 @@ function clearForm(id) {
 }
 
 sections.forEach((section) => observer.observe(section));
-
-window.addEventListener("scroll", updateProgressDot);
-window.addEventListener("resize", updateProgressDot);
-updateProgressDot();

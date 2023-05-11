@@ -1,52 +1,114 @@
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  height: 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  overflow-x: auto;
-  overflow-y: hidden;
-  scrollbar-width: none;
-  user-select: none;
-  backdrop-filter: blur(15px);
-}
-
-.header a {
-  color: white;
-  font-size: 26px;
-  text-decoration: none;
-  margin: 10px;
-}
-
-#nametag {
-  color: rgb(130, 200, 130);
-  margin-left: 10px;
-  margin-right: 20px;
-  white-space: nowrap;
-}
-
-.section-tags-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom: solid 1px white;
-}
-
-.active-section {
-  color: rgb(130, 200, 130) !important;
-}
-
-/* additions for non touch screen devices */
 @media (any-pointer: fine) {
-  .section-tags-wrapper:hover a {
+  .header2 {
+    visibility: hidden;
+  }
+
+  .header1 {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    user-select: none;
+  }
+
+  .active-section {
+    color: rgb(130, 200, 130) !important;
+  }
+
+  .header1:hover a {
     opacity: 0.3;
   }
-  .section-tags-wrapper a:hover {
+
+  .header1 a:hover {
     opacity: 1;
     transform: 0;
   }
+}
+
+@media (any-pointer: coarse) {
+  .header1 {
+    visibility: hidden;
+  }
+
+  #menu-button-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1001;
+    display: inline-block;
+    cursor: pointer;
+    margin: 15px 30px;
+  }
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  /* Rotate first bar */
+  .btn-active .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+
+  /* Fade out the second bar */
+  .btn-active .bar2 {
+    opacity: 0;
+  }
+
+  /* Rotate last bar */
+  .btn-active .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
+  #menu-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    white-space: nowrap;
+    width: 0;
+    padding-top: 50px;
+    padding-bottom: 50vh;
+    background-color: rgba(130, 200, 130, 1);
+  }
+
+  .menu-active {
+    animation: slide-in-right 250ms linear forwards;
+  }
+
+  .menu-inactive {
+    animation: slide-out-right 250ms linear forwards;
+  }
+
+  @keyframes slide-in-right {
+    from {
+      width: 0;
+    }
+    to {
+      width: 60vw;
+    }
+  }
+  @keyframes slide-out-right {
+    from {
+      width: 60vw;
+    }
+    to {
+      width: 0;
+    }
+  }
+
+  #menu-container h2 {
+    text-align: center;
+  }
+
 }

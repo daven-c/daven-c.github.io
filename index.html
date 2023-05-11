@@ -29,32 +29,41 @@
 
     <div id="preload-container">
     </div>
-    
-    <header class="header">
-        <a draggable="false" id="nametag" href="https://github.com/daven-c/daven-c.github.io" target="_blank">Daven
-            Chang</a>
-        <div class="section-tags-wrapper">
+
+    <header class="header1">
+        <a id="home-tag" draggable="false" href="#home" class="active-section"
+            onclick="return sectionSwap(event);">Home</a>
+        <a id="about-tag" draggable="false" href="#about" onclick="return sectionSwap(event);">About</a>
+        <a id="skills-tag" draggable="false" href="#skills" onclick="return sectionSwap(event);">Skills</a>
+        <a id="projects-tag" draggable="false" href="#projects" onclick="return sectionSwap(event);">Projects</a>
+        <a id="interests-tag" draggable="false" href="#interests" onclick="return sectionSwap(event);">Interests</a>
+        <a id="contact-tag" draggable="false" href="#contact" onclick="return sectionSwap(event);">Contact</a>
+    </header>
+
+    <header class="header2">
+        <div id="menu-button-container" onclick="menuanimate(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div id="menu-container" class="menu-inactive">
+            <h2>&lt;Navigate&gt;</h2>
             <a id="home-tag" draggable="false" href="#home" class="active-section"
-                onclick="return sectionSwap(event);">Home</a>
-            <a id="about-tag" draggable="false" href="#about" onclick="return sectionSwap(event);">About</a>
-            <a id="skills-tag" draggable="false" href="#skills" onclick="return sectionSwap(event);">Skills</a>
-            <a id="projects-tag" draggable="false" href="#projects" onclick="return sectionSwap(event);">Projects</a>
-            <a id="interests-tag" draggable="false" href="#interests" onclick="return sectionSwap(event);">Interests</a>
-            <a id="contact-tag" draggable="false" href="#contact" onclick="return sectionSwap(event);">Contact</a>
+                onclick="return sectionSwap(event);">// Home</a>
+            <a id="about-tag" draggable="false" href="#about" onclick="return sectionSwap(event);">// About</a>
+            <a id="skills-tag" draggable="false" href="#skills" onclick="return sectionSwap(event);">// Skills</a>
+            <a id="projects-tag" draggable="false" href="#projects" onclick="return sectionSwap(event);">// Projects</a>
+            <a id="interests-tag" draggable="false" href="#interests" onclick="return sectionSwap(event);">// Interests</a>
+            <a id="contact-tag" draggable="false" href="#contact" onclick="return sectionSwap(event);">// Contact</a>
         </div>
     </header>
 
-    <!--
-    <div id="progressContainer">
-        <div id="progressDot"></div>
-    </div>
-    -->
-
     <div class="scroll-wrapper">
         <section id="home" class="section">
+            <a draggable="false" id="nametag" href="index.html">DC</a>
             <h2>Daven Chang</h2>
             <div id="home-content">
-                <p>Software // Automation // Machine Learning</p>
+                <p>Imagine // Improve // Innovate</p>
             </div>
         </section>
 
@@ -181,6 +190,9 @@
                     <input id="submit-button" type="submit" value="Submit">
                 </span>
             </form>
+        </section>
+        <section id="footer" class="section">
+            <a href="https://github.com/daven-c" target="_blank">GitHub</a>
         </section>
     </div>
     <script src="resources/preloading/preload-script.js"></script>
