@@ -1,3 +1,7 @@
+.active-section {
+  color: rgb(130, 200, 130) !important;
+}
+
 /* DESKTOP */
 @media (any-pointer: fine) {
   .headerM {
@@ -12,10 +16,6 @@
     overflow-x: auto;
     overflow-y: hidden;
     user-select: none;
-  }
-
-  .active-section {
-    color: rgb(130, 200, 130) !important;
   }
 
   .headerD:hover a {
