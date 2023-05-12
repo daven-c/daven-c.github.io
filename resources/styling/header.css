@@ -97,20 +97,20 @@
       border: none;
     }
     5% {
-      border-left: solid 2px rgb(130, 200, 130);
+      border-left: solid 2px rgb(115, 210, 115);
     }
     100% {
-      border-left: solid 2px rgb(130, 200, 130);
+      border-left: solid 2px rgb(115, 210, 115);
       width: 60vw;
     }
   }
   @keyframes slide-out-right {
     0% {
       width: 60vw;
-      border-left: solid 2px rgb(130, 200, 130);
+      border-left: solid 2px rgb(115, 210, 115);
     }
     95% {
-      border-left: solid 2px rgb(130, 200, 130);
+      border-left: solid 2px rgb(115, 210, 115);
     }
     100% {
       width: 0;

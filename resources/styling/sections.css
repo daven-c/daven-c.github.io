@@ -33,7 +33,7 @@
   top: 0;
   left: 0;
   margin: 15px 50px;
-  color: rgb(130, 200, 130);
+  color: rgb(115, 210, 115);
   white-space: nowrap;
   font-size: 30px;
   font-weight: bold;
@@ -133,9 +133,13 @@
   justify-content: center;
 }
 
-.projects-container span {
+.projects-container span:nth-child(1) {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  width: 700px;
+  max-width: 80%;
 }
 
 .project-item {
@@ -178,6 +182,10 @@
   .projects-container span:nth-child(2) div {
     height: 640px;
   }
+
+  .projects-container span:nth-child(3) div {
+    width: 640px;
+  }
 }
 
 .project-item:hover .project-desc {
@@ -186,19 +194,38 @@
 
 .project-desc {
   position: absolute;
-  margin: 0;
-  right: 100%;
+  right: 99%;
   top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 0;
   width: 100%;
   height: 100%;
-  border-radius: 10px;
-  background-color: rgba(130, 200, 130, 1);
+  background-color: rgb(115, 210, 115);
   animation: slide-out 250ms;
+}
+
+.project-desc p {
+  font-size: 22px;
+  padding: 15px;
+  text-align: start;
+}
+
+.project-desc a {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 20px;
+}
+
+.project-desc a:hover {
+  text-decoration: underline;
 }
 
 @keyframes slide-in {
   from {
-    right: 100%;
+    right: 99%;
   }
   to {
     right: 0;
@@ -210,7 +237,7 @@
     right: 0;
   }
   to {
-    right: 100%;
+    right: 99%;
   }
 }
 
@@ -228,7 +255,7 @@
 #footer {
   height: fit-content;
   min-height: 35vh !important;
-  background-color: rgb(130, 200, 130);
+  background-color: rgb(115, 210, 115);
 }
 
 #footer a {
