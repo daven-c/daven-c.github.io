@@ -31,8 +31,8 @@
     </div>
 
     <header class="headerD">
-        <a id="home-tag" draggable="false" href="#home" class="active-section"
-            onclick="return sectionSwap(event);">// Home</a>
+        <a id="home-tag" draggable="false" href="#home" class="active-section" onclick="return sectionSwap(event);">//
+            Home</a>
         <a id="about-tag" draggable="false" href="#about" onclick="return sectionSwap(event);">// About</a>
         <a id="skills-tag" draggable="false" href="#skills" onclick="return sectionSwap(event);">// Skills</a>
         <a id="projects-tag" draggable="false" href="#projects" onclick="return sectionSwap(event);">// Projects</a>
@@ -53,7 +53,8 @@
             <a id="about-tag" draggable="false" href="#about" onclick="return sectionSwap(event);">// About</a>
             <a id="skills-tag" draggable="false" href="#skills" onclick="return sectionSwap(event);">// Skills</a>
             <a id="projects-tag" draggable="false" href="#projects" onclick="return sectionSwap(event);">// Projects</a>
-            <a id="interests-tag" draggable="false" href="#interests" onclick="return sectionSwap(event);">// Interests</a>
+            <a id="interests-tag" draggable="false" href="#interests" onclick="return sectionSwap(event);">//
+                Interests</a>
             <a id="contact-tag" draggable="false" href="#contact" onclick="return sectionSwap(event);">// Contact</a>
         </div>
     </header>
@@ -162,8 +163,34 @@
 
         <section id="projects" class="section">
             <h2 class="section-title">Projects</h2>
-            <div id="projects-content">
-                <p>small and large projects.</p>
+            <div class="projects-container">
+                <span>
+                    <div class="project-item">
+                        <img src="https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/002/407/592/datas/medium.png"
+                            alt="">
+                        <div class="project-text-wrapper">
+                            <h2 class="project-title">Helping Hands</h2>
+                            <p class="project-type">Computer Vision</p>
+                        </div>
+                        <p class="project-desc" align="left">HelpingHands is a Python project that lets you control your mouse with
+                            hand gestures and a webcam. Moving, clicking, highlighting, copying, and more included.
+                        </p>
+                    </div>
+                    <div class="project-item">
+                        <p class="project-desc">B</p>
+                    </div>
+                </span>
+                <span>
+                    <div class="project-item">
+                        <p class="project-desc">C</p>
+                    </div>
+                </span>
+                <div class="project-item">
+                    <p class="project-desc">D</p>
+                </div>
+                <div class="project-item">
+                    <p class="project-desc">E</p>
+                </div>
             </div>
         </section>
 
@@ -193,6 +220,7 @@
         </section>
         <section id="footer" class="section">
             <a href="https://github.com/daven-c" target="_blank">GitHub</a>
+            <p>© Daven Chang 2023</p>
         </section>
     </div>
     <script src="resources/preloading/preload-script.js"></script>
