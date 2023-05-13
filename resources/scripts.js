@@ -24,6 +24,7 @@ function menuanimate() {
 // section switching function
 const observer = new IntersectionObserver((events) => {
   events.forEach((entry) => {
+    console.log(entry);
     if (entry.isIntersecting && entry.target.id != "footer") {
       document
         .getElementsByClassName("active-section")[0]
