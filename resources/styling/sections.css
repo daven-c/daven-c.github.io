@@ -191,7 +191,7 @@
 
 .project-desc {
   position: absolute;
-  right: calc(100% - 3px);
+  right: calc(100% - 4px);
   top: 0;
   display: flex;
   flex-direction: column;
@@ -222,7 +222,7 @@
 
 @keyframes slide-in {
   from {
-    right: 99%;
+    right: calc(100% - 4px);;
   }
   to {
     right: 0;
@@ -234,7 +234,7 @@
     right: 0;
   }
   to {
-    right: 99%;
+    right: calc(100% - 4px);;
   }
 }
 
