@@ -151,8 +151,8 @@
 
 .project-item {
   position: relative;
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   background-color: rgb(30, 30, 30);
   border-radius: 10px;
   overflow: hidden;
