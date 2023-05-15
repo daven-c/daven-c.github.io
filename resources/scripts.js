@@ -92,6 +92,6 @@ function typeWriter(ele, txt, speed, callback = null) {
 
 setTimeout(() => {
   typeWriter(title, "Daven Chang", 100, () => {
-    typeWriter(subtitle, "Making Stuff", 100);
+    typeWriter(subtitle, "Software | Automation | Machine Learning", 100);
   });
 }, 1000);

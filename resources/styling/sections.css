@@ -43,16 +43,6 @@
   text-overflow: clip;
 }
 
-@media (orientation: landscape) {
-  #title {
-    font-size: 7em;
-  }
-
-  #subtitle {
-    font-size: 3em;
-  }
-}
-
 #title::after {
   padding-left: 1px;
   content: "";
