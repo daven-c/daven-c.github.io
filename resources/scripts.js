@@ -4,11 +4,13 @@ const headerLinks = document.querySelectorAll("header a");
 const progressDot = document.getElementById("progressDot");
 const progressContainer = document.getElementById("progressContainer");
 
-const menuButton = document.getElementById("menu-button-container");
+const menuButton = document.getElementsByClassName("menu-button-container")[0];
+const menuOverlay = document.getElementsByClassName("menu-container")[0];
+
 
 const options = {
   root: document,
-  threshold: 0.8,
+  threshold: .5,
 };
 
 function isDesktop() {
@@ -17,14 +19,13 @@ function isDesktop() {
 
 function menuanimate() {
   menuButton.classList.toggle("btn-active");
-  document.getElementById("menu-container").classList.toggle("menu-active");
-  document.getElementById("menu-container").classList.toggle("menu-inactive");
+  menuOverlay.classList.toggle("menu-active");
+  menuOverlay.classList.toggle("menu-inactive");
 }
 
 // section switching function
 const observer = new IntersectionObserver((events) => {
   events.forEach((entry) => {
-    console.log(entry);
     if (entry.isIntersecting && entry.target.id != "footer") {
       document
         .getElementsByClassName("active-section")[0]
@@ -41,11 +42,10 @@ const observer = new IntersectionObserver((events) => {
 function sectionSwap(event) {
   event.preventDefault();
 
-  var targetSectionId = event.currentTarget.getAttribute("href");
-  var targetSection = document.querySelector(targetSectionId);
+  let targetSectionId = event.currentTarget.getAttribute("href");
+  let targetSection = document.querySelector(targetSectionId);
   targetSection.scrollIntoView({ behavior: "smooth" });
-  if (!isDesktop())
-    menuanimate(menuButton);
+  if (!isDesktop()) menuanimate(menuButton);
 }
 
 function clearForm(id) {
@@ -53,19 +53,16 @@ function clearForm(id) {
   form.childNodes.forEach((input) => (input.value = ""));
 }
 
-if (isDesktop()) {
-  document.body.removeChild(document.body.getElementsByClassName("headerM")[0]);
-  console.log("view: landscape");
-} else {
-  document.body.removeChild(document.body.getElementsByClassName("headerD")[0]);
-  console.log("view: portrait");
+let eles = document.getElementsByClassName((isDesktop()) ? "por-exc" : "ld-exc");
+while (eles.length != 0) {
+  eles[0].remove()
 }
 
-const appHeight = () => {
+const documentHeight = () => {
   const doc = document.documentElement
-  doc.style.setProperty(' — app-height', `${window.innerHeight}px`)
+  doc.style.setProperty('--doc-height', `${window.innerHeight}px`)
  }
- window.addEventListener('resize', appHeight)
- appHeight()
+ window.addEventListener("resize", documentHeight)
+ documentHeight()
 
 sections.forEach((section) => observer.observe(section));

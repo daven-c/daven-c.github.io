@@ -1,48 +1,81 @@
 #contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 90%;
   max-width: 500px;
 }
 
 .form-field {
   width: 100%;
+  font-size: 1.2em;
   margin-bottom: 20px;
-  color: white;
-  font-family: Rajdhani, sans-serif;
-  font-size: 24px;
   background-color: transparent;
   border: none;
   border-bottom: solid 2px rgba(255, 255, 255, 0.5);
   outline: none;
   resize: none;
+  -webkit-transition: 250ms;
+  -o-transition: 250ms;
+  transition: 250ms;
+}
+
+.form-field::-webkit-input-placeholder {
+  opacity: 0.5;
+}
+
+.form-field::-moz-placeholder {
+  opacity: 0.5;
+}
+
+.form-field:-ms-input-placeholder {
+  opacity: 0.5;
+}
+
+.form-field::-ms-input-placeholder {
+  opacity: 0.5;
 }
 
 .form-field::placeholder {
-  color: white;
   opacity: 0.5;
 }
 
 .form-field:focus {
-  border-bottom: solid 2px rgba(255, 255, 255, 1);
-  transition: 0ms;
+  border-bottom: solid 2px white;
+  -webkit-transition: 250ms;
+  -o-transition: 250ms;
+  transition: 250ms;
 }
 
 #form-button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #clear-button,
 #submit-button {
   width: 120px;
-  color: white;
-  font-family: Rajdhani, sans-serif;
-  font-size: 24px;
   background-color: transparent;
   border-radius: 20px;
   padding: 10px 20px;
@@ -53,25 +86,68 @@
 
 #clear-button {
   border: solid 1px rgba(200, 130, 130, 0.8);
+  background: -webkit-gradient(
+    linear,
+    left top, right top,
+    color-stop(50%, rgba(200, 130, 130, 0.8)),
+    color-stop(50%, transparent)
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(200, 130, 130, 0.8) 50%,
+    transparent 50%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(200, 130, 130, 0.8) 50%,
+    transparent 50%
+  );
+  background-size: 300% 100%;
+  background-position: right bottom;
+  -webkit-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
 }
 
 #submit-button {
   border: solid 1px rgba(130, 200, 130, 0.8);
+  background: -webkit-gradient(
+    linear,
+    left top, right top,
+    color-stop(50%, rgba(130, 200, 130, 0.8)),
+    color-stop(50%, transparent)
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(130, 200, 130, 0.8) 50%,
+    transparent 50%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(130, 200, 130, 0.8) 50%,
+    transparent 50%
+  );
+  background-size: 300% 100%;
+  background-position: right bottom;
+  -webkit-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
 }
 
 #clear-button:active,
 #submit-button:active {
-  transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+      -ms-transform: scale(0.95);
+          transform: scale(0.95);
+  -webkit-transition: 50ms;
+  -o-transition: 50ms;
   transition: 50ms;
 }
 
 /* additions for non touch screen devices */
 @media (any-pointer: fine) {
-  #clear-button:hover {
-    background-color: rgba(200, 130, 130, 0.8);
-  }
-
+  #clear-button:hover,
   #submit-button:hover {
-    background-color: rgba(130, 200, 130, 0.8);
+    background-position: left bottom;
   }
 }

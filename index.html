@@ -19,52 +19,53 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!--fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Rajdhani&display=swap"
-        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora&display=swap" rel="stylesheet">
 </head>
 
-<body onclick>
+<body onclick="">
 
     <div id="preload-container">
     </div>
 
-    <header class="headerD">
-        <a id="home-tag" draggable="false" href="#home" class="active-section" onclick="return sectionSwap(event);">
-            Home</a>
-        <a id="about-tag" draggable="false" href="#about" onclick="return sectionSwap(event);">About</a>
-        <a id="skills-tag" draggable="false" href="#skills" onclick="return sectionSwap(event);">Skills</a>
-        <a id="projects-tag" draggable="false" href="#projects" onclick="return sectionSwap(event);">Projects</a>
-        <a id="interests-tag" draggable="false" href="#interests" onclick="return sectionSwap(event);">Interests</a>
-        <a id="contact-tag" draggable="false" href="#contact" onclick="return sectionSwap(event);">Contact</a>
+    <header class="headerD ld-exc">
+        <a draggable="false" id="nametag" href="index.html">DC</a>
+        <div class="section-headers">
+            <a id="home-tag" draggable="false" href="#home" class="active-section" onclick="return sectionSwap(event);">
+                Home</a>
+            <a id="about-tag" draggable="false" href="#about" onclick="return sectionSwap(event);">About</a>
+            <a id="skills-tag" draggable="false" href="#skills" onclick="return sectionSwap(event);">Skills</a>
+            <a id="projects-tag" draggable="false" href="#projects" onclick="return sectionSwap(event);">Projects</a>
+            <a id="contact-tag" draggable="false" href="#contact" onclick="return sectionSwap(event);">Contact</a>
+        </div>
     </header>
 
-    <header class="headerM">
-        <div id="menu-button-container" onclick="menuanimate(this)">
+    <header class="headerM por-exc">
+        <div class="menu-button-container" onclick="menuanimate(this)">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
         </div>
-        <div id="menu-container" class="menu-inactive">
-            <h2>&lt;Navigate&gt;</h2>
+        <div class="menu-container menu-inactive">
+            <h3>&lt;Navigate&gt;</h3>
             <a id="home-tag" draggable="false" href="#home" class="active-section"
                 onclick="return sectionSwap(event);">Home</a>
             <a id="about-tag" draggable="false" href="#about" onclick="return sectionSwap(event);">About</a>
             <a id="skills-tag" draggable="false" href="#skills" onclick="return sectionSwap(event);">Skills</a>
             <a id="projects-tag" draggable="false" href="#projects" onclick="return sectionSwap(event);">Projects</a>
-            <a id="interests-tag" draggable="false" href="#interests" onclick="return sectionSwap(event);">
-                Interests</a>
             <a id="contact-tag" draggable="false" href="#contact" onclick="return sectionSwap(event);">Contact</a>
         </div>
     </header>
 
     <div class="scroll-wrapper">
         <section id="home" class="section">
-            <a draggable="false" id="nametag" href="index.html">DC</a>
-            <h2>Daven Chang</h2>
-            <div id="home-content">
-                <p>Imagine // Improve // Innovate</p>
+            <a draggable="false" id="nametag" class="por-exc" href="index.html">DC</a>
+            <h1>Daven Chang</h1>
+            <h3>Making Stuff</h3>
+            <div class="scroll-anim">
+                <div></div>
+                <div></div>
             </div>
         </section>
 
@@ -167,7 +168,7 @@
                 <div class="project-item">
                     <img src="./resources/images/project-icons/HelpingHands.png" alt="">
                     <div class="project-text-wrapper">
-                        <h2 class="project-title">Helping Hands</h2>
+                        <h4 class="project-title">Helping Hands</h4>
                         <p class="project-type">Computer Vision</p>
                     </div>
                     <div class="project-desc">
@@ -176,107 +177,97 @@
                             more
                             included.
                         </p>
-                        <a href="https://devpost.com/software/helpinghands-myl8ox" target="_blank">More
-                            -></a>
+                        <a href="https://devpost.com/software/helpinghands-myl8ox" target="_blank">View→</a>
                     </div>
                 </div>
                 <div class="project-item">
                     <img src="./resources/images/construction.png" alt="">
                     <div class="project-text-wrapper">
-                        <h2 class="project-title">Title</h2>
+                        <h4 class="project-title">Title</h4>
                         <p class="project-type">Type</p>
                     </div>
                     <div class="project-desc">
                         <p>ASD</p>
-                        <a href="" target="_blank">More -></a>
+                        <a href="" target="_blank">View→</a>
                     </div>
                 </div>
                 <div class="project-item">
                     <img src="./resources/images/construction.png" alt="">
                     <div class="project-text-wrapper">
-                        <h2 class="project-title">Title</h2>
+                        <h4 class="project-title">Title</h4>
                         <p class="project-type">Type</p>
                     </div>
                     <div class="project-desc">
                         <p>ASD</p>
-                        <a href="" target="_blank">More -></a>
+                        <a href="" target="_blank">View→</a>
                     </div>
                 </div>
                 <div class="project-item">
                     <img src="./resources/images/construction.png" alt="">
                     <div class="project-text-wrapper">
-                        <h2 class="project-title">Title</h2>
+                        <h4 class="project-title">Title</h4>
                         <p class="project-type">Type</p>
                     </div>
                     <div class="project-desc">
                         <p>ASD</p>
-                        <a href="" target="_blank">More -></a>
+                        <a href="" target="_blank">View→</a>
                     </div>
                 </div>
                 <div class="project-item">
                     <img src="./resources/images/construction.png" alt="">
                     <div class="project-text-wrapper">
-                        <h2 class="project-title">Title</h2>
+                        <h4 class="project-title">Title</h4>
                         <p class="project-type">Type</p>
                     </div>
                     <div class="project-desc">
                         <p>ASD</p>
-                        <a href="" target="_blank">More -></a>
+                        <a href="" target="_blank">View→</a>
                     </div>
                 </div>
-            <div class="project-item">
-                <img src="./resources/images/construction.png" alt="">
-                <div class="project-text-wrapper">
-                    <h2 class="project-title">Title</h2>
-                    <p class="project-type">Type</p>
+                <div class="project-item">
+                    <img src="./resources/images/construction.png" alt="">
+                    <div class="project-text-wrapper">
+                        <h4 class="project-title">Title</h4>
+                        <p class="project-type">Type</p>
+                    </div>
+                    <div class="project-desc">
+                        <p>ASD</p>
+                        <a href="" target="_blank">View→</a>
+                    </div>
                 </div>
-                <div class="project-desc">
-                    <p>ASD</p>
-                    <a href="" target="_blank">More -></a>
+                <div class="project-item">
+                    <img src="./resources/images/construction.png" alt="">
+                    <div class="project-text-wrapper">
+                        <h4 class="project-title">Title</h4>
+                        <p class="project-type">Type</p>
+                    </div>
+                    <div class="project-desc">
+                        <p>ASD</p>
+                        <a href="" target="_blank">View→</a>
+                    </div>
                 </div>
             </div>
-            <div class="project-item">
-                <img src="./resources/images/construction.png" alt="">
-                <div class="project-text-wrapper">
-                    <h2 class="project-title">Title</h2>
-                    <p class="project-type">Type</p>
-                </div>
-                <div class="project-desc">
-                    <p>ASD</p>
-                    <a href="" target="_blank">More -></a>
-                </div>
-            </div>
-    </div>
-    </section>
+        </section>
 
-    <section id="interests" class="section">
-        <h2 class="section-title">Interests</h2>
-        <div id="interests-content">
-            <h3>Computer Vision</h3>
-            <h3>Generative AI</h3>
-            <h3>Software</h3>
-        </div>
-    </section>
-
-    <section id="contact" class="section">
-        <h2 class="section-title">Contact Me!</h2>
-        <form id="contact-form"
-            action="https://script.google.com/macros/s/AKfycbwNb1GhH6F8-EGU-fhr9Ljwn3YTSaH8AG59Cyqa-TCw8CcNkPi2AVZOLbpYtW3CUCE6-Q/exec"
-            method="post" target="hidden_iframe">
-            <input class="form-field" type="text" name="Name" placeholder="Name" required>
-            <input class="form-field" type="email" name="Email" placeholder="Email" required>
-            <textarea id="message-block" class="form-field" name="Message" placeholder="Message" rows="8"
-                required></textarea>
-            <span id="form-button-container">
-                <input id="clear-button" type="button" value="Clear" onclick="clearForm('contact-form')">
-                <input id="submit-button" type="submit" value="Submit">
-            </span>
-        </form>
-    </section>
-    <section id="footer" class="section">
-        <a href="https://github.com/daven-c" target="_blank">GitHub</a>
-        <p>© Daven Chang 2023</p>
-    </section>
+        <section id="contact" class="section">
+            <h2 class="section-title">Contact Me</h2>
+            <form id="contact-form"
+                action="https://script.google.com/macros/s/AKfycbwNb1GhH6F8-EGU-fhr9Ljwn3YTSaH8AG59Cyqa-TCw8CcNkPi2AVZOLbpYtW3CUCE6-Q/exec"
+                method="post" target="hidden_iframe">
+                <input class="form-field" type="text" name="Name" placeholder="Name" required>
+                <input class="form-field" type="email" name="Email" placeholder="Email" required>
+                <textarea id="message-block" class="form-field" name="Message" placeholder="Message" rows="8"
+                    required></textarea>
+                <span id="form-button-container">
+                    <input id="clear-button" type="button" value="Clear ." onclick="clearForm('contact-form')">
+                    <input id="submit-button" type="submit" value="Send !">
+                </span>
+            </form>
+        </section>
+        <section id="footer" class="section">
+            <a href="https://github.com/daven-c" target="_blank">GitHub</a>
+            <p>© Daven Chang 2023</p>
+        </section>
     </div>
     <script src="resources/preloading/preload-script.js"></script>
     <script src="resources/scripts.js"></script>
