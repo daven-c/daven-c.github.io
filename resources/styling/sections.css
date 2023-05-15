@@ -55,7 +55,8 @@
   content: "";
   opacity: 0;
   border-right: solid 2px white;
-  animation: blinker-fade-in 100ms ease 2300ms forwards, blink 100ms ease 3700ms forwards;
+  animation: blinker-fade-in 100ms ease 2300ms forwards,
+    blink 100ms ease 3700ms forwards;
 }
 
 @keyframes blink {
@@ -76,34 +77,22 @@
   }
 }
 
-.scroll-anim {
+.scroll-container {
   position: absolute;
   bottom: 60px;
+  height: 30px;
   opacity: 0.5;
   -webkit-animation: oscillate 1.5s ease-in-out infinite;
   animation: oscillate 1.5s ease-in-out infinite;
 }
 
-.scroll-anim div {
-  width: 30px;
-  height: 4px;
-  position: relative;
-  border-radius: 10px;
-  background-color: rgb(255, 255, 255);
-}
-
-.scroll-anim div:nth-child(1) {
-  right: 10px;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
+.arrow-down {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 10px;
   transform: rotate(45deg);
-}
-
-.scroll-anim div:nth-child(2) {
-  left: 10px;
-  -webkit-transform: translate(0, -100%) rotate(-45deg);
-  -ms-transform: translate(0, -100%) rotate(-45deg);
-  transform: translate(0, -100%) rotate(-45deg);
+  -webkit-transform: rotate(45deg);
 }
 
 @-webkit-keyframes oscillate {
