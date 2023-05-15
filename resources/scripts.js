@@ -50,7 +50,7 @@ function sectionSwap(event) {
   let targetSectionId = event.currentTarget.getAttribute("href");
   let targetSection = document.querySelector(targetSectionId);
   targetSection.scrollIntoView({ behavior: "smooth" });
-  if (!isDesktop()) menuanimate(menuButton);
+  if (!isDesktop() && menuOverlay.classList.contains("menu-active")) menuanimate();
 }
 
 // clear entries on form
