@@ -56,7 +56,7 @@
   opacity: 0;
   border-right: solid 2px white;
   animation: blinker-fade-in 100ms ease 2300ms forwards,
-    blink 100ms ease 6600ms forwards;
+    blink 100ms ease 4600ms forwards;
 }
 
 @keyframes blink {
@@ -90,7 +90,7 @@
   height: 30px;
   opacity: 0;
   -webkit-animation: oscillate 1.5s ease-in-out infinite;
-  animation: blinker-fade-in 500ms linear 6600ms forwards, oscillate 1.5s ease-in-out 7100ms infinite;
+  animation: blinker-fade-in 500ms linear 4700ms forwards, oscillate 1.5s ease-in-out 5200ms infinite;
 }
 
 .arrow-down {
