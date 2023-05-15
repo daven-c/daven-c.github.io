@@ -50,6 +50,14 @@
   opacity: 0.5;
 }
 
+.form-field:-webkit-autofill,
+.form-field:-webkit-autofill:hover,
+.form-field:-webkit-autofill:focus,
+.form-field:-webkit-autofill:active {
+    -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+    -webkit-transition-delay: 9999s;
+}
+
 .form-field:focus {
   border-bottom: solid 2px white;
   -webkit-transition: 250ms;
