@@ -7,16 +7,20 @@ const progressContainer = document.getElementById("progressContainer");
 const menuButton = document.getElementsByClassName("menu-button-container")[0];
 const menuOverlay = document.getElementsByClassName("menu-container")[0];
 
+const title = document.getElementById("title");
+const subtitle = document.getElementById("subtitle");
 
 const options = {
   root: document,
-  threshold: .5,
+  threshold: 0.5,
 };
 
+// check if width > height
 function isDesktop() {
   return screen.width > screen.height;
 }
 
+// update state of hamburger menu
 function menuanimate() {
   menuButton.classList.toggle("btn-active");
   menuOverlay.classList.toggle("menu-active");
@@ -37,8 +41,9 @@ const observer = new IntersectionObserver((events) => {
     }
   });
 }, options);
+sections.forEach((section) => observer.observe(section));
 
-// scrolling function
+// scrolling tracker
 function sectionSwap(event) {
   event.preventDefault();
 
@@ -48,21 +53,45 @@ function sectionSwap(event) {
   if (!isDesktop()) menuanimate(menuButton);
 }
 
+// clear entries on form
 function clearForm(id) {
   const form = document.getElementById(id);
   form.childNodes.forEach((input) => (input.value = ""));
 }
 
-let eles = document.getElementsByClassName((isDesktop()) ? "por-exc" : "ld-exc");
+// remove elements unrelated to orientation
+let eles = document.getElementsByClassName(isDesktop() ? "por-exc" : "ld-exc");
 while (eles.length != 0) {
-  eles[0].remove()
+  eles[0].remove();
 }
 
+// Adjust height for mobile
 const documentHeight = () => {
-  const doc = document.documentElement
-  doc.style.setProperty('--doc-height', `${window.innerHeight}px`)
- }
- window.addEventListener("resize", documentHeight)
- documentHeight()
+  const doc = document.documentElement;
+  doc.style.setProperty("--doc-height", `${window.innerHeight}px`);
+};
+window.addEventListener("resize", documentHeight);
+documentHeight();
 
-sections.forEach((section) => observer.observe(section));
+// typing effect
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+function typeWriter(ele, txt, speed, callback = null) {
+  i = 0;
+  function type() {
+    if (i < txt.length) {
+      ele.innerHTML += txt.charAt(i++);
+    } else {
+      clearInterval(interval);
+      if (callback != null) callback();
+    }
+  }
+  const interval = setInterval(type, speed);
+}
+
+setTimeout(() => {
+  typeWriter(title, "Daven Chang", 100, () => {
+    typeWriter(subtitle, "Making Stuff", 100);
+  });
+}, 1000);

@@ -43,12 +43,55 @@
   text-overflow: clip;
 }
 
+@media (orientation: landscape) {
+  #title {
+    font-size: 7em;
+  }
+
+  #subtitle {
+    font-size: 3em;
+  }
+}
+
+#title::after {
+  padding-left: 1px;
+  content: "";
+  border-right: solid 2px white;
+  animation: blink 500ms ease 2, blink 100ms ease 2300ms forwards;
+}
+
+#subtitle::after {
+  padding-left: 1px;
+  content: "";
+  opacity: 0;
+  border-right: solid 2px white;
+  animation: blinker-fade-in 100ms ease 2300ms forwards, blink 100ms ease 3700ms forwards;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes blinker-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .scroll-anim {
   position: absolute;
   bottom: 60px;
   opacity: 0.5;
-  -webkit-animation: osicllate 1.5s ease-in-out infinite;
-  animation: osicllate 1.5s ease-in-out infinite;
+  -webkit-animation: oscillate 1.5s ease-in-out infinite;
+  animation: oscillate 1.5s ease-in-out infinite;
 }
 
 .scroll-anim div {
@@ -73,7 +116,7 @@
   transform: translate(0, -100%) rotate(-45deg);
 }
 
-@-webkit-keyframes osicllate {
+@-webkit-keyframes oscillate {
   0% {
     opacity: 0.5;
     bottom: 60px;
@@ -88,7 +131,7 @@
   }
 }
 
-@keyframes osicllate {
+@keyframes oscillate {
   0% {
     opacity: 0.5;
     bottom: 60px;
@@ -308,7 +351,7 @@
   right: 0;
   bottom: 0;
   padding: 10px 15px;
-  border-radius: 10px 0 0 0 ;
+  border-radius: 10px 0 0 0;
   background-color: rgb(30, 30, 30);
 }
 
