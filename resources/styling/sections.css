@@ -43,10 +43,6 @@
   text-overflow: clip;
 }
 
-#home h1 {
-  text-shadow: rgb(0, 0, 0) 0 8px 5px;
-}
-
 .scroll-anim {
   position: absolute;
   bottom: 60px;
