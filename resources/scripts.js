@@ -44,13 +44,9 @@ const observer = new IntersectionObserver((events) => {
 sections.forEach((section) => observer.observe(section));
 
 // scrolling tracker
-function sectionSwap(event) {
-  event.preventDefault();
-
-  let targetSectionId = event.currentTarget.getAttribute("href");
-  let targetSection = document.querySelector(targetSectionId);
-  targetSection.scrollIntoView({ behavior: "smooth" });
-  if (!isDesktop() && menuOverlay.classList.contains("menu-active")) menuanimate();
+function updatemenu() {
+  if (!isDesktop() && menuOverlay.classList.contains("menu-active"))
+    menuanimate();
 }
 
 // clear entries on form

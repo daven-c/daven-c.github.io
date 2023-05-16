@@ -32,12 +32,12 @@
     <header class="headerD ld-exc">
         <a draggable="false" id="nametag" href="index.html">DC</a>
         <div class="section-headers">
-            <a id="home-tag" draggable="false" href="#home" class="active-section" onclick="return sectionSwap(event);">
+            <a id="home-tag" draggable="false" href="#home" class="active-section">
                 Home</a>
-            <a id="about-tag" draggable="false" href="#about" onclick="return sectionSwap(event);">About</a>
-            <a id="skills-tag" draggable="false" href="#skills" onclick="return sectionSwap(event);">Skills</a>
-            <a id="projects-tag" draggable="false" href="#projects" onclick="return sectionSwap(event);">Projects</a>
-            <a id="contact-tag" draggable="false" href="#contact" onclick="return sectionSwap(event);">Contact</a>
+            <a id="about-tag" draggable="false" href="#about">About</a>
+            <a id="skills-tag" draggable="false" href="#skills">Skills</a>
+            <a id="projects-tag" draggable="false" href="#projects">Projects</a>
+            <a id="contact-tag" draggable="false" href="#contact">Contact</a>
         </div>
     </header>
 
@@ -49,12 +49,11 @@
         </div>
         <div class="menu-container menu-inactive">
             <h3>&lt;Navigate&gt;</h3>
-            <a id="home-tag" draggable="false" href="#home" class="active-section"
-                onclick="return sectionSwap(event);">Home</a>
-            <a id="about-tag" draggable="false" href="#about" onclick="return sectionSwap(event);">About</a>
-            <a id="skills-tag" draggable="false" href="#skills" onclick="return sectionSwap(event);">Skills</a>
-            <a id="projects-tag" draggable="false" href="#projects" onclick="return sectionSwap(event);">Projects</a>
-            <a id="contact-tag" draggable="false" href="#contact" onclick="return sectionSwap(event);">Contact</a>
+            <a id="home-tag" draggable="false" href="#home" class="active-section" onclick="updatemenu();">Home</a>
+            <a id="about-tag" draggable="false" href="#about" onclick="updatemenu();">About</a>
+            <a id="skills-tag" draggable="false" href="#skills" onclick="updatemenu();">Skills</a>
+            <a id="projects-tag" draggable="false" href="#projects" onclick="updatemenu();">Projects</a>
+            <a id="contact-tag" draggable="false" href="#contact" onclick="updatemenu();">Contact</a>
         </div>
     </header>
 
@@ -67,7 +66,7 @@
                 <div class="arrow-down"></div>
             </div>
             <a href="#about" class="scroll-down" draggable="false" href="#about"
-                onclick="return sectionSwap(event);"></a>
+                onclick="updatemenu();"></a>
         </section>
 
         <section id="about" class="section">
