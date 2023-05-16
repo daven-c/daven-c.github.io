@@ -90,7 +90,8 @@
   height: 30px;
   opacity: 0;
   -webkit-animation: oscillate 1.5s ease-in-out infinite;
-  animation: blinker-fade-in 500ms linear 4700ms forwards, oscillate 1.5s ease-in-out 5200ms infinite;
+  animation: blinker-fade-in 500ms linear 4700ms forwards,
+    oscillate 1.5s ease-in-out 5200ms infinite;
 }
 
 .arrow-down {
@@ -220,17 +221,18 @@
   .skills-icon {
     margin: 0 5%;
     -webkit-box-flex: 0;
-    -ms-flex: 0 1 calc(20% - 15%);
-    flex: 0 1 calc(20% - 15%);
+    -ms-flex: 0 1 5%;
+    flex: 0 1 5%;
+    transition: 200ms;
   }
 
   .skills-icon:hover {
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2);
-    -webkit-transform: 200ms;
-    -ms-transform: 200ms;
-    transform: 200ms;
+    -webkit-transition: 200ms;
+    -ms-transition: 200ms;
+    transition: 200ms;
   }
 }
 
