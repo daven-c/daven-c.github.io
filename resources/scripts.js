@@ -70,9 +70,6 @@ window.addEventListener("resize", documentHeight);
 documentHeight();
 
 // typing effect
-function sleep(ms) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-}
 function typeWriter(ele, txt, speed, callback = null) {
   i = 0;
   function type() {
