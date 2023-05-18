@@ -12,20 +12,20 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     overflow-x: auto;
     overflow-y: hidden;
     -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     background-color: rgba(30, 30, 30, 0.8);
     -webkit-backdrop-filter: blur(10px);
-            backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
   }
 
   #nametag {
@@ -38,11 +38,11 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     margin-right: 100px;
   }
 
@@ -57,8 +57,8 @@
   .section-headers a:hover {
     opacity: 1;
     -webkit-transform: 0;
-        -ms-transform: 0;
-            transform: 0;
+    -ms-transform: 0;
+    transform: 0;
   }
 
   .active-section {
@@ -92,8 +92,8 @@
   /* Rotate first bar */
   .btn-active .bar1 {
     -webkit-transform: translate(0, 10px) rotate(-45deg);
-        -ms-transform: translate(0, 10px) rotate(-45deg);
-            transform: translate(0, 10px) rotate(-45deg);
+    -ms-transform: translate(0, 10px) rotate(-45deg);
+    transform: translate(0, 10px) rotate(-45deg);
   }
 
   /* Fade out the second bar */
@@ -104,8 +104,8 @@
   /* Rotate last bar */
   .btn-active .bar3 {
     -webkit-transform: translate(0, -10px) rotate(45deg);
-        -ms-transform: translate(0, -10px) rotate(45deg);
-            transform: translate(0, -10px) rotate(45deg);
+    -ms-transform: translate(0, -10px) rotate(45deg);
+    transform: translate(0, -10px) rotate(45deg);
   }
 
   .menu-container {
@@ -119,14 +119,14 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
+    -ms-flex-align: start;
+    align-items: start;
     white-space: nowrap;
     background-color: rgba(40, 40, 45, 1);
   }
@@ -144,12 +144,12 @@
 
   .menu-active {
     -webkit-animation: slide-in-right 250ms linear forwards;
-            animation: slide-in-right 250ms linear forwards;
+    animation: slide-in-right 250ms linear forwards;
   }
 
   .menu-inactive {
     -webkit-animation: slide-out-right 250ms linear forwards;
-            animation: slide-out-right 250ms linear forwards;
+    animation: slide-out-right 250ms linear forwards;
   }
 
   @-webkit-keyframes slide-in-right {
