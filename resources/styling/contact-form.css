@@ -4,19 +4,20 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 90%;
   max-width: 500px;
 }
 
 .form-field {
+  color: white;
   width: 100%;
   font-size: 1.2em;
   margin-bottom: 20px;
@@ -30,32 +31,20 @@
   transition: 250ms;
 }
 
-.form-field::-webkit-input-placeholder {
-  opacity: 0.5;
-}
-
-.form-field::-moz-placeholder {
-  opacity: 0.5;
-}
-
-.form-field:-ms-input-placeholder {
-  opacity: 0.5;
-}
-
-.form-field::-ms-input-placeholder {
-  opacity: 0.5;
-}
-
+.form-field::-webkit-input-placeholder,
+.form-field::-moz-placeholder,
+.form-field:-ms-input-placeholder,
+.form-field::-ms-input-placeholder,
 .form-field::placeholder {
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .form-field:-webkit-autofill,
 .form-field:-webkit-autofill:hover,
 .form-field:-webkit-autofill:focus,
 .form-field:-webkit-autofill:active {
-    -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
-    -webkit-transition-delay: 9999s;
+  -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+  -webkit-transition-delay: 9999s;
 }
 
 .form-field:focus {
@@ -71,18 +60,19 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 #clear-button,
 #submit-button {
+  color: white;
   width: 120px;
   background-color: transparent;
   border-radius: 20px;
@@ -96,7 +86,8 @@
   border: solid 1px rgba(200, 130, 130, 0.8);
   background: -webkit-gradient(
     linear,
-    left top, right top,
+    left top,
+    right top,
     color-stop(50%, rgba(200, 130, 130, 0.8)),
     color-stop(50%, transparent)
   );
@@ -121,7 +112,8 @@
   border: solid 1px rgba(130, 200, 130, 0.8);
   background: -webkit-gradient(
     linear,
-    left top, right top,
+    left top,
+    right top,
     color-stop(50%, rgba(130, 200, 130, 0.8)),
     color-stop(50%, transparent)
   );
@@ -145,8 +137,8 @@
 #clear-button:active,
 #submit-button:active {
   -webkit-transform: scale(0.95);
-      -ms-transform: scale(0.95);
-          transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
   -webkit-transition: 50ms;
   -o-transition: 50ms;
   transition: 50ms;
