@@ -69,6 +69,16 @@ const documentHeight = () => {
 window.addEventListener("resize", documentHeight);
 documentHeight();
 
+// Light and dark mode
+function swapTheme(button) {
+  document.body.classList.toggle("light-mode");
+  button.classList.toggle("light-mode");
+  document.getElementById("home").classList.toggle("light-mode");
+  document
+    .getElementsByClassName("arrow-down")[0]
+    .classList.toggle("light-mode");
+}
+
 // typing effect
 function typeWriter(ele, txt, speed, callback = null) {
   i = 0;

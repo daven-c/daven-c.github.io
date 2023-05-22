@@ -92,14 +92,14 @@
       </div>
     </header>
 
-    <div class="scroll-wrapper">
+    <div class="main-container">
       <section id="home" class="section">
         <a draggable="false" id="nametag" class="por-exc" href="index.html"
           >DC</a
         >
         <div class="lightball-wrapper">
-            <div class="lightball"></div>
-            <div class="lightball"></div>
+          <div class="lightball"></div>
+          <div class="lightball"></div>
         </div>
         <h2 id="title"></h2>
         <h4 id="subtitle"></h4>
@@ -113,9 +113,12 @@
           href="#about"
           onclick="updatemenu();"
         ></a>
+        <button class="theme-button" onclick="swapTheme(this);">
+          <img src="resources/images/LDIcon.png" alt="" />
+        </button>
       </section>
 
-      <section id="about" class="section">
+      <section id="about" class="section light-mode">
         <h3 class="section-title">About Me</h3>
         <div id="about-content">
           <p>Currently a senior at Oakton High School</p>

@@ -43,6 +43,11 @@
   text-overflow: clip;
 }
 
+#home.light-mode {
+  background: url("../images/lighttitlebg2.png") no-repeat center center;
+  background-size: cover;
+}
+
 .lightball-wrapper {
   position: absolute;
   top: 50%;
@@ -169,6 +174,15 @@
   -webkit-transform: rotate(45deg);
 }
 
+.arrow-down.light-mode {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 10px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
 @-webkit-keyframes oscillate {
   0% {
     opacity: 0.5;
@@ -207,6 +221,61 @@
     margin: 20px;
     font-weight: bold;
     font-size: 1.3em;
+  }
+}
+
+.theme-button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  box-shadow: none;
+  background-color: white;
+  filter: invert(0);
+  animation: icon-spin-dark 300ms linear forwards;
+}
+
+.theme-button img {
+  width: 50px;
+  height: 50px;
+}
+
+.theme-button.light-mode {
+  animation: icon-spin-light 300ms linear forwards;
+}
+
+@keyframes icon-spin-dark {
+  0% {
+    rotate: 0;
+    filter: invert(0);
+  }
+  50% {
+    rotate: -180deg;
+  }
+  100% {
+    rotate: -360deg;
+    filter: invert(1);
+  }
+}
+
+@keyframes icon-spin-light {
+  0% {
+    rotate: 0;
+    filter: invert(1);
+  }
+  50% {
+    rotate: 180deg;
+  }
+  100% {
+    rotate: 360deg;
+    filter: invert(0);
   }
 }
 
@@ -312,7 +381,7 @@
   gap: 20px;
 }
 
-@media (any-pointer: fine) {
+@media (any-pointer: fine) and (min-width: 1100px) {
   .project-item:nth-child(3) {
     height: 100%;
     -ms-grid-row: 1;
