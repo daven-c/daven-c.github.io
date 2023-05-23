@@ -10,7 +10,7 @@
     <!--styles-->
     <link rel="stylesheet" href="resources/preloading/preload-styles.css" />
     <link rel="stylesheet" href="resources/styling/general.css" />
-    <link rel="stylesheet" href="resources/styling/header.css" />
+    <link rel="stylesheet" href="resources/styling/overlay.css" />
     <link rel="stylesheet" href="resources/styling/sections.css" />
     <link rel="stylesheet" href="resources/styling/contact-form.css" />
 
@@ -32,65 +32,75 @@
   <body onclick="">
     <div id="preload-container"></div>
 
-    <header class="headerD ld-exc">
-      <a draggable="false" id="nametag" href="index.html">DC</a>
-      <div class="section-headers">
-        <a id="home-tag" draggable="false" href="#home" class="active-section">
-          Home</a
-        >
-        <a id="about-tag" draggable="false" href="#about">About</a>
-        <a id="skills-tag" draggable="false" href="#skills">Skills</a>
-        <a id="projects-tag" draggable="false" href="#projects">Projects</a>
-        <a id="contact-tag" draggable="false" href="#contact">Contact</a>
-      </div>
-    </header>
+    <div class="overlay-hud">
+      <header class="headerD ld-exc">
+        <a draggable="false" id="nametag" href="index.html">DC</a>
+        <div class="section-headers">
+          <a
+            id="home-tag"
+            draggable="false"
+            href="#home"
+            class="active-section"
+          >
+            Home</a
+          >
+          <a id="about-tag" draggable="false" href="#about">About</a>
+          <a id="skills-tag" draggable="false" href="#skills">Skills</a>
+          <a id="projects-tag" draggable="false" href="#projects">Projects</a>
+          <a id="contact-tag" draggable="false" href="#contact">Contact</a>
+        </div>
+      </header>
 
-    <header class="headerM por-exc">
-      <div class="menu-button-container" onclick="menuanimate(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </div>
-      <div class="menu-container menu-inactive">
-        <h3>&lt;Navigate&gt;</h3>
-        <a
-          id="home-tag"
-          draggable="false"
-          href="#home"
-          class="active-section"
-          onclick="updatemenu();"
-          >Home</a
-        >
-        <a
-          id="about-tag"
-          draggable="false"
-          href="#about"
-          onclick="updatemenu();"
-          >About</a
-        >
-        <a
-          id="skills-tag"
-          draggable="false"
-          href="#skills"
-          onclick="updatemenu();"
-          >Skills</a
-        >
-        <a
-          id="projects-tag"
-          draggable="false"
-          href="#projects"
-          onclick="updatemenu();"
-          >Projects</a
-        >
-        <a
-          id="contact-tag"
-          draggable="false"
-          href="#contact"
-          onclick="updatemenu();"
-          >Contact</a
-        >
-      </div>
-    </header>
+      <header class="headerM por-exc">
+        <div class="menu-button-container" onclick="menuanimate(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <div class="menu-container menu-inactive">
+          <h3>&lt;Navigate&gt;</h3>
+          <a
+            id="home-tag"
+            draggable="false"
+            href="#home"
+            class="active-section"
+            onclick="updatemenu();"
+            >Home</a
+          >
+          <a
+            id="about-tag"
+            draggable="false"
+            href="#about"
+            onclick="updatemenu();"
+            >About</a
+          >
+          <a
+            id="skills-tag"
+            draggable="false"
+            href="#skills"
+            onclick="updatemenu();"
+            >Skills</a
+          >
+          <a
+            id="projects-tag"
+            draggable="false"
+            href="#projects"
+            onclick="updatemenu();"
+            >Projects</a
+          >
+          <a
+            id="contact-tag"
+            draggable="false"
+            href="#contact"
+            onclick="updatemenu();"
+            >Contact</a
+          >
+        </div>
+      </header>
+      <button class="theme-button" onclick="swapTheme(this);">
+        <img src="resources/images/LDIcon.png" alt="" />
+      </button>
+    </div>
 
     <div class="main-container">
       <section id="home" class="section">
@@ -113,9 +123,6 @@
           href="#about"
           onclick="updatemenu();"
         ></a>
-        <button class="theme-button" onclick="swapTheme(this);">
-          <img src="resources/images/LDIcon.png" alt="" />
-        </button>
       </section>
 
       <section id="about" class="section light-mode">
