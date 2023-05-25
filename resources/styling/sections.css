@@ -41,7 +41,7 @@
   background-size: cover;
   -o-text-overflow: clip;
   text-overflow: clip;
-  transition: 300ms;
+  transition: background 300ms;
 }
 
 body.light-mode #home {
