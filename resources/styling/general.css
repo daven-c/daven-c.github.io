@@ -12,6 +12,7 @@ body {
   height: 100%;
   overflow-x: hidden;
   scrollbar-width: none;
+  transition: 300ms;
 }
 
 body::-webkit-scrollbar {
