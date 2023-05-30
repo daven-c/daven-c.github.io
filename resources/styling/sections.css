@@ -249,7 +249,11 @@ body.light-mode #home {
   background-color: rgb(30, 30, 30);
   border: solid 2px rgb(115, 210, 115);
   border-radius: 20px;
-  box-shadow: 0 0 10px rgb(115, 210, 115);
+  box-shadow: 0 0 10px rgba(115, 210, 115, 1);
+}
+
+.skills-category-wrapper:hover {
+  box-shadow: 0 0 20px rgba(115, 210, 115, 1);
 }
 
 .skill-category-title {
