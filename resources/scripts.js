@@ -12,19 +12,12 @@ const subtitle = document.getElementById("subtitle");
 
 const options = {
   root: document,
-  threshold: 0.5,
+  threshold: 0.3,
 };
 
 // check if width > height
 function isDesktop() {
   return screen.width > screen.height;
-}
-
-// update state of hamburger menu
-function menuanimate() {
-  menuButton.classList.toggle("btn-active");
-  menuOverlay.classList.toggle("menu-active");
-  menuOverlay.classList.toggle("menu-inactive");
 }
 
 // section switching function
@@ -43,7 +36,14 @@ const observer = new IntersectionObserver((events) => {
 }, options);
 sections.forEach((section) => observer.observe(section));
 
-// scrolling tracker
+// update state of hamburger menu
+function menuanimate() {
+  menuButton.classList.toggle("btn-active");
+  menuOverlay.classList.toggle("menu-active");
+  menuOverlay.classList.toggle("menu-inactive");
+}
+
+// menu button updater
 function updatemenu() {
   if (!isDesktop() && menuOverlay.classList.contains("menu-active"))
     menuanimate();

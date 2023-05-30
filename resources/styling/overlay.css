@@ -60,15 +60,18 @@
     margin-left: 30px;
   }
 
+  .section-headers a {
+    transition: 150ms;
+  }
+
   .section-headers:hover a {
     opacity: 0.3;
+    transition: 150ms;
   }
 
   .section-headers a:hover {
     opacity: 1;
-    -webkit-transform: 0;
-    -ms-transform: 0;
-    transform: 0;
+    transition: 0;
   }
 
   .active-section {

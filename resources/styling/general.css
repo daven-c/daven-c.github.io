@@ -15,10 +15,6 @@ body {
   transition: background-color 300ms;
 }
 
-body::-webkit-scrollbar {
-  display: none;
-}
-
 body.light-mode {
   background-color: rgb(164, 162, 163);
 }
