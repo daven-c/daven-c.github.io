@@ -245,6 +245,7 @@ body.light-mode #home {
 .skills-category-wrapper {
   width: 400px;
   max-width: calc(90vw - 20px);
+  min-height: 280px;
   padding: 20px;
   background-color: rgb(30, 30, 30);
   border: solid 2px rgb(115, 210, 115);
@@ -499,7 +500,6 @@ body.light-mode .skills-icon {
 }
 
 #footer {
-  padding-top: 0;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -507,10 +507,44 @@ body.light-mode .skills-icon {
   background-color: rgb(30, 30, 30);
 }
 
-#footer a {
-  border-bottom: solid 2px transparent;
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
-#footer a:hover {
-  border-bottom: solid 2px white;
+.footer-left,
+.footer-right {
+  width: 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 15px;
+}
+
+@media only screen and (min-width: 600px) {
+  .footer-left {
+    border-right: solid 2px white;
+  }
+  .footer-right {
+    border-left: solid 2px white;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .footer-left {
+    border-bottom: solid 2px white;
+  }
+  .footer-right {
+    border-top: solid 2px white;
+  }
+}
+
+.footer-link:hover {
+  color:rgb(115, 210, 115);
 }

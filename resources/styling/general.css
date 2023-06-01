@@ -19,6 +19,10 @@ body.light-mode {
   background-color: rgb(164, 162, 163);
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 h1 {
   font-size: 6.854em;
 }
