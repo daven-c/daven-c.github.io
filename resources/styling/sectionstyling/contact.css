@@ -1,3 +1,12 @@
+#contact {
+  height: 97vh;
+  min-height: 0;
+}
+
+#contact .section-title::after {
+  content: "!";
+}
+
 #contact-form {
   display: flex;
   flex-direction: column;
@@ -84,4 +93,55 @@
   #submit-button:hover {
     background-position: left bottom;
   }
+}
+
+#footer {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 35vh !important;
+  background-color: rgb(30, 30, 30);
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-left,
+.footer-right {
+  width: 300px;
+  height: 150px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 15px;
+}
+
+@media only screen and (min-width: 600px) {
+  .footer-left {
+    border-right: solid 2px white;
+  }
+  .footer-right {
+    border-left: solid 2px white;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .footer-left {
+    border-bottom: solid 2px white;
+  }
+  .footer-right {
+    border-top: solid 2px white;
+  }
+}
+
+.footer-link:hover {
+  color: rgb(115, 210, 115);
 }

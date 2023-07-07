@@ -1,3 +1,40 @@
+#scroll-top {
+  position: fixed;
+  bottom: 40px;
+  right: 46px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.arrow-up {
+  position: relative;
+  bottom: 0;
+  width: 20px;
+  height: 20px;
+  rotate: 45deg;
+  border: solid 3px white;
+  border-bottom: none;
+  border-right: none;
+  transition: 250ms;
+}
+
+#scroll-top p {
+  position: relative;
+  top: -5px;
+  rotate: 90deg;
+  font-size: 14px;
+  transition: 250ms;
+}
+
+#scroll-top:hover .arrow-up{
+  bottom: 5px;
+}
+
+#scroll-top:hover p {
+  top: 0;
+}
+
 /* MOBILE */
 
 .headerM {
@@ -20,7 +57,7 @@
 }
 
 .menu-button-container {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   z-index: 1001;
@@ -73,6 +110,7 @@
   font-size: 2em;
   white-space: nowrap;
   background-color: rgb(40, 40, 45);
+  text-align: center;
 }
 
 .menu-container a {

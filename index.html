@@ -12,7 +12,17 @@
     <link rel="stylesheet" href="resources/styling/general.css" />
     <link rel="stylesheet" href="resources/styling/overlay.css" />
     <link rel="stylesheet" href="resources/styling/sections.css" />
-    <link rel="stylesheet" href="resources/styling/contact-form.css" />
+    <link rel="stylesheet" href="resources/styling/sectionstyling/home.css" />
+    <link rel="stylesheet" href="resources/styling/sectionstyling/about.css" />
+    <link rel="stylesheet" href="resources/styling/sectionstyling/skills.css" />
+    <link
+      rel="stylesheet"
+      href="resources/styling/sectionstyling/projects.css"
+    />
+    <link
+      rel="stylesheet"
+      href="resources/styling/sectionstyling/contact.css"
+    />
 
     <!-- Add star icon library -->
     <link
@@ -31,6 +41,11 @@
 
   <body onclick="">
     <div id="preload-container"></div>
+
+    <a id="scroll-top" href="#home"
+      ><div class="arrow-up"></div>
+      <p>TOP</p></a
+    >
 
     <header class="headerM">
       <div class="menu-button-container" onclick="menuanimate(this)">
@@ -85,8 +100,9 @@
           <div class="lightball"></div>
         </div>
 
+        <a draggable="false" id="nametag" href="devo.html">Devo</a>
+
         <header class="headerD">
-          <a draggable="false" id="nametag" href="index.html">DC</a>
           <div class="section-headers">
             <a
               id="home-tag"
@@ -116,6 +132,7 @@
           href="#about"
           onclick="updatemenu();"
         ></a>
+
         <button class="theme-button" onclick="swapTheme(this);">
           <img src="resources/images/LDIcon.png" alt="" />
         </button>

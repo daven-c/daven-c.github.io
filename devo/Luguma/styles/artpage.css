@@ -1,0 +1,10 @@
+.art-container {
+  padding: 50px;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 30px;
+}

@@ -1,0 +1,237 @@
+#home {
+  padding-top: 0;
+  background: url("/daven-c.github.io/resources/images/darktitlebg2.png")
+    no-repeat center center;
+  background-size: cover;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  transition: background 300ms;
+}
+
+body.light-mode #home {
+  background: url("/daven-c.github.io/resources/images/lighttitlebg2.png")
+    no-repeat center center;
+  background-size: cover;
+}
+
+#nametag {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 20px;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+@media (min-width: 500px) {
+  #nametag {
+    margin: 10px 20px;
+  }
+}
+
+.headerD {
+  width: 100%;
+  padding: 10px 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  font-size: 1.3em;
+}
+
+@media (max-width: 500px) {
+  .headerD {
+    display: none;
+  }
+}
+
+.section-headers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+
+.section-headers a {
+  transition: 100ms;
+}
+
+.section-headers a:hover {
+  color: rgb(115, 210, 115);
+}
+
+.lightball-wrapper {
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: fit-content;
+  height: fit-content;
+}
+
+.lightball {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgb(246, 228, 168);
+  box-shadow: rgb(253, 221, 115) 0 0 40px;
+}
+
+.lightball:nth-child(1) {
+  bottom: 80px;
+  right: 185px;
+  transform: translate(-15px, 0);
+  animation: side-to-side 7s ease-in-out infinite;
+}
+
+.lightball:nth-child(2) {
+  top: 90px;
+  left: 300px;
+  transform: translate(15px, 0);
+  animation: side-to-side2 7s ease-in-out 1s infinite;
+}
+
+@media (any-pointer: coarse) {
+  .lightball:nth-child(1) {
+    bottom: 20vh;
+    right: 20vw;
+  }
+  .lightball:nth-child(2) {
+    top: 25vh;
+    left: 20vw;
+  }
+}
+
+@keyframes side-to-side {
+  0% {
+    transform: translate(-15px, 0);
+  }
+  50% {
+    transform: translate(15px, 0);
+  }
+}
+
+@keyframes side-to-side2 {
+  0% {
+    transform: translate(15px, 0);
+  }
+  50% {
+    transform: translate(-15px, 0);
+  }
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 30px;
+  height: 60px;
+  width: 30px;
+}
+
+.arrow-container {
+  position: absolute;
+  bottom: 60px;
+  height: 30px;
+  animation: oscillate 1.5s ease-in-out 200ms infinite;
+}
+
+.arrow-down {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 10px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+@-webkit-keyframes oscillate {
+  0% {
+    opacity: 0.5;
+    bottom: 60px;
+  }
+  50% {
+    opacity: 1;
+    bottom: 30px;
+  }
+  100% {
+    opacity: 0.5;
+    bottom: 60px;
+  }
+}
+
+@keyframes oscillate {
+  0% {
+    opacity: 0.5;
+    bottom: 60px;
+  }
+  50% {
+    opacity: 1;
+    bottom: 30px;
+  }
+  100% {
+    opacity: 0.5;
+    bottom: 60px;
+  }
+}
+
+.theme-button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  box-shadow: none;
+  background-color: white;
+  filter: invert(0);
+  animation: icon-spin-dark 300ms linear forwards;
+}
+
+.theme-button img {
+  width: 50px;
+  height: 50px;
+}
+
+.theme-button.light-mode {
+  animation: icon-spin-light 300ms linear forwards;
+}
+
+@keyframes icon-spin-dark {
+  0% {
+    rotate: 0;
+    filter: invert(0);
+  }
+  50% {
+    rotate: -180deg;
+  }
+  100% {
+    rotate: -360deg;
+    filter: invert(1);
+  }
+}
+
+@keyframes icon-spin-light {
+  0% {
+    rotate: 0;
+    filter: invert(1);
+  }
+  50% {
+    rotate: 180deg;
+  }
+  100% {
+    rotate: 360deg;
+    filter: invert(0);
+  }
+}
