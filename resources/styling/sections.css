@@ -20,11 +20,6 @@
   text-align: center;
 }
 
-#skills,
-#projects {
-  padding-top: 70px;
-}
-
 .section-title {
   max-width: 90%;
   position: relative;
@@ -54,6 +49,42 @@
 body.light-mode #home {
   background: url("../images/lighttitlebg2.png") no-repeat center center;
   background-size: cover;
+}
+
+.headerD {
+  width: 100%;
+  padding: 10px 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3em;
+}
+
+@media (max-width: 500px) {
+  .headerD {
+    display: none;
+  }
+}
+
+.section-headers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+
+.section-headers a {
+  transition: 100ms;
+}
+
+.section-headers a:hover {
+  color: rgb(115, 210, 115);
 }
 
 .lightball-wrapper {
@@ -115,45 +146,6 @@ body.light-mode #home {
   }
   50% {
     transform: translate(-15px, 0);
-  }
-}
-
-#title,
-#subtitle {
-  z-index: 1;
-}
-
-#title::after {
-  padding-left: 1px;
-  content: "";
-  border-right: solid 2px white;
-  animation: blink 500ms ease 2, blink 100ms ease 2300ms forwards;
-}
-
-#subtitle::after {
-  padding-left: 1px;
-  content: "";
-  opacity: 0;
-  border-right: solid 2px white;
-  animation: blinker-fade-in 100ms ease 2300ms forwards,
-    blink 100ms ease 4600ms forwards;
-}
-
-@keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes blinker-fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }
 
@@ -221,6 +213,61 @@ body.light-mode #home {
     margin: 20px;
     font-weight: bold;
     font-size: 1.3em;
+  }
+}
+
+.theme-button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  box-shadow: none;
+  background-color: white;
+  filter: invert(0);
+  animation: icon-spin-dark 300ms linear forwards;
+}
+
+.theme-button img {
+  width: 50px;
+  height: 50px;
+}
+
+.theme-button.light-mode {
+  animation: icon-spin-light 300ms linear forwards;
+}
+
+@keyframes icon-spin-dark {
+  0% {
+    rotate: 0;
+    filter: invert(0);
+  }
+  50% {
+    rotate: -180deg;
+  }
+  100% {
+    rotate: -360deg;
+    filter: invert(1);
+  }
+}
+
+@keyframes icon-spin-light {
+  0% {
+    rotate: 0;
+    filter: invert(1);
+  }
+  50% {
+    rotate: 180deg;
+  }
+  100% {
+    rotate: 360deg;
+    filter: invert(0);
   }
 }
 
@@ -546,5 +593,5 @@ body.light-mode .skills-icon {
 }
 
 .footer-link:hover {
-  color:rgb(115, 210, 115);
+  color: rgb(115, 210, 115);
 }

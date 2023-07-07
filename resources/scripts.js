@@ -7,9 +7,6 @@ const progressContainer = document.getElementById("progressContainer");
 const menuButton = document.getElementsByClassName("menu-button-container")[0];
 const menuOverlay = document.getElementsByClassName("menu-container")[0];
 
-const title = document.getElementById("title");
-const subtitle = document.getElementById("subtitle");
-
 const options = {
   root: document,
   threshold: 0.3,
@@ -55,12 +52,6 @@ function clearForm(id) {
   form.childNodes.forEach((input) => (input.value = ""));
 }
 
-// remove elements unrelated to orientation
-let eles = document.getElementsByClassName(isDesktop() ? "por-exc" : "ld-exc");
-while (eles.length != 0) {
-  eles[0].remove();
-}
-
 // Adjust height for mobile
 const documentHeight = () => {
   const doc = document.documentElement;
@@ -74,23 +65,3 @@ function swapTheme(button) {
   document.body.classList.toggle("light-mode");
   button.classList.toggle("light-mode");
 }
-
-// typing effect
-function typeWriter(ele, txt, speed, callback = null) {
-  i = 0;
-  function type() {
-    if (i < txt.length) {
-      ele.innerHTML += txt.charAt(i++);
-    } else {
-      clearInterval(interval);
-      if (callback != null) callback();
-    }
-  }
-  const interval = setInterval(type, speed);
-}
-
-setTimeout(() => {
-  typeWriter(title, "Daven Chang", 100, () => {
-    typeWriter(subtitle, "Software | Automation | Machine Learning", 50);
-  });
-}, 1000);

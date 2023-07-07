@@ -24,7 +24,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Sora&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -32,87 +32,80 @@
   <body onclick="">
     <div id="preload-container"></div>
 
-    <div class="overlay-hud">
-      <header class="headerD ld-exc">
-        <a draggable="false" id="nametag" href="index.html">DC</a>
-        <div class="section-headers">
-          <a
-            id="home-tag"
-            draggable="false"
-            href="#home"
-            class="active-section"
-          >
-            Home</a
-          >
-          <a id="about-tag" draggable="false" href="#about">About</a>
-          <a id="skills-tag" draggable="false" href="#skills">Skills</a>
-          <a id="projects-tag" draggable="false" href="#projects">Projects</a>
-          <a id="contact-tag" draggable="false" href="#contact">Contact</a>
-        </div>
-      </header>
-
-      <header class="headerM por-exc">
-        <div class="menu-button-container" onclick="menuanimate(this)">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-        </div>
-        <div class="menu-container menu-inactive">
-          <h3>&lt;Navigate&gt;</h3>
-          <a
-            id="home-tag"
-            draggable="false"
-            href="#home"
-            class="active-section"
-            onclick="updatemenu();"
-            >Home</a
-          >
-          <a
-            id="about-tag"
-            draggable="false"
-            href="#about"
-            onclick="updatemenu();"
-            >About</a
-          >
-          <a
-            id="skills-tag"
-            draggable="false"
-            href="#skills"
-            onclick="updatemenu();"
-            >Skills</a
-          >
-          <a
-            id="projects-tag"
-            draggable="false"
-            href="#projects"
-            onclick="updatemenu();"
-            >Projects</a
-          >
-          <a
-            id="contact-tag"
-            draggable="false"
-            href="#contact"
-            onclick="updatemenu();"
-            >Contact</a
-          >
-        </div>
-      </header>
-      <button class="theme-button" onclick="swapTheme(this);">
-        <img src="resources/images/LDIcon.png" alt="" />
-      </button>
-    </div>
+    <header class="headerM">
+      <div class="menu-button-container" onclick="menuanimate(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <div class="menu-container menu-inactive">
+        <a
+          id="home-tag"
+          draggable="false"
+          href="#home"
+          class="active-section"
+          onclick="updatemenu();"
+          >Home</a
+        >
+        <a
+          id="about-tag"
+          draggable="false"
+          href="#about"
+          onclick="updatemenu();"
+          >About</a
+        >
+        <a
+          id="skills-tag"
+          draggable="false"
+          href="#skills"
+          onclick="updatemenu();"
+          >Skills</a
+        >
+        <a
+          id="projects-tag"
+          draggable="false"
+          href="#projects"
+          onclick="updatemenu();"
+          >Projects</a
+        >
+        <a
+          id="contact-tag"
+          draggable="false"
+          href="#contact"
+          onclick="updatemenu();"
+          >Contact</a
+        >
+      </div>
+    </header>
 
     <div class="main-container">
       <section id="home" class="section">
-        <a draggable="false" id="nametag" class="por-exc" href="index.html"
-          >DC</a
-        >
         <div class="lightball-wrapper">
           <div class="lightball"></div>
           <div class="lightball"></div>
         </div>
-        <h2 id="title"></h2>
-        <h4 id="subtitle"></h4>
+
+        <header class="headerD">
+          <a draggable="false" id="nametag" href="index.html">DC</a>
+          <div class="section-headers">
+            <a
+              id="home-tag"
+              draggable="false"
+              href="#home"
+              class="active-section"
+            >
+              Home</a
+            >
+            <a id="about-tag" draggable="false" href="#about">About</a>
+            <a id="skills-tag" draggable="false" href="#skills">Skills</a>
+            <a id="projects-tag" draggable="false" href="#projects">Projects</a>
+            <a id="contact-tag" draggable="false" href="#contact">Contact</a>
+          </div>
+        </header>
+
+        <h2 id="title">Daven Chang</h2>
+        <h4 id="subtitle">Software | Automation | Machine Learning</h4>
+
         <div class="arrow-container">
           <div class="arrow-down"></div>
         </div>
@@ -123,18 +116,9 @@
           href="#about"
           onclick="updatemenu();"
         ></a>
-        <a
-          href="lauboard.html"
-          target="_blank"
-          style="
-            background-color: rgb(32, 141, 54);
-            padding: 10px;
-            cursor: pointer;
-            margin-top: 20px;
-            border-radius: 5px;
-          "
-          >Lau Board</a
-        >
+        <button class="theme-button" onclick="swapTheme(this);">
+          <img src="resources/images/LDIcon.png" alt="" />
+        </button>
       </section>
 
       <section id="about" class="section light-mode">
