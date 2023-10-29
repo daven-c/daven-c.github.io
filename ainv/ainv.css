@@ -59,6 +59,8 @@ body {
     position: absolute;
     top: 50px;
     right: 100%;
+    padding: 5px;
+    border-radius: 5px;
     background-color: white;
 }
 
