@@ -1,0 +1,203 @@
+body {
+    background-color: rgb(20,
+            19,
+            19);
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(187, 153, 109);
+}
+
+.window-frame {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    translate: -50% 0;
+    width: 1200px;
+    height: 800px;
+    background-color: rgb(32, 28, 28);
+    border: solid 10px white;
+    overflow-x: hidden;
+}
+
+
+.window-frame.active {
+    background-color: rgb(69, 172, 219);
+    animation: shift 600ms linear forwards;
+}
+
+@keyframes shift {
+    0% {
+        background-color: rgb(32, 28, 28);
+    }
+
+    100% {
+        background-color: rgb(69, 172, 219);
+    }
+}
+
+
+.window-crossh {
+    position: absolute;
+    top: 50%;
+    translate: 0 -50%;
+    width: 100%;
+    height: 6px;
+    background-color: white;
+}
+
+.window-crossup {
+    position: absolute;
+    left: 50%;
+    translate: -50% 0;
+    width: 6px;
+    height: 100%;
+    background-color: white;
+}
+
+.banner {
+    position: absolute;
+    top: 50px;
+    right: 100%;
+    background-color: white;
+}
+
+.sun {
+    cursor: pointer;
+    z-index: 2;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.815);
+    border-radius: 50%;
+}
+
+.sun.active {
+    cursor: default;
+    background-color: rgb(207, 207, 32);
+    box-shadow: 0 0 50px rgb(255, 196, 0);
+    animation: glow 600ms linear forwards;
+}
+
+@keyframes glow {
+    0% {
+        background-color: rgb(78, 78, 24);
+        box-shadow: none;
+    }
+
+    100% {
+        background-color: rgb(207, 207, 32);
+        box-shadow: 0 0 50px rgb(255, 196, 0);
+    }
+}
+
+.flower-cover {
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    translate: -50% 0;
+    border-bottom: 200px solid rgb(71, 36, 2);
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    width: 360px;
+    rotate: 180deg;
+}
+
+.flower-wrapper {
+    position: absolute;
+    top: 100%;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.f2 {
+    rotate: 12deg;
+    translate: 80px 80px;
+}
+
+.f3 {
+    rotate: 18deg;
+    translate: 160px 140px;
+}
+
+.f4 {
+    rotate: -8deg;
+    translate: -70px 90px;
+}
+
+.f5 {
+    rotate: -15deg;
+    translate: -150px 170px;
+}
+
+
+.flower-stem {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.leaf {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(14, 87, 14);
+    border-radius: 0% 100% 0% 100% / 0% 70% 30% 81%;
+    scale: 0;
+}
+
+.leaf1 {
+    top: 80px;
+}
+
+.leaf2 {
+    transform: rotateY(180deg);
+    top: 160px;
+}
+
+.stem {
+    width: 20px;
+    height: 50vh;
+    background-color: rgb(14, 87, 14);
+}
+
+
+.flower-petals {
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.petal {
+    width: 100px;
+    height: 100px;
+    scale: .5;
+    position: absolute;
+    background-color: rgba(255,
+            74,
+            201,
+            0.8);
+    border-radius: 100% 0% 100% 100% / 0% 0% 100% 100%;
+}
+
+.petal-center {}
+
+.petal-left {}
+
+.petal-right {
+    transform: rotateY(180deg);
+}
