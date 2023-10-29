@@ -8,6 +8,7 @@ const leaf1 = document.getElementsByClassName("leaf1");
 const leaf2 = document.getElementsByClassName("leaf2");
 
 const flower_rise_dur = 2000;
+const rise_delay = 1000;
 const flower_grow_dur = 1000;
 const flower_bloom_dur = 1000;
 const banner_slide_dur = 5000
@@ -29,7 +30,7 @@ function trigger_flower_rise() {
             { time: 0, top: '100%' },
             { time: 1, top: '0' },
         ], {
-            duration: flower_rise_dur,
+            duration: flower_rise_dur + (Math.random() * 800),
             easing: 'linear',
             fill: 'forwards',
         });
@@ -51,7 +52,7 @@ function trigger_flower_grow_bloom() {
             duration: flower_grow_dur,
             easing: 'linear',
             fill: 'forwards',
-            delay: flower_rise_dur,
+            delay: flower_rise_dur + rise_delay,
         });
 
         // bloom
@@ -62,7 +63,7 @@ function trigger_flower_grow_bloom() {
             duration: flower_bloom_dur,
             easing: 'linear',
             fill: 'forwards',
-            delay: flower_rise_dur + flower_grow_dur,
+            delay: flower_rise_dur + flower_grow_dur + rise_delay,
         });
 
 
@@ -74,7 +75,7 @@ function trigger_flower_grow_bloom() {
             duration: flower_grow_dur,
             easing: 'linear',
             fill: 'forwards',
-            delay: flower_rise_dur,
+            delay: flower_rise_dur + rise_delay,
         });
 
         // bloom
@@ -85,7 +86,7 @@ function trigger_flower_grow_bloom() {
             duration: flower_bloom_dur,
             easing: 'linear',
             fill: 'forwards',
-            delay: flower_rise_dur + flower_grow_dur,
+            delay: flower_rise_dur + flower_grow_dur + rise_delay,
         });
 
         // grow
@@ -96,7 +97,7 @@ function trigger_flower_grow_bloom() {
             duration: flower_grow_dur,
             easing: 'linear',
             fill: 'forwards',
-            delay: flower_rise_dur,
+            delay: flower_rise_dur + rise_delay,
         });
 
         // bloom
@@ -107,7 +108,7 @@ function trigger_flower_grow_bloom() {
             duration: flower_bloom_dur,
             easing: 'linear',
             fill: 'forwards',
-            delay: flower_rise_dur + flower_grow_dur,
+            delay: flower_rise_dur + flower_grow_dur + rise_delay,
         });
 
         // bloom
@@ -118,7 +119,7 @@ function trigger_flower_grow_bloom() {
             duration: flower_bloom_dur,
             easing: 'linear',
             fill: 'forwards',
-            delay: flower_rise_dur + flower_grow_dur,
+            delay: flower_rise_dur + flower_grow_dur + rise_delay,
         });
 
         // bloom
@@ -129,7 +130,7 @@ function trigger_flower_grow_bloom() {
             duration: flower_bloom_dur,
             easing: 'linear',
             fill: 'forwards',
-            delay: flower_rise_dur + flower_grow_dur,
+            delay: flower_rise_dur + flower_grow_dur + rise_delay,
         });
     }
     banner.animate([
@@ -139,7 +140,7 @@ function trigger_flower_grow_bloom() {
         duration: banner_slide_dur,
         easing: 'linear',
         fill: 'forwards',
-        delay: flower_rise_dur + flower_grow_dur + flower_bloom_dur + 1000
+        delay: flower_rise_dur + rise_delay + flower_grow_dur + flower_bloom_dur + 1000
     })
 
 }

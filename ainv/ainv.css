@@ -13,8 +13,8 @@ body {
     bottom: 50px;
     left: 50%;
     translate: -50% 0;
-    width: 1200px;
-    height: 800px;
+    width: 80vw;
+    height: 80vh;
     background-color: rgb(32, 28, 28);
     border: solid 10px white;
     overflow-x: hidden;
@@ -99,10 +99,10 @@ body {
     bottom: 0;
     left: 50%;
     translate: -50% 0;
-    border-bottom: 200px solid rgb(71, 36, 2);
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    width: 360px;
+    border-bottom: 20vh solid rgb(71, 36, 2);
+    border-left: 4vh solid transparent;
+    border-right: 4vh solid transparent;
+    width: 25vw;
     rotate: 180deg;
 }
 
@@ -119,22 +119,22 @@ body {
 
 .f2 {
     rotate: 12deg;
-    translate: 80px 80px;
+    translate: 5vw 10vh;
 }
 
 .f3 {
     rotate: 18deg;
-    translate: 160px 140px;
+    translate: 9vw 20vh;
 }
 
 .f4 {
     rotate: -8deg;
-    translate: -70px 90px;
+    translate: -4vw 12vh;
 }
 
 .f5 {
     rotate: -15deg;
-    translate: -150px 170px;
+    translate: -8vw 22vh;
 }
 
 
@@ -166,7 +166,7 @@ body {
 }
 
 .stem {
-    width: 20px;
+    width: 1.5vw;
     height: 50vh;
     background-color: rgb(14, 87, 14);
 }
@@ -183,8 +183,8 @@ body {
 
 
 .petal {
-    width: 100px;
-    height: 100px;
+    width: 5vw;
+    height: 5vw;
     scale: .5;
     position: absolute;
     background-color: rgba(255,

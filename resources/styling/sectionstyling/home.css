@@ -1,7 +1,6 @@
 #home {
   padding-top: 0;
-  background: url("/daven-c.github.io/resources/images/darktitlebg2.png")
-    no-repeat center center;
+  background: url("/daven-c.github.io/resources/images/darktitlebg2.png") no-repeat center center;
   background-size: cover;
   -o-text-overflow: clip;
   text-overflow: clip;
@@ -9,8 +8,7 @@
 }
 
 body.light-mode #home {
-  background: url("/daven-c.github.io/resources/images/lighttitlebg2.png")
-    no-repeat center center;
+  background: url("/daven-c.github.io/resources/images/lighttitlebg2.png") no-repeat center center;
   background-size: cover;
 }
 
@@ -104,6 +102,7 @@ body.light-mode #home {
     bottom: 20vh;
     right: 20vw;
   }
+
   .lightball:nth-child(2) {
     top: 25vh;
     left: 20vw;
@@ -114,6 +113,7 @@ body.light-mode #home {
   0% {
     transform: translate(-15px, 0);
   }
+
   50% {
     transform: translate(15px, 0);
   }
@@ -123,6 +123,7 @@ body.light-mode #home {
   0% {
     transform: translate(15px, 0);
   }
+
   50% {
     transform: translate(-15px, 0);
   }
@@ -156,10 +157,12 @@ body.light-mode #home {
     opacity: 0.5;
     bottom: 60px;
   }
+
   50% {
     opacity: 1;
     bottom: 30px;
   }
+
   100% {
     opacity: 0.5;
     bottom: 60px;
@@ -171,10 +174,12 @@ body.light-mode #home {
     opacity: 0.5;
     bottom: 60px;
   }
+
   50% {
     opacity: 1;
     bottom: 30px;
   }
+
   100% {
     opacity: 0.5;
     bottom: 60px;
@@ -213,9 +218,11 @@ body.light-mode #home {
     rotate: 0;
     filter: invert(0);
   }
+
   50% {
     rotate: -180deg;
   }
+
   100% {
     rotate: -360deg;
     filter: invert(1);
@@ -227,9 +234,11 @@ body.light-mode #home {
     rotate: 0;
     filter: invert(1);
   }
+
   50% {
     rotate: 180deg;
   }
+
   100% {
     rotate: 360deg;
     filter: invert(0);
