@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lemme COok</title>
+    <style>
+        body {
+            background-color: rgb(40, 35, 35);
+            padding: 0;
+            margin: 0;
+        }
+
+        .countdown-timer {
+            width: 100vw;
+            height: 100vh;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 100vh;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .countdown-timer span {
+            color: white;
+            display: inline-block;
+            width: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="countdown-timer">
+        <span id="days"></span> days,
+        <span id="hours"></span> hours,
+        <span id="minutes"></span> minutes,
+        <span id="seconds"></span> seconds
+    </div>
+    <script src="countdown.js"></script>
+</body>
+
+</html>
