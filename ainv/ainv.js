@@ -11,9 +11,7 @@ const flower_rise_dur = 2000;
 const rise_delay = 1000;
 const flower_grow_dur = 1000;
 const flower_bloom_dur = 1000;
-const banner_slide_dur = 5000
-
-const petal_grow = new Animation()
+const banner_slide_dur = 5000;
 
 function toggle_sun(ele) {
     if (ele.classList.contains("active") == false) {
