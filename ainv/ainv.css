@@ -64,6 +64,28 @@ body {
     background-color: white;
 }
 
+.sp-img {
+    z-index: 999;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    width: 275px;
+    height: 500px;
+    scale: 0.0;
+}
+
+.lv-img {
+    z-index: 1000;
+    position: absolute;
+    left: 46%;
+    top: 40%;
+    translate: -50% -50%;
+    width: 100px;
+    height: 100px;
+    scale: 0.0;
+}
+
 .sun {
     cursor: pointer;
     z-index: 2;

@@ -1,5 +1,7 @@
 const window_frame = document.getElementsByClassName("window-frame")[0];
 const banner = document.getElementsByClassName("banner")[0];
+const sp_img = document.getElementsByClassName("sp-img")[0];
+const lv_img = document.getElementsByClassName("lv-img")[0];
 const flower_wrapper = document.getElementsByClassName("flower-wrapper");
 const left_petal = document.getElementsByClassName("petal-left");
 const center_petal = document.getElementsByClassName("petal-center");
@@ -140,5 +142,23 @@ function trigger_flower_grow_bloom() {
         fill: 'forwards',
         delay: flower_rise_dur + rise_delay + flower_grow_dur + flower_bloom_dur + 1000
     })
-
+    sp_img.animate([
+        { time: 0, scale: 0, rotate: '0deg' },
+        { time: 1, scale: 1, rotate: '1440deg' },
+    ], {
+        duration: banner_slide_dur,
+        easing: 'linear',
+        fill: 'forwards',
+        delay: flower_rise_dur + rise_delay + flower_grow_dur + flower_bloom_dur + 1000 + banner_slide_dur
+    })
+    lv_img.animate([
+        { time: 0, scale: 1 },
+        { time: .9, scale: 0.8 },
+        { time: 1, scale: 0.5 },
+    ], {
+        duration: 300,
+        easing: 'ease-out',
+        fill: 'forwards',
+        delay: flower_rise_dur + rise_delay + flower_grow_dur + flower_bloom_dur + 1000 + banner_slide_dur + banner_slide_dur
+    })
 }
