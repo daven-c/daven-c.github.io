@@ -1,0 +1,29 @@
+@import 'variables.css';
+
+#about {
+    background-color: var(--black-grey);
+    height: 80%;
+}
+
+#about * {
+    color: white;
+}
+
+.about-container {
+    margin: auto;
+    position: relative;
+    top: 10%;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+#about .sec-title,
+#about p {
+    text-align: center;
+    width: 70%;
+}

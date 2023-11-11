@@ -1,0 +1,7 @@
+@import 'variables.css';
+
+#overlay {
+    pointer-events: none;
+    position: fixed;
+    background-color: transparent
+}
