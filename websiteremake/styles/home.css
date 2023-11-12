@@ -30,7 +30,8 @@
     flex-wrap: wrap;
     flex-direction: row-reverse;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 10%;
 }
 
 .content-container {
@@ -59,13 +60,8 @@
     font-weight: 600;
 }
 
-#nametag span.highlight {
-    font-size: 4rem;
-    font-weight: 600;
-}
-
 #description {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     font-weight: 600;
 }
 

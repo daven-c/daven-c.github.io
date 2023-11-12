@@ -33,6 +33,7 @@ section {
 }
 
 .highlight {
+    font-size: inherit;
     color: var(--green);
 }
 
