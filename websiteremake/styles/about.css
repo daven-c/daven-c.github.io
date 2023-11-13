@@ -1,7 +1,7 @@
 @import 'variables.css';
 
 #about {
-    background-color: var(--beige);
+    background-color: var(--secondary-clr);
     height: fit-content;
     padding-top: 40px;
     padding-bottom: 100px;

@@ -1,6 +1,6 @@
 :root {
-    --dark-grey: rgb(40, 40, 50);
-    --black-grey: rgb(20, 20, 30);
-    --green: rgb(77, 199, 77);
-    --beige: rgb(255, 245, 223);
+    --primary-clr: rgb(40, 40, 50);
+    --secondary-clr: rgb(255, 245, 223);
+    --alternate-primary: rgb(20, 20, 30);
+    --highlight-clr: rgb(77, 199, 77);
 }

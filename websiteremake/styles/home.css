@@ -3,7 +3,7 @@
 #home {
     position: relative;
     height: 100%;
-    background-color: var(--dark-grey);
+    background-color: var(--primary-clr);
 }
 
 #header {
