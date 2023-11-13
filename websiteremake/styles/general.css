@@ -3,12 +3,13 @@
 * {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.1rem;
     text-decoration: none;
-    color: white;
+    color: black;
     word-wrap: normal;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html,
@@ -17,17 +18,28 @@ body {
     height: 100%;
     min-width: 100%;
     min-height: 100%;
-    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--green);
 }
 
 section {
     position: relative;
-    background-color: var(--black-grey);
     width: 100%;
     height: 100%;
+    background-color: var(--dark-grey);
 }
 
 .sec-title {
+    margin-bottom: 20px;
+    color: var(--green);
+    text-align: center;
     font-size: 2.4rem;
     font-weight: 600;
 }

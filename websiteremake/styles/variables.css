@@ -1,5 +1,6 @@
 :root {
-    --black-grey: rgb(40, 40, 50);
-    --green: rgb(64, 177, 64);
-    --white: rgb(252, 245, 229);
+    --dark-grey: rgb(40, 40, 50);
+    --black-grey: rgb(20, 20, 30);
+    --green: rgb(77, 199, 77);
+    --beige: rgb(255, 245, 223);
 }
