@@ -17,7 +17,7 @@
 }
 
 #header a {
-    color: white;
+    color: var(--secondary-clr);
     font-size: 1.2rem;
     font-weight: 600;
 }
@@ -36,13 +36,13 @@
 }
 
 #nametag {
-    color: white;
+    color: var(--secondary-clr);
     font-size: 4rem;
     font-weight: 600;
 }
 
 #description {
-    color: white;
+    color: var(--secondary-clr);
     font-size: 1.7rem;
     font-weight: 600;
 }

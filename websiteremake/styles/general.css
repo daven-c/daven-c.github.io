@@ -26,7 +26,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--highlight-clr);
+    background: var(--secondary-clr);
 }
 
 section {
@@ -38,7 +38,7 @@ section {
 
 .sec-title {
     margin-bottom: 20px;
-    color: var(--highlight-clr);
+    color: var(--primary-clr);
     text-align: center;
     font-size: 2.4rem;
     font-weight: 600;
