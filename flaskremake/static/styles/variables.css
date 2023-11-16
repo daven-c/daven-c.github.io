@@ -1,0 +1,13 @@
+/* :root {
+    --primary-clr: rgb(40, 40, 50);
+    --secondary-clr: rgb(255, 245, 223);
+    --alternate-primary: rgb(20, 20, 30);
+    --highlight-clr: rgb(77, 199, 77);
+} */
+
+:root {
+    --secondary-clr: #191923;
+    --primary-clr: #FBFEF9;
+    --highlight-clr: #208AAE;
+    --alternate-clr: #2e9459;
+}

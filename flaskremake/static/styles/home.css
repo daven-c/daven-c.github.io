@@ -1,0 +1,61 @@
+@import 'variables.css';
+
+#home {
+    position: relative;
+    height: 100%;
+    background-color: var(--primary-clr);
+}
+
+#header {
+    position: absolute;
+    right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 30px;
+}
+
+#header a {
+    color: var(--secondary-clr);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.content-container {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    translate: 0 -50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+#nametag {
+    color: var(--secondary-clr);
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+#description {
+    color: var(--secondary-clr);
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+/*
+.bg {
+    position: absolute;
+    right: 0;
+    top: 40%;
+    background: url("../resources/self.jpg") no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 400px;
+}
+*/
