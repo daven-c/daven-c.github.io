@@ -6,8 +6,7 @@
 } */
 
 :root {
-    --secondary-clr: #191923;
     --primary-clr: #FBFEF9;
-    --highlight-clr: #208AAE;
-    --alternate-clr: #2e9459;
+    --secondary-clr: #191923;
+    --highlight-clr: #2e9459;
 }
