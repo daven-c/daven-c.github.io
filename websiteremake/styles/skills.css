@@ -1,10 +1,10 @@
 @import 'variables.css';
 
 #skills {
-    background-color: var(--primary-clr);
+    background-color: var(--white);
     height: fit-content;
     padding-bottom: 30px;
-    color: var(--secondary-clr);
+    color: var(--white);
 }
 
 #skills .sec-title {
@@ -17,10 +17,10 @@
     width: 90%;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     border-radius: 20px;
-    box-shadow: 0 0 10px var(--secondary-clr);
+    box-shadow: 0 0 4px var(--grey);
 }
 
 .skills-container .recolor {
@@ -29,12 +29,13 @@
     left: 0;
     width: 100%;
     height: 200px;
-    background-color: var(--highlight-clr);
+    background-color: var(--darkgreen);
 }
 
 .skills-card {
     z-index: 1;
-    height: 800px;
+    height: fit-content;
+    min-height: 800px;
     padding: 40px;
     flex-basis: 400px;
     flex-grow: 1;
@@ -43,8 +44,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    background-color: var(--primary-clr);
-    overflow-y: scroll;
+    background-color: var(--white);
 }
 
 #card1 {
@@ -90,13 +90,13 @@
     width: 80px;
     height: 80px;
     padding: 20px;
-    background-color: var(--primary-clr);
-    border-radius: 50%;
     filter: invert(1);
+    background-color: #f8e7fc;
+    border-radius: 50%;
 }
 
 .card-title {
-    color: var(--secondary-clr);
+    color: var(--black);
     margin-top: 20px;
     margin-bottom: 30px;
     text-align: center;
@@ -137,7 +137,7 @@
 }
 
 .skills-icon p {
-    color: var(--secondary-clr);
+    color: var(--black);
     margin-top: 10px;
     text-align: center;
     text-overflow: clip;

@@ -3,7 +3,6 @@
 #home {
     position: relative;
     height: 100%;
-    background-color: var(--primary-clr);
 }
 
 #header {
@@ -17,7 +16,7 @@
 }
 
 #header a {
-    color: var(--secondary-clr);
+    color: var(--gold);
     font-size: 1.2rem;
     font-weight: 600;
 }
@@ -36,13 +35,11 @@
 }
 
 #nametag {
-    color: var(--secondary-clr);
     font-size: 4rem;
     font-weight: 600;
 }
 
 #description {
-    color: var(--secondary-clr);
     font-size: 1.7rem;
     font-weight: 600;
 }
