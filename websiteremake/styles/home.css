@@ -3,6 +3,7 @@
 #home {
     position: relative;
     height: 100%;
+    background-color: var(--darkgrey);
 }
 
 #header {
@@ -35,11 +36,13 @@
 }
 
 #nametag {
+    color: var(--white);
     font-size: 4rem;
     font-weight: 600;
 }
 
 #description {
+    color: var(--white);
     font-size: 1.7rem;
     font-weight: 600;
 }

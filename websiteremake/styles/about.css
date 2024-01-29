@@ -1,7 +1,7 @@
 @import 'variables.css';
 
 #about {
-    background-color: var(--darkgreen);
+    background-color: var(--offwhite);
     height: fit-content;
     padding-top: 40px;
     padding-bottom: 100px;
@@ -44,7 +44,7 @@
     background: url("../resources/self.jpg") no-repeat center center;
     background-size: cover;
     border-radius: 50%;
-    border: solid 6px var(--white);
+    border: solid 6px var(--offwhite);
     margin-bottom: 20px;
 }
 
@@ -57,7 +57,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--white);
+    background-color: var(--offwhite);
 }
 
 .about-icon {
@@ -93,7 +93,7 @@
     position: relative;
     margin: auto;
     max-width: 800px;
-    color: var(--white);
+    color: var(--black);
     word-wrap: normal;
     text-indent: 30px;
     line-height: 30px;

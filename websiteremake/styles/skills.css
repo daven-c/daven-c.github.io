@@ -1,7 +1,7 @@
 @import 'variables.css';
 
 #skills {
-    background-color: var(--white);
+    background-color: var(--darkgrey);
     height: fit-content;
     padding-bottom: 30px;
     color: var(--white);
@@ -29,7 +29,7 @@
     left: 0;
     width: 100%;
     height: 200px;
-    background-color: var(--darkgreen);
+    background-color: var(--offwhite);
 }
 
 .skills-card {
