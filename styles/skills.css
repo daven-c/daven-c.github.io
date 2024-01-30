@@ -20,7 +20,7 @@
     align-items: start;
     justify-content: center;
     border-radius: 20px;
-    box-shadow: 0 0 4px var(--grey);
+    box-shadow: 0 0 4px var(--white);
 }
 
 .skills-container .recolor {
@@ -44,19 +44,23 @@
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    background-color: var(--white);
+    background-color: var(--darkgrey);
 }
 
 #card1 {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    border-right: solid 1px lightgrey;
+}
+
+#card2 {
+    border: none;
+    border-left: solid 1px white;
+    border-right: solid 1px white;
 }
 
 #card3 {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    border-left: solid 1px lightgrey;
 }
 
 @media (max-width: 780px) {
@@ -72,11 +76,12 @@
         border: none;
         border-top-right-radius: 20px;
         border-bottom-left-radius: 0;
-        border-bottom: solid 1px grey;
     }
 
     #card2 {
-        border-bottom: solid 1px grey;
+        border: none;
+        border-top: solid 1px white;
+        border-bottom: solid 1px white;
     }
 
     #card3 {
@@ -90,13 +95,12 @@
     width: 80px;
     height: 80px;
     padding: 20px;
-    filter: invert(1);
-    background-color: #f8e7fc;
+    background-color: var(--gold);
     border-radius: 50%;
 }
 
 .card-title {
-    color: var(--black);
+    color: var(--white);
     margin-top: 20px;
     margin-bottom: 30px;
     text-align: center;
@@ -117,7 +121,7 @@
 .skills-icon {
     margin: 3% 10%;
     width: 60px;
-    filter: drop-shadow(0px 8px 9px rgb(0, 0, 0, .4));
+    filter: drop-shadow(0px 2px 4px rgba(255, 255, 255, 0.3));
     transition: 300ms;
 }
 
@@ -137,7 +141,7 @@
 }
 
 .skills-icon p {
-    color: var(--black);
+    color: var(--white);
     margin-top: 10px;
     text-align: center;
     text-overflow: clip;

@@ -1,0 +1,151 @@
+@import 'variables.css';
+
+#contact {
+    padding: 30px 0;
+    height: 700px;
+    background-color: var(--darkgrey);
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    max-width: 500px;
+    height: fit-content;
+    min-height: 500px;
+    margin: auto;
+}
+
+.form-field {
+    color: white;
+    width: 100%;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 2px rgba(255, 255, 255, 0.5);
+    outline: none;
+    resize: none;
+    transition: 250ms;
+}
+
+.form-field::placeholder {
+    opacity: 0.7;
+}
+
+.form-field:focus {
+    border-bottom: solid 2px white;
+    transition: 250ms;
+}
+
+#form-button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#clear-button,
+#submit-button {
+    color: white;
+    width: 120px;
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 0 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#clear-button {
+    border: solid 3px rgba(200, 130, 130, 0.8);
+    background: linear-gradient(to right,
+            rgba(200, 130, 130, 0.8) 50%,
+            transparent 50%);
+    background-size: 300% 100%;
+    background-position: right bottom;
+    transition: all 300ms ease-out;
+}
+
+#submit-button {
+    border: solid 3px rgba(130, 200, 130, 0.8);
+    background: linear-gradient(to right,
+            rgba(130, 200, 130, 0.8) 50%,
+            transparent 50%);
+    background-size: 300% 100%;
+    background-position: right bottom;
+    transition: all 300ms ease-out;
+}
+
+#clear-button:active,
+#submit-button:active {
+    transform: scale(0.95);
+    transition: 50ms;
+}
+
+/* additions for non touch screen devices */
+@media (any-pointer: fine) {
+
+    #clear-button:hover,
+    #submit-button:hover {
+        background-position: left bottom;
+    }
+}
+
+#footer {
+    display: flex;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    min-height: 400px !important;
+    background-color: var(--offwhite);
+}
+
+.footer-content {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-left,
+.footer-right {
+    width: 300px;
+    height: 150px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+}
+
+@media only screen and (min-width: 600px) {
+    .footer-left {
+        border-right: solid 2px var(--darkgrey);
+    }
+
+    .footer-right {
+        border-left: solid 2px var(--darkgrey);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .footer-left {
+        border-bottom: solid 2px var(--darkgrey);
+    }
+
+    .footer-right {
+        border-top: solid 2px var(--darkgrey);
+    }
+}
+
+.footer-link:hover {
+    color: var(--gold);
+}

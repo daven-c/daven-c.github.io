@@ -16,36 +16,24 @@
 
     <!-- styles -->
     <link rel="stylesheet" href="styles/general.css" />
-    <link rel="stylesheet" href="styles/overlay.css">
     <link rel="stylesheet" href="styles/home.css" />
     <link rel="stylesheet" href="styles/about.css">
     <link rel="stylesheet" href="styles/skills.css">
     <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="styles/contact.css">
 </head>
 
 <body>
     <!-- home about skills projects contact -->
-    <div id="overlay">
-        <div id="menu">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        </div>
-    </div>
     <section id="home">
         <div id="header">
-            <a href="contact.html" class="hover-ul">Contact</a>
+            <a href="#contact" class="hover-ul">Contact</a>
             <a href="resources/Resume.pdf" class="hover-ul" target="_blank">Resume</a>
         </div>
         <div class="content-container">
             <h1 id="nametag">Hello, I'm <span class="highlight">Daven!</span></h1>
             <h3 id="description">I Specialize in <span class="highlight">Software</span> and <span
                     class="highlight">ML</span> Solutions.</h3>
-        </div>
-        <div class="bg">
-            <div>
-
-            </div>
         </div>
     </section>
     <section id="about">
@@ -246,7 +234,33 @@
     <section id="projects">
 
     </section>
-    <section id="contact"></section>
+    <section id="contact">
+        <h2 class="sec-title">Contact Me!</h2>
+        <form id="contact-form"
+            action="https://script.google.com/macros/s/AKfycbwNb1GhH6F8-EGU-fhr9Ljwn3YTSaH8AG59Cyqa-TCw8CcNkPi2AVZOLbpYtW3CUCE6-Q/exec"
+            method="post" target="hidden_iframe">
+            <input class="form-field" type="text" name="Name" placeholder="Name" required />
+            <input class="form-field" type="email" name="Email" placeholder="Email" required />
+            <textarea id="message-block" class="form-field" name="Message" placeholder="Message" rows="8"
+                required></textarea>
+            <span id="form-button-container">
+                <input id="clear-button" type="button" value="Clear ." onclick="clearForm('contact-form')" />
+                <input id="submit-button" type="submit" value="Send !" />
+            </span>
+        </form>
+    </section>
+    <section id="footer" class="section">
+        <div class="footer-content">
+            <div class="footer-left">
+                <a class="footer-link" href="https://github.com/daven-c" target="_blank">GitHub</a>
+                <a class="footer-link" href="mailto: ddchang1iz@gmail.com" target="_blank">Contact</a>
+            </div>
+            <div class="footer-right">
+                <p>© Daven Chang 2023</p>
+                <p>Banner created by Milo Hartmann</p>
+            </div>
+        </div>
+    </section>
 
     <script src="scripts/script.js"></script>
 </body>

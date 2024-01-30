@@ -44,7 +44,7 @@
     background: url("../resources/self.jpg") no-repeat center center;
     background-size: cover;
     border-radius: 50%;
-    border: solid 6px var(--offwhite);
+    border: solid 6px var(--gold);
     margin-bottom: 20px;
 }
 

@@ -59,11 +59,9 @@
 
 #clear-button {
   border: solid 3px rgba(200, 130, 130, 0.8);
-  background: linear-gradient(
-    to right,
-    rgba(200, 130, 130, 0.8) 50%,
-    transparent 50%
-  );
+  background: linear-gradient(to right,
+      rgba(200, 130, 130, 0.8) 50%,
+      transparent 50%);
   background-size: 300% 100%;
   background-position: right bottom;
   transition: all 300ms ease-out;
@@ -71,11 +69,9 @@
 
 #submit-button {
   border: solid 3px rgba(130, 200, 130, 0.8);
-  background: linear-gradient(
-    to right,
-    rgba(130, 200, 130, 0.8) 50%,
-    transparent 50%
-  );
+  background: linear-gradient(to right,
+      rgba(130, 200, 130, 0.8) 50%,
+      transparent 50%);
   background-size: 300% 100%;
   background-position: right bottom;
   transition: all 300ms ease-out;
@@ -89,6 +85,7 @@
 
 /* additions for non touch screen devices */
 @media (any-pointer: fine) {
+
   #clear-button:hover,
   #submit-button:hover {
     background-position: left bottom;
@@ -128,6 +125,7 @@
   .footer-left {
     border-right: solid 2px white;
   }
+
   .footer-right {
     border-left: solid 2px white;
   }
@@ -137,6 +135,7 @@
   .footer-left {
     border-bottom: solid 2px white;
   }
+
   .footer-right {
     border-top: solid 2px white;
   }
