@@ -2,7 +2,8 @@
 
 #contact {
     padding: 30px 0;
-    height: 700px;
+    height: fit-content;
+    min-height: 700px;
     background-color: var(--darkgrey);
 }
 
@@ -99,7 +100,7 @@
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    min-height: 400px !important;
+    min-height: 200px !important;
     background-color: var(--offwhite);
 }
 
