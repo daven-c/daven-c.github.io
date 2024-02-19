@@ -23,13 +23,13 @@ body {
     scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     width: 6px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--gold);
-}
+    background: var(--black);
+} */
 
 section {
     position: relative;
@@ -39,7 +39,7 @@ section {
 
 .sec-title {
     margin-bottom: 20px;
-    color: var(--gold);
+    color: var(--aqua);
     text-align: center;
     font-size: 2.4rem;
     font-weight: 600;
@@ -47,7 +47,7 @@ section {
 
 .highlight {
     font-size: inherit;
-    color: var(--gold);
+    color: var(--aqua);
 }
 
 .hover-ul {
@@ -63,7 +63,7 @@ section {
         bottom: 0;
         width: 100%;
         height: 2px;
-        background-color: var(--gold);
+        background-color: var(--aqua);
         transform: scaleX(0);
         transition: transform 0.4s;
     }

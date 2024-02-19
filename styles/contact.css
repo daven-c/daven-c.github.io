@@ -4,7 +4,11 @@
     padding: 30px 0;
     height: fit-content;
     min-height: 700px;
-    background-color: var(--darkgrey);
+    background-color: var(--aqua);
+}
+
+#contact .sec-title {
+    color: var(--beige);
 }
 
 #contact-form {
@@ -26,7 +30,7 @@
     margin-bottom: 20px;
     background-color: transparent;
     border: none;
-    border-bottom: solid 2px rgba(255, 255, 255, 0.5);
+    border-bottom: solid 2px rgb(168, 168, 168);
     outline: none;
     resize: none;
     transition: 250ms;
@@ -37,7 +41,7 @@
 }
 
 .form-field:focus {
-    border-bottom: solid 2px white;
+    border-bottom: solid 2px var(--beige);
     transition: 250ms;
 }
 
@@ -50,7 +54,7 @@
 
 #clear-button,
 #submit-button {
-    color: white;
+    color: var(--beige);
     width: 120px;
     background-color: transparent;
     border-radius: 20px;
@@ -145,8 +149,4 @@
     .footer-right {
         border-top: solid 2px var(--darkgrey);
     }
-}
-
-.footer-link:hover {
-    color: var(--gold);
 }

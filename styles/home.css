@@ -1,7 +1,7 @@
 @import 'variables.css';
 
 #home {
-    background-color: var(--darkgrey);
+    background-color: var(--beige);
 }
 
 #header {
@@ -15,7 +15,7 @@
 }
 
 #header a {
-    color: var(--gold);
+    color: var(--aqua);
     font-size: 1.2rem;
     font-weight: 600;
 }
@@ -34,13 +34,13 @@
 }
 
 #nametag {
-    color: var(--white);
+    color: var(--black);
     font-size: 4rem;
     font-weight: 600;
 }
 
 #description {
-    color: var(--white);
+    color: var(--black);
     font-size: 1.7rem;
     font-weight: 600;
 }

@@ -1,22 +1,26 @@
 #projects {
     padding: 150px 0;
-    background-color: var(--darkgrey);
+    background-color: var(--beige);
     height: fit-content;
 }
 
 .projects-container {
     padding: 0 60px;
+}
+
+.projects-card-wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
+    justify-content: start;
+    gap: 40px;
 }
 
 .project-card {
     width: 400px;
     height: 300px;
     border-radius: 10px;
-    background-color: var(--offwhite);
+    background-color: var(--white);
+    box-shadow: 0 4px 10px rgba(190, 182, 219, 0.4);
 }
