@@ -1,7 +1,7 @@
-@import 'variables.css';
+@import 'colors.css';
 
 #skills {
-    background-color: var(--beige);
+    background-color: white;
     height: fit-content;
     padding-bottom: 30px;
 }
@@ -9,7 +9,7 @@
 #skills .sec-title {
     z-index: 1;
     position: relative;
-    color: var(--beige)
+    color: white
 }
 
 .skills-container {

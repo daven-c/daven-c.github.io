@@ -1,4 +1,4 @@
-@import 'variables.css';
+@import 'colors.css';
 
 #about {
     background-color: var(--aqua);
@@ -8,7 +8,7 @@
 }
 
 #about .sec-title {
-    color: var(--beige);
+    color: white;
 }
 
 .about-profile {
@@ -48,7 +48,7 @@
     background: url("../resources/self.jpg") no-repeat center center;
     background-size: cover;
     border-radius: 50%;
-    border: solid 6px var(--beige);
+    border: solid 6px white;
     margin-bottom: 20px;
 }
 
@@ -61,7 +61,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--beige);
+    background-color: white;
 }
 
 .about-icon {

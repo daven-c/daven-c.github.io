@@ -1,12 +1,21 @@
-@import 'variables.css';
+@import 'colors.css';
 
 #home {
-    background-color: var(--beige);
+    background-color: white;
+}
+
+#logo {
+    position: absolute;
+    left: 2%;
+    margin: 30px;
+    color: var(--aqua);
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 #header {
     position: absolute;
-    right: 5%;
+    right: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -30,18 +39,64 @@
     align-items: start;
     justify-content: center;
     gap: 20px;
-    padding: 20px;
+}
+
+.wave {
+    translate: 0 -5px;
+    font-size: 3.5rem;
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0.0deg)
+    }
+
+    10% {
+        transform: rotate(14.0deg)
+    }
+
+    /* The following five values can be played with to make the waving more or less extreme */
+    20% {
+        transform: rotate(-8.0deg)
+    }
+
+    30% {
+        transform: rotate(14.0deg)
+    }
+
+    40% {
+        transform: rotate(-4.0deg)
+    }
+
+    50% {
+        transform: rotate(10.0deg)
+    }
+
+    60% {
+        transform: rotate(0.0deg)
+    }
+
+    /* Reset for the last half to pause */
+    100% {
+        transform: rotate(0.0deg)
+    }
 }
 
 #nametag {
-    color: var(--black);
+    color: black;
     font-size: 4rem;
     font-weight: 600;
 }
 
 #description {
-    color: var(--black);
-    font-size: 1.7rem;
+    width: 600px;
+    color: rgb(85, 87, 97);
+    font-size: 1.5rem;
     font-weight: 600;
 }
 

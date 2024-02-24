@@ -1,4 +1,4 @@
-@import 'variables.css';
+@import 'colors.css';
 
 * {
     font-family: 'Inter', sans-serif;
@@ -47,42 +47,6 @@ section {
 
 .highlight {
     font-size: inherit;
+    font-weight: inherit;
     color: var(--aqua);
-}
-
-.hover-ul {
-    display: inline-block;
-    position: relative;
-    padding-bottom: 2px;
-
-    /* Create the line under the div */
-    &::after {
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        height: 2px;
-        background-color: var(--aqua);
-        transform: scaleX(0);
-        transition: transform 0.4s;
-    }
-
-    /* Apply styles when hovering over the div */
-    &:hover {
-
-        /* Expand the underline when hovering */
-        &::after {
-            transform-origin: left;
-            transform: scaleX(1);
-        }
-    }
-
-    /* Revert the transformation when not hovering */
-    &:not(:hover) {
-        &::after {
-            transform-origin: right;
-            transform: scaleX(0);
-        }
-    }
 }

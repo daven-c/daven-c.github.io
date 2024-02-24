@@ -1,4 +1,4 @@
-@import 'variables.css';
+@import 'colors.css';
 
 #contact {
     padding: 30px 0;
@@ -8,7 +8,7 @@
 }
 
 #contact .sec-title {
-    color: var(--beige);
+    color: white;
 }
 
 #contact-form {
@@ -41,7 +41,7 @@
 }
 
 .form-field:focus {
-    border-bottom: solid 2px var(--beige);
+    border-bottom: solid 2px white;
     transition: 250ms;
 }
 
@@ -54,7 +54,7 @@
 
 #clear-button,
 #submit-button {
-    color: var(--beige);
+    color: white;
     width: 120px;
     background-color: transparent;
     border-radius: 20px;
@@ -96,57 +96,5 @@
     #clear-button:hover,
     #submit-button:hover {
         background-position: left bottom;
-    }
-}
-
-#footer {
-    display: flex;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    min-height: 200px !important;
-    background-color: var(--offwhite);
-}
-
-.footer-content {
-    text-align: center;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
-.footer-left,
-.footer-right {
-    width: 300px;
-    height: 150px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 15px;
-}
-
-@media only screen and (min-width: 600px) {
-    .footer-left {
-        border-right: solid 2px var(--darkgrey);
-    }
-
-    .footer-right {
-        border-left: solid 2px var(--darkgrey);
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .footer-left {
-        border-bottom: solid 2px var(--darkgrey);
-    }
-
-    .footer-right {
-        border-top: solid 2px var(--darkgrey);
     }
 }
