@@ -1,9 +1,3 @@
-// clear entries on form
-function clearForm(id) {
-    const form = document.getElementById(id);
-    form.childNodes.forEach((input) => (input.value = ""));
-}
-
 window.addEventListener('load', function () {
     equalizeSkillCardHeights();
     centerProjectCards();

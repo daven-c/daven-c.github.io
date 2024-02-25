@@ -6,8 +6,8 @@
 
 #logo {
     position: absolute;
-    left: 2%;
-    margin: 30px;
+    left: 50px;
+    margin-top: 30px;
     color: var(--aqua);
     font-size: 1.2rem;
     font-weight: 600;
@@ -38,15 +38,56 @@
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    gap: 20px;
+    text-wrap: wrap;
+}
+
+@media (orientation: portrait) {
+    .content-container {
+        left: 0;
+        padding: 0 30px;
+    }
+
+}
+
+#nametag {
+    translate: -3px 0;
+    color: black;
+    font-size: 4rem;
+    font-weight: 600;
+    padding-bottom: 6px;
+}
+
+#nametag::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 38%;
+    margin-left: 4px;
+    border-bottom: solid 3px var(--aqua);
+    animation: expand-nametag 1s ease-out forwards;
+}
+
+#nametag .highlight {
+    color: black;
+    animation-duration: 250ms;
+    animation-delay: 350ms;
+}
+
+@keyframes expand-nametag {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 38%;
+    }
 }
 
 .wave {
     translate: 0 -5px;
     font-size: 3.5rem;
-    animation-name: wave-animation;
-    animation-duration: 2.5s;
-    animation-iteration-count: infinite;
+    animation: wave-animation 2.5s 1s infinite linear;
     transform-origin: 70% 70%;
     display: inline-block;
 }
@@ -87,28 +128,35 @@
     }
 }
 
-#nametag {
-    color: black;
-    font-size: 4rem;
-    font-weight: 600;
-}
-
 #description {
-    width: 600px;
-    color: rgb(85, 87, 97);
+    margin-top: 20px;
+    max-width: 600px;
+    color: rgb(85, 85, 85);
     font-size: 1.5rem;
     font-weight: 600;
 }
 
-/*
-.bg {
-    position: absolute;
-    right: 0;
-    top: 40%;
-    background: url("../resources/self.jpg") no-repeat center center;
-    background-size: cover;
-    background-position: center;
-    width: 400px;
-    height: 400px;
+#resume-button {
+    margin-top: 40px;
+    padding: 10px 20px;
+    background-color: var(--aqua);
+    transition: 400ms;
 }
-*/
+
+#resume-button span {
+    color: white;
+    transition: inherit;
+}
+
+#resume-button:hover {
+    background-color: white;
+}
+
+#resume-button:hover span {
+    color: black;
+}
+
+#resume-button.partial-border-hover:hover::before,
+#resume-button.partial-border-hover:hover::after {
+    border-color: var(--aqua);
+}

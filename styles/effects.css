@@ -34,3 +34,44 @@
         }
     }
 }
+
+/*************************************************/
+
+.partial-border-hover {
+    position: relative;
+    transition: inherit;
+    border-color: black;
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        width: 15%;
+        height: 40%;
+        border: solid 2px;
+        transition: inherit;
+    }
+
+    &::before {
+        top: -6px;
+        left: -6px;
+        border-bottom: none;
+        border-right: none;
+        border-color: inherit;
+    }
+
+    &::after {
+        bottom: -6px;
+        right: -6px;
+        border-top: none;
+        border-left: none;
+        border-color: inherit;
+    }
+
+    &:hover::before,
+    &:hover::after {
+        width: calc(100% + 10px);
+        height: calc(100% + 10px);
+    }
+}

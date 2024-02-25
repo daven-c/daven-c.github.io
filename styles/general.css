@@ -16,10 +16,10 @@ html,
 body {
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100%;
-    min-width: 100%;
-    min-height: 100%;
+    width: 100vw !important;
+    height: 100vh !important;
+    min-width: 100vw;
+    min-height: 100vh;
     scroll-behavior: smooth;
 }
 
@@ -48,5 +48,15 @@ section {
 .highlight {
     font-size: inherit;
     font-weight: inherit;
-    color: var(--aqua);
+    animation: highlight-anim 500ms linear forwards;
+}
+
+@keyframes highlight-anim {
+    0% {
+        color: inherit;
+    }
+
+    100% {
+        color: var(--aqua)
+    }
 }

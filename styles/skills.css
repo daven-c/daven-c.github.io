@@ -29,7 +29,7 @@
     left: 0;
     width: 100%;
     height: 200px;
-    background-color: #114b5f;
+    background-color: var(--aqua);
 }
 
 .skills-card {
