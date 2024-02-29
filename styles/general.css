@@ -20,6 +20,7 @@ body {
     height: 100vh !important;
     min-width: 100vw;
     min-height: 100vh;
+    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
@@ -38,11 +39,17 @@ section {
 }
 
 .sec-title {
-    margin-bottom: 20px;
-    color: var(--aqua);
-    text-align: center;
-    font-size: 2.4rem;
+    height: 60px;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 40px;
+    margin-left: 10%;
+    margin-bottom: 80px;
+    color: black;
+    font-size: 2rem;
     font-weight: 600;
+    border-left: solid 2px var(--aqua);
+    border-bottom: solid 2px var(--aqua);
 }
 
 .highlight {

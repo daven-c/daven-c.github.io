@@ -40,7 +40,7 @@
 .partial-border-hover {
     position: relative;
     transition: inherit;
-    border-color: black;
+    border-color: white;
 
     &::before,
     &::after {

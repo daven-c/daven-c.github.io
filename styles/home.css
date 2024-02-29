@@ -1,13 +1,13 @@
 @import 'colors.css';
 
 #home {
-    background-color: white;
+    background-color: var(--darkgrey);
 }
 
 #logo {
     position: absolute;
     left: 50px;
-    margin-top: 30px;
+    margin-top: 32px;
     color: var(--aqua);
     font-size: 1.2rem;
     font-weight: 600;
@@ -32,8 +32,10 @@
 .content-container {
     position: absolute;
     top: 50%;
-    left: 10%;
+    left: 200px;
     translate: 0 -50%;
+    width: fit-content;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -46,12 +48,11 @@
         left: 0;
         padding: 0 30px;
     }
-
 }
 
 #nametag {
     translate: -3px 0;
-    color: black;
+    color: white;
     font-size: 4rem;
     font-weight: 600;
     padding-bottom: 6px;
@@ -69,7 +70,7 @@
 }
 
 #nametag .highlight {
-    color: black;
+    color: white;
     animation-duration: 250ms;
     animation-delay: 350ms;
 }
@@ -129,10 +130,10 @@
 }
 
 #description {
-    margin-top: 20px;
+    margin-top: 24px;
     max-width: 600px;
-    color: rgb(85, 85, 85);
-    font-size: 1.5rem;
+    color: rgb(165, 165, 165);
+    font-size: 1.2rem;
     font-weight: 600;
 }
 
@@ -149,11 +150,11 @@
 }
 
 #resume-button:hover {
-    background-color: white;
+    background-color: var(--darkgrey);
 }
 
 #resume-button:hover span {
-    color: black;
+    color: var(--aqua);
 }
 
 #resume-button.partial-border-hover:hover::before,
